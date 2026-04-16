@@ -1,0 +1,1462 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Asian Technocast — Cast Iron Manufacturer, Rajkot</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:wght@300;400;500&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet"/>
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+:root{
+  --ink:#08090c;
+  --ink2:#0f1117;
+  --ink3:#161b24;
+  --ore:#ff4a00;
+  --ore2:#ff7240;
+  --steel:#d8e2ed;
+  --fog:#7a8fa8;
+  --mist:#3a4a60;
+  --white:#f4f7fb;
+  --gold:#e8a020;
+  --cyan:#00c8e8;
+  --ff-display:'Bebas Neue',sans-serif;
+  --ff-body:'DM Sans',sans-serif;
+  --ff-mono:'DM Mono',monospace;
+}
+body{background:var(--ink);color:var(--steel);font-family:var(--ff-body);overflow-x:hidden}
+a{text-decoration:none;color:inherit}
+img{display:block;max-width:100%}
+
+/* ─── TOPBAR ────────────────────────────── */
+.topbar{background:var(--ore);overflow:hidden;height:32px;display:flex;align-items:center}
+.top-track{display:flex;gap:0;animation:slide 22s linear infinite;white-space:nowrap;width:max-content}
+.top-item{font-family:var(--ff-mono);font-size:10px;letter-spacing:.18em;text-transform:uppercase;color:rgba(255,255,255,.92);padding:0 2.5rem;border-right:1px solid rgba(255,255,255,.25)}
+@keyframes slide{to{transform:translateX(-50%)}}
+
+/* ─── NAVBAR ────────────────────────────── */
+nav{position:sticky;top:0;z-index:900;background:rgba(8,9,12,.92);backdrop-filter:blur(20px);border-bottom:1px solid rgba(255,74,0,.2)}
+.nav-w{display:flex;align-items:center;justify-content:space-between;height:68px;padding:0 clamp(1.5rem,4vw,4rem)}
+.logo-mark{display:flex;align-items:center;gap:14px}
+.logo-hex{width:38px;height:38px;flex-shrink:0}
+.logo-name{font-family:var(--ff-display);font-size:22px;color:var(--white);letter-spacing:.04em;line-height:1}
+.logo-sub{font-family:var(--ff-mono);font-size:9px;letter-spacing:.2em;color:var(--fog);text-transform:uppercase;margin-top:2px}
+.nav-links{display:flex;gap:2rem}
+.nav-links a{font-family:var(--ff-mono);font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:#8fa6c0;transition:color .2s;position:relative}
+.nav-links a::after{content:'';position:absolute;left:0;bottom:-3px;width:0;height:1px;background:var(--ore);transition:width .3s}
+.nav-links a:hover{color:var(--white)}
+.nav-links a:hover::after{width:100%}
+.nav-cta{font-family:var(--ff-mono);font-size:10px;letter-spacing:.12em;text-transform:uppercase;background:var(--ore);color:#fff;padding:.55rem 1.4rem;border:none;cursor:pointer;transition:background .2s,transform .2s}
+.nav-cta:hover{background:var(--ore2);transform:translateY(-1px)}
+.ham-btn{display:none;flex-direction:column;gap:5px;background:none;border:none;cursor:pointer;padding:.3rem}
+.ham-btn span{width:22px;height:1.5px;background:var(--steel);transition:.3s}
+
+/* ─── HERO ──────────────────────────────── */
+.hero{min-height:100vh;position:relative;display:flex;flex-direction:column;overflow:hidden;background:var(--ink)}
+#motorCanvas{position:absolute;inset:0;width:100%;height:100%;z-index:0}
+.hero-vignette{position:absolute;inset:0;z-index:1;background:radial-gradient(ellipse 85% 85% at 65% 50%,transparent 40%,rgba(8,9,12,.75) 100%);pointer-events:none}
+.hero-vignette2{position:absolute;inset:0;z-index:1;background:linear-gradient(to right,rgba(8,9,12,.96) 0%,rgba(8,9,12,.7) 40%,rgba(8,9,12,.15) 70%,rgba(8,9,12,.05) 100%);pointer-events:none}
+.hero-content{position:relative;z-index:2;display:flex;flex-direction:column;justify-content:center;padding:0 clamp(1.5rem,4vw,4rem);padding-top:7rem;padding-bottom:5rem;max-width:900px;flex:1}
+.hero-eyebrow{display:flex;align-items:center;gap:1rem;margin-bottom:1.8rem}
+.hero-eyebrow-line{width:48px;height:1px;background:var(--ore)}
+.hero-eyebrow span{font-family:var(--ff-mono);font-size:11px;letter-spacing:.2em;text-transform:uppercase;color:var(--ore)}
+.hero-h1{font-family:var(--ff-display);font-size:clamp(6rem,14vw,17rem);line-height:.88;letter-spacing:.01em;color:var(--white);margin-bottom:2.5rem}
+.hero-h1 .stroke{-webkit-text-stroke:2px rgba(240,244,248,.28);color:transparent}
+.hero-h1 .accent{color:var(--ore)}
+.hero-desc{max-width:460px;font-size:1.05rem;line-height:1.8;color:#9ab0c8;border-left:3px solid var(--ore);padding-left:1.2rem;margin-bottom:3rem}
+.hero-actions{display:flex;gap:1rem;flex-wrap:wrap;margin-bottom:4rem}
+.btn-primary{background:var(--ore);color:#fff;font-family:var(--ff-mono);font-size:11px;letter-spacing:.14em;text-transform:uppercase;padding:.9rem 2.2rem;border:none;cursor:pointer;transition:.25s;position:relative;overflow:hidden}
+.btn-primary::before{content:'';position:absolute;inset:0;background:#fff;opacity:0;transition:opacity .25s}
+.btn-primary:hover::before{opacity:.08}
+.btn-primary:hover{transform:translateY(-2px);box-shadow:0 16px 48px rgba(255,74,0,.35)}
+.btn-ghost{background:transparent;color:#c0cedd;font-family:var(--ff-mono);font-size:11px;letter-spacing:.14em;text-transform:uppercase;padding:.9rem 2.2rem;border:1px solid rgba(196,205,216,.3);cursor:pointer;transition:.25s}
+.btn-ghost:hover{border-color:var(--ore);color:var(--ore);transform:translateY(-2px)}
+.hero-stats{display:flex;gap:0;border:1px solid rgba(255,255,255,.1);max-width:560px;overflow:hidden}
+.hstat{flex:1;padding:1.2rem 1rem;border-right:1px solid rgba(255,255,255,.1);text-align:center;transition:background .3s;cursor:default}
+.hstat:last-child{border-right:none}
+.hstat:hover{background:rgba(255,74,0,.06)}
+.hstat-n{font-family:var(--ff-display);font-size:2.8rem;color:var(--ore);line-height:1;margin-bottom:3px}
+.hstat-l{font-family:var(--ff-mono);font-size:9px;letter-spacing:.16em;text-transform:uppercase;color:#8fa6c0}
+.canvas-labels{position:absolute;right:clamp(1rem,3vw,3rem);bottom:3rem;z-index:3;display:flex;flex-direction:column;gap:.5rem;text-align:right}
+.clabel{font-family:var(--ff-mono);font-size:9px;letter-spacing:.14em;text-transform:uppercase;color:rgba(196,205,216,.45);display:flex;align-items:center;justify-content:flex-end;gap:.5rem}
+.clabel::after{content:'';width:30px;height:1px;background:rgba(196,205,216,.25)}
+.scroll-ind{position:absolute;bottom:2.5rem;left:50%;transform:translateX(-50%);z-index:3;display:flex;flex-direction:column;align-items:center;gap:.5rem}
+.scroll-ind span{font-family:var(--ff-mono);font-size:9px;letter-spacing:.2em;color:#7a8fa8;text-transform:uppercase}
+.scroll-line{width:1px;height:50px;background:linear-gradient(to bottom,var(--ore),transparent);animation:scrollDown 2s ease-in-out infinite}
+@keyframes scrollDown{0%{opacity:0;transform:scaleY(0);transform-origin:top}50%{opacity:1}100%{opacity:0;transform:scaleY(1);transform-origin:top}}
+
+/* ─── MARQUEE BAND ──────────────────────── */
+.band{border-top:1px solid rgba(255,74,0,.2);border-bottom:1px solid rgba(255,74,0,.2);background:var(--ink2);padding:1rem 0;overflow:hidden}
+.band-track{display:flex;animation:slide 18s linear infinite;width:max-content}
+.band-item{display:flex;align-items:center;gap:.8rem;padding:0 2.5rem;border-right:1px solid rgba(255,255,255,.06);font-family:var(--ff-mono);font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:#8fa6c0;white-space:nowrap}
+.band-dot{width:5px;height:5px;background:var(--ore);border-radius:50%;flex-shrink:0}
+
+/* ─── SECTION COMMONS ───────────────────── */
+section{padding:clamp(5rem,10vw,10rem) clamp(1.5rem,4vw,4rem)}
+.s-label{font-family:var(--ff-mono);font-size:10px;letter-spacing:.22em;text-transform:uppercase;color:var(--ore);margin-bottom:1.2rem;display:flex;align-items:center;gap:.8rem}
+.s-label::before{content:'';width:28px;height:1px;background:var(--ore)}
+.s-head{font-family:var(--ff-display);font-size:clamp(4rem,8vw,9rem);line-height:.9;letter-spacing:.02em;color:var(--white)}
+.s-head .stroke{-webkit-text-stroke:1.5px rgba(240,244,248,.22);color:transparent}
+.s-head .ore{color:var(--ore)}
+
+/* ─── ABOUT ─────────────────────────────── */
+.about-section{background:var(--ink2)}
+.about-grid{display:grid;grid-template-columns:1fr 1fr;gap:6rem;align-items:start;max-width:1400px;margin:0 auto}
+.about-poster{position:relative}
+.ap-bg{background:var(--ink3);border:1px solid rgba(255,255,255,.08);aspect-ratio:3/4;position:relative;overflow:hidden;display:flex;flex-direction:column;justify-content:flex-end;padding:2.5rem}
+.ap-grid-lines{position:absolute;inset:0;background-image:linear-gradient(rgba(255,255,255,.03) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.03) 1px,transparent 1px);background-size:40px 40px}
+.ap-ore-block{position:absolute;top:0;left:0;width:100%;height:45%;background:var(--ore);display:flex;align-items:flex-end;justify-content:flex-start;padding:2rem 2.5rem;clip-path:polygon(0 0,100% 0,100% 80%,0 100%)}
+.ap-year{font-family:var(--ff-display);font-size:clamp(5rem,12vw,9rem);color:rgba(255,255,255,.12);line-height:1;position:absolute;right:-10px;top:1rem}
+.ap-since{font-family:var(--ff-mono);font-size:11px;letter-spacing:.2em;text-transform:uppercase;color:rgba(255,255,255,.9)}
+.ap-since strong{display:block;font-family:var(--ff-display);font-size:3.5rem;color:#fff;letter-spacing:.03em;line-height:1}
+.ap-facts{display:flex;flex-direction:column;gap:1.2rem;position:relative;z-index:1}
+.ap-fact{display:flex;align-items:flex-start;gap:.9rem}
+.ap-fact-icon{width:32px;height:32px;flex-shrink:0;border:1px solid rgba(255,74,0,.35);display:grid;place-items:center;color:var(--ore);font-size:.75rem;margin-top:2px}
+.ap-fact-t{font-size:.85rem;color:var(--white);font-weight:500;margin-bottom:2px}
+.ap-fact-d{font-size:.78rem;color:#8fa6c0;line-height:1.6}
+.ap-badge{position:absolute;right:-1.5rem;top:40%;background:var(--ink);border:1px solid rgba(255,74,0,.4);padding:1.2rem 1.5rem;z-index:2}
+.ap-badge-n{font-family:var(--ff-display);font-size:2.8rem;color:var(--ore);line-height:1}
+.ap-badge-l{font-family:var(--ff-mono);font-size:9px;letter-spacing:.16em;text-transform:uppercase;color:#8fa6c0}
+.about-right{padding-top:2rem}
+.about-right .s-head{margin-bottom:2rem}
+.about-right p{font-size:1.05rem;line-height:1.85;color:#8fa6c0;margin-bottom:2.5rem}
+.cert-strip{display:flex;gap:0;border:1px solid rgba(255,255,255,.1);margin-bottom:3rem}
+.cert{flex:1;padding:1.2rem;border-right:1px solid rgba(255,255,255,.1);text-align:center}
+.cert:last-child{border-right:none}
+.cert-icon{font-size:1.4rem;color:var(--ore);margin-bottom:.5rem}
+.cert-t{font-family:var(--ff-mono);font-size:9px;letter-spacing:.12em;text-transform:uppercase;color:#b0c4d8}
+
+/* ─── MOTOR SHOWCASE ────────────────────── */
+.motor-section{background:var(--ink);position:relative;overflow:hidden}
+.motor-section::before{content:'MOTOR';position:absolute;right:-2rem;top:50%;transform:translateY(-50%);font-family:var(--ff-display);font-size:clamp(10rem,22vw,26rem);color:rgba(255,255,255,.015);white-space:nowrap;letter-spacing:.05em;pointer-events:none}
+.motor-inner{max-width:1400px;margin:0 auto;display:grid;grid-template-columns:1.1fr 0.9fr;gap:5rem;align-items:center}
+.motor-canvas-wrap{position:relative}
+#motorDetailCanvas{width:100%;border:1px solid rgba(255,74,0,.15);background:var(--ink2);aspect-ratio:1;display:block}
+.motor-frame-label{position:absolute;top:-1px;left:0;right:0;display:flex;justify-content:space-between;align-items:center;padding:.6rem 1rem;border-bottom:1px solid rgba(255,74,0,.15);background:rgba(8,9,12,.95)}
+.mfl-tag{font-family:var(--ff-mono);font-size:9px;letter-spacing:.18em;text-transform:uppercase;color:var(--ore)}
+.mfl-status{display:flex;align-items:center;gap:.5rem;font-family:var(--ff-mono);font-size:9px;color:#8fa6c0}
+.mfl-dot{width:6px;height:6px;border-radius:50%;background:#00e87a;animation:blink 2s ease-in-out infinite}
+@keyframes blink{0%,100%{opacity:1}50%{opacity:.3}}
+.motor-tabs{display:flex;flex-direction:column;gap:0;border:1px solid rgba(255,255,255,.1);margin-bottom:2rem}
+.m-tab{background:none;border:none;border-bottom:1px solid rgba(255,255,255,.1);padding:1.1rem 1.4rem;text-align:left;cursor:pointer;display:flex;align-items:center;justify-content:space-between;transition:.25s;position:relative;overflow:hidden}
+.m-tab::before{content:'';position:absolute;left:0;top:0;bottom:0;width:0;background:var(--ore);transition:width .35s}
+.m-tab.active::before,.m-tab:hover::before{width:3px}
+.m-tab:last-child{border-bottom:none}
+.m-tab-name{font-family:var(--ff-mono);font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:#8fa6c0;transition:color .2s;position:relative;z-index:1}
+.m-tab.active .m-tab-name{color:var(--white)}
+.m-tab-detail{font-family:var(--ff-mono);font-size:9px;letter-spacing:.1em;color:#3a4a60;transition:color .2s;position:relative;z-index:1}
+.m-tab.active .m-tab-detail{color:var(--ore)}
+.m-tab:hover .m-tab-name{color:#c0cedd}
+.spec-table{width:100%;border-collapse:collapse;font-size:.82rem;margin-bottom:2rem}
+.spec-table tr{border-bottom:1px solid rgba(255,255,255,.08)}
+.spec-table td{padding:.75rem .5rem}
+.spec-table td:first-child{font-family:var(--ff-mono);font-size:9px;letter-spacing:.1em;text-transform:uppercase;color:#8fa6c0;width:40%}
+.spec-table td:last-child{color:#c8d8e8;font-weight:500}
+
+/* ─── PRODUCTS ──────────────────────────── */
+.prod-section{background:var(--ink2)}
+.prod-header{max-width:1400px;margin:0 auto 4rem;display:grid;grid-template-columns:1fr 1fr;gap:3rem;align-items:end}
+.prod-grid{max-width:1400px;margin:0 auto;display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:rgba(255,255,255,.06)}
+.prod-card{background:var(--ink2);padding:2.5rem 2rem;position:relative;overflow:hidden;transition:.35s;cursor:default}
+.prod-card::after{content:'';position:absolute;bottom:0;left:0;width:100%;height:2px;background:var(--ore);transform:scaleX(0);transform-origin:left;transition:transform .5s}
+.prod-card:hover::after{transform:scaleX(1)}
+.prod-card:hover{background:var(--ink3)}
+.prod-card.featured{background:var(--ore);grid-column:span 2}
+.prod-card.featured:hover{background:var(--ore2)}
+.prod-card.featured::after{background:#fff}
+.prod-num{font-family:var(--ff-display);font-size:5rem;color:rgba(255,255,255,.06);position:absolute;right:1rem;bottom:-1.5rem;line-height:1;pointer-events:none;transition:.3s}
+.prod-card:hover .prod-num{color:rgba(255,74,0,.1)}
+.prod-card.featured .prod-num{color:rgba(255,255,255,.12)}
+.prod-icon-wrap{width:52px;height:52px;border:1px solid rgba(255,74,0,.4);display:grid;place-items:center;margin-bottom:1.4rem;font-size:1.3rem;color:var(--ore);transition:.3s}
+.prod-card:hover .prod-icon-wrap,.prod-card.featured .prod-icon-wrap{background:var(--ore);color:#fff;border-color:var(--ore)}
+.prod-card.featured .prod-icon-wrap{border-color:rgba(255,255,255,.4);background:rgba(255,255,255,.15);color:#fff}
+.prod-name{font-family:var(--ff-display);font-size:1.6rem;letter-spacing:.03em;color:var(--white);margin-bottom:.6rem}
+.prod-card.featured .prod-name{font-size:2.2rem;color:#fff}
+.prod-desc{font-size:.82rem;color:#8fa6c0;line-height:1.65}
+.prod-card.featured .prod-desc{color:rgba(255,255,255,.82);font-size:.9rem;max-width:360px}
+.prod-tags{display:flex;flex-wrap:wrap;gap:.35rem;margin-top:1rem}
+.ptag{font-family:var(--ff-mono);font-size:9px;letter-spacing:.1em;text-transform:uppercase;padding:.2rem .55rem;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.1);color:#8fa6c0}
+.prod-card.featured .ptag{background:rgba(255,255,255,.18);border-color:rgba(255,255,255,.3);color:#fff}
+.prod-arrow{font-family:var(--ff-mono);font-size:10px;letter-spacing:.1em;text-transform:uppercase;color:var(--ore);display:inline-flex;align-items:center;gap:.5rem;margin-top:1.4rem;transition:gap .25s}
+.prod-card:hover .prod-arrow{gap:.9rem}
+.prod-card.featured .prod-arrow{color:rgba(255,255,255,.9)}
+
+/* ─── WHY US ────────────────────────────── */
+.why-section{background:var(--ink3);position:relative;overflow:hidden}
+.why-bg-text{position:absolute;right:-3rem;top:50%;transform:translateY(-50%);font-family:var(--ff-display);font-size:clamp(8rem,18vw,20rem);color:rgba(255,255,255,.018);pointer-events:none;letter-spacing:.05em}
+.why-inner{max-width:1400px;margin:0 auto}
+.why-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:rgba(255,255,255,.07);margin-top:4rem}
+.wcard{background:var(--ink3);padding:2.5rem 2rem;position:relative;overflow:hidden;transition:.3s;cursor:default}
+.wcard:hover{background:var(--ink2)}
+.wcard::before{content:'';position:absolute;top:0;left:0;right:0;height:0;background:rgba(255,74,0,.06);transition:height .4s}
+.wcard:hover::before{height:100%}
+.wcard-n{font-family:var(--ff-mono);font-size:9px;letter-spacing:.18em;color:var(--ore);margin-bottom:1rem;position:relative}
+.wcard-icon{width:48px;height:48px;border-radius:50%;border:1px solid rgba(255,74,0,.28);display:grid;place-items:center;color:var(--ore);font-size:1.1rem;margin-bottom:1rem;transition:.3s;position:relative}
+.wcard:hover .wcard-icon{background:var(--ore);color:#fff;border-color:var(--ore)}
+.wcard-title{font-size:1rem;font-weight:600;color:var(--white);margin-bottom:.5rem;position:relative}
+.wcard-desc{font-size:.82rem;color:#8fa6c0;line-height:1.75;position:relative}
+
+/* ─── PROCESS ───────────────────────────── */
+.process-section{background:var(--ore);padding:clamp(4rem,7vw,6rem) clamp(1.5rem,4vw,4rem)}
+.process-inner{max-width:1400px;margin:0 auto}
+.process-title{font-family:var(--ff-display);font-size:clamp(3rem,6vw,6rem);color:rgba(255,255,255,.2);margin-bottom:3rem;letter-spacing:.03em}
+.proc-row{display:flex;align-items:stretch;gap:0;overflow-x:auto;scrollbar-width:none}
+.proc-row::-webkit-scrollbar{display:none}
+.proc-step{flex:1;min-width:140px;padding:2rem 1.5rem;border-right:1px solid rgba(255,255,255,.22);position:relative;transition:.25s}
+.proc-step:last-child{border-right:none}
+.proc-step:hover{background:rgba(255,255,255,.1)}
+.proc-n{font-family:var(--ff-display);font-size:4rem;color:rgba(255,255,255,.18);line-height:1;margin-bottom:.8rem}
+.proc-icon{width:48px;height:48px;background:rgba(255,255,255,.18);border-radius:50%;display:grid;place-items:center;color:#fff;font-size:1.1rem;margin-bottom:.8rem}
+.proc-label{font-family:var(--ff-mono);font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:rgba(255,255,255,.9)}
+
+/* ─── CONTACT ───────────────────────────── */
+.contact-section{background:var(--ink2)}
+.contact-inner{max-width:1400px;margin:0 auto;display:grid;grid-template-columns:1fr 1.3fr;gap:6rem;align-items:start}
+.contact-info .s-head{margin-bottom:2.5rem}
+.info-blocks{display:flex;flex-direction:column;gap:0}
+.iblock{display:flex;gap:1rem;align-items:flex-start;padding:1.2rem 0;border-bottom:1px solid rgba(255,255,255,.08);transition:.3s}
+.iblock:hover{padding-left:.5rem}
+.iblock-icon{width:40px;height:40px;flex-shrink:0;border:1px solid rgba(255,74,0,.25);display:grid;place-items:center;color:var(--ore);font-size:.9rem}
+.iblock-lbl{font-family:var(--ff-mono);font-size:9px;letter-spacing:.14em;text-transform:uppercase;color:#7a8fa8;margin-bottom:.25rem}
+.iblock-val{font-size:.9rem;color:#c8d8e8;line-height:1.5}
+.iblock-val a{color:#c8d8e8;transition:color .2s}
+.iblock-val a:hover{color:var(--ore)}
+.map-box{margin-top:2rem;border:1px solid rgba(255,255,255,.08);overflow:hidden;position:relative}
+.map-box::after{content:'';position:absolute;inset:0;pointer-events:none;box-shadow:inset 0 0 0 1px rgba(255,74,0,.1)}
+.form-box{background:var(--ink3);border:1px solid rgba(255,255,255,.09);padding:3rem;position:relative}
+.form-box::before{content:'';position:absolute;top:0;left:0;right:0;height:2px;background:linear-gradient(90deg,var(--ore),transparent)}
+.form-head{font-family:var(--ff-display);font-size:2.8rem;color:var(--white);margin-bottom:.3rem;letter-spacing:.03em}
+.form-sub{font-family:var(--ff-mono);font-size:9px;letter-spacing:.16em;text-transform:uppercase;color:#7a8fa8;margin-bottom:2rem;padding-bottom:1.5rem;border-bottom:1px solid rgba(255,255,255,.08)}
+.fg{margin-bottom:1rem}
+.fg label{display:block;font-family:var(--ff-mono);font-size:9px;letter-spacing:.14em;text-transform:uppercase;color:#8fa6c0;margin-bottom:.4rem}
+.fg input,.fg select,.fg textarea{width:100%;background:var(--ink2);border:1px solid rgba(255,255,255,.1);color:#c8d8e8;font-family:var(--ff-body);font-size:.9rem;padding:.78rem 1rem;outline:none;transition:.25s;appearance:none}
+.fg select option{background:var(--ink2)}
+.fg input:focus,.fg select:focus,.fg textarea:focus{border-color:var(--ore);box-shadow:0 0 0 2px rgba(255,74,0,.1)}
+.fg textarea{resize:vertical;min-height:100px}
+.fg input::placeholder,.fg textarea::placeholder{color:#3a4a60}
+.frow{display:grid;grid-template-columns:1fr 1fr;gap:1rem}
+.form-ok{display:none;align-items:center;gap:.8rem;margin-top:1rem;padding:.9rem 1.1rem;background:rgba(0,232,122,.07);border:1px solid rgba(0,232,122,.25);color:#00e87a;font-family:var(--ff-mono);font-size:10px;letter-spacing:.08em}
+
+/* ─── FOOTER ────────────────────────────── */
+footer{background:var(--ink);border-top:1px solid rgba(255,255,255,.07)}
+.footer-top{display:grid;grid-template-columns:2fr 1fr 1fr;gap:4rem;padding:5rem clamp(1.5rem,4vw,4rem) 4rem;border-bottom:1px solid rgba(255,255,255,.07);max-width:1400px;margin:0 auto}
+.footer-logo-name{font-family:var(--ff-display);font-size:3.5rem;color:var(--white);line-height:1;margin-bottom:.5rem}
+.footer-logo-sub{font-family:var(--ff-mono);font-size:9px;letter-spacing:.2em;text-transform:uppercase;color:#7a8fa8;margin-bottom:1.2rem}
+.footer-bar{width:28px;height:2px;background:var(--ore);margin-bottom:1.2rem}
+.footer-desc{font-size:.85rem;color:#7a8fa8;line-height:1.75;max-width:280px}
+.fc-head{font-family:var(--ff-mono);font-size:9px;letter-spacing:.22em;text-transform:uppercase;color:var(--ore);margin-bottom:1.2rem}
+.fc-links{display:flex;flex-direction:column;gap:.55rem}
+.fc-links a{font-size:.85rem;color:#7a8fa8;display:flex;align-items:center;gap:.4rem;transition:color .2s}
+.fc-links a::before{content:'→';font-size:.7rem;color:#3a4a60;transition:color .2s}
+.fc-links a:hover{color:var(--ore)}
+.fc-links a:hover::before{color:var(--ore)}
+.fc-info{display:flex;flex-direction:column;gap:.8rem}
+.fci{display:flex;gap:.6rem;align-items:flex-start;font-size:.82rem;color:#7a8fa8;line-height:1.5}
+.fci i{color:var(--ore);font-size:.75rem;margin-top:.2rem;flex-shrink:0}
+.footer-bottom{display:flex;justify-content:space-between;align-items:center;padding:1.2rem clamp(1.5rem,4vw,4rem);font-family:var(--ff-mono);font-size:9px;letter-spacing:.1em;color:#3a4a60;max-width:1400px;margin:0 auto;flex-wrap:wrap;gap:.5rem}
+
+/* ─── SCROLL REVEAL ─────────────────────── */
+.reveal{opacity:0;transform:translateY(32px);transition:opacity .8s ease,transform .8s ease}
+.reveal.visible{opacity:1;transform:none}
+.reveal.d1{transition-delay:.1s}.reveal.d2{transition-delay:.2s}.reveal.d3{transition-delay:.3s}
+.reveal.d4{transition-delay:.4s}.reveal.d5{transition-delay:.5s}
+
+/* ─── SCROLL TO TOP ─────────────────────── */
+#stt{position:fixed;bottom:2rem;right:2rem;width:48px;height:48px;background:var(--ore);color:#fff;border:none;cursor:pointer;display:grid;place-items:center;font-size:.9rem;opacity:0;transform:translateY(8px);transition:.35s;z-index:800}
+#stt.show{opacity:1;transform:none}
+#stt:hover{background:var(--ore2);transform:translateY(-3px);box-shadow:0 12px 36px rgba(255,74,0,.4)}
+
+/* ─── MOBILE NAV ────────────────────────── */
+.mob-menu{display:none;background:var(--ink2);border-bottom:1px solid rgba(255,74,0,.15);padding:.5rem 0 1rem}
+.mob-menu.open{display:block}
+.mob-menu a{display:block;padding:.7rem 1.8rem;font-family:var(--ff-mono);font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:#8fa6c0;border-left:2px solid transparent;transition:.2s}
+.mob-menu a:hover{color:var(--ore);border-color:var(--ore);background:rgba(255,74,0,.04)}
+
+/* ─── RESPONSIVE ────────────────────────── */
+@media(max-width:1100px){
+  .about-grid,.motor-inner,.contact-inner,.footer-top{grid-template-columns:1fr;gap:3rem}
+  .prod-grid{grid-template-columns:repeat(2,1fr)}
+  .prod-card.featured{grid-column:span 2}
+  .why-grid{grid-template-columns:repeat(2,1fr)}
+  .motor-tabs{flex-direction:row;overflow-x:auto;scrollbar-width:none}
+  .m-tab{border-bottom:1px solid rgba(255,255,255,.07);border-right:1px solid rgba(255,255,255,.07);min-width:140px}
+}
+@media(max-width:768px){
+  .nav-links,.nav-cta{display:none}
+  .ham-btn{display:flex}
+  .prod-grid,.why-grid{grid-template-columns:1fr}
+  .prod-card.featured{grid-column:span 1}
+  .hero-h1{font-size:clamp(5rem,18vw,8rem)}
+  .prod-header{grid-template-columns:1fr}
+  .frow{grid-template-columns:1fr}
+  .canvas-labels{display:none}
+  .footer-top{grid-template-columns:1fr;gap:2.5rem}
+  .about-poster{display:none}
+  .proc-row{flex-wrap:wrap}
+}
+@media(max-width:480px){
+  .hero-stats{flex-direction:column}
+  .hstat{border-right:none;border-bottom:1px solid rgba(255,255,255,.08)}
+  .hstat:last-child{border-bottom:none}
+  .hero-actions{flex-direction:column}
+}
+</style>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+<!-- EmailJS -->
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+<script type="text/javascript">
+  (function(){
+    emailjs.init({ publicKey: 'BiIkG2O9mPjoOkHR4' });
+  })();
+</script>
+</head>
+<body>
+
+<!-- TOPBAR -->
+<div class="topbar">
+  <div class="top-track">
+    <span class="top-item">📞 Alpesh Ghadia: +91 97252 52593</span>
+    <span class="top-item">📞 Sandeep Ghadia: +91 96622 00009</span>
+    <span class="top-item">✉ mananghadia83@gmail.com</span>
+    <span class="top-item">📍 Plot 185, Aji GIDC, Rajkot – 360003</span>
+    <span class="top-item">🕐 Mon–Sat · 9AM–6PM IST</span>
+    <span class="top-item">Precision Cast Iron · Est. 2006</span>
+    <span class="top-item">Quality You Can Trust</span>
+    <span class="top-item">📞 Alpesh Ghadia: +91 97252 52593</span>
+    <span class="top-item">📞 Sandeep Ghadia: +91 96622 00009</span>
+    <span class="top-item">✉ mananghadia83@gmail.com</span>
+    <span class="top-item">📍 Plot 185, Aji GIDC, Rajkot – 360003</span>
+    <span class="top-item">🕐 Mon–Sat · 9AM–6PM IST</span>
+    <span class="top-item">Precision Cast Iron · Est. 2006</span>
+    <span class="top-item">Quality You Can Trust</span>
+  </div>
+</div>
+
+<!-- NAVBAR -->
+<nav id="navbar">
+  <div class="nav-w">
+    <div class="logo-mark">
+      <svg class="logo-hex" viewBox="0 0 38 38" fill="none">
+        <polygon points="19,2 36,10.5 36,27.5 19,36 2,27.5 2,10.5" fill="rgba(255,74,0,.12)" stroke="#ff4a00" stroke-width="1.5"/>
+        <text x="50%" y="55%" text-anchor="middle" dominant-baseline="middle" font-family="Bebas Neue" font-size="13" fill="#ff4a00">AT</text>
+      </svg>
+      <div><div class="logo-name">Asian Technocast</div><div class="logo-sub">Cast Iron Mfr · Rajkot · Est 2006</div></div>
+    </div>
+    <div class="nav-links">
+      <a href="#home">Home</a><a href="#about">About</a><a href="#motor">Motor Bodies</a>
+      <a href="#products">Products</a><a href="#why">Why Us</a><a href="#contact">Contact</a>
+    </div>
+    <a href="#contact" class="nav-cta">Get a Quote →</a>
+    <button class="ham-btn" id="hamBtn"><span></span><span></span><span></span></button>
+  </div>
+  <div class="mob-menu" id="mobMenu">
+    <a href="#home">Home</a><a href="#about">About Us</a><a href="#motor">Motor Bodies</a>
+    <a href="#products">Products</a><a href="#why">Why Us</a><a href="#contact">Contact & Quote</a>
+  </div>
+</nav>
+
+<!-- ═══════════════ HERO ═══════════════════ -->
+<section class="hero" id="home">
+  <canvas id="motorCanvas"></canvas>
+  <div class="hero-vignette"></div>
+  <div class="hero-vignette2"></div>
+
+  <div class="hero-content">
+    <div class="hero-eyebrow">
+      <div class="hero-eyebrow-line"></div>
+      <span>Rajkot's Precision Casting Experts · Since 2006</span>
+    </div>
+
+    <h1 class="hero-h1">
+      CAST<br>
+      <span class="stroke">IRON</span><br>
+      <span class="accent">EXCELLENCE.</span>
+    </h1>
+
+    <p class="hero-desc">
+      Asian Technocast engineers world-class cast iron components for automotive, agriculture, and industrial machinery — backed by 18+ years of metallurgical mastery from Rajkot's Aji GIDC.
+    </p>
+
+    <div class="hero-actions">
+      <a href="#contact" class="btn-primary">Request a Quote →</a>
+      <a href="#products" class="btn-ghost">Explore Products</a>
+    </div>
+
+    <div class="hero-stats">
+      <div class="hstat"><div class="hstat-n">18+</div><div class="hstat-l">Years</div></div>
+      <div class="hstat"><div class="hstat-n">7</div><div class="hstat-l">Categories</div></div>
+      <div class="hstat"><div class="hstat-n">500+</div><div class="hstat-l">Products</div></div>
+      <div class="hstat"><div class="hstat-n">100%</div><div class="hstat-l">Quality</div></div>
+    </div>
+  </div>
+
+  <div class="canvas-labels">
+    <div class="clabel">3-Phase Stator Winding</div>
+    <div class="clabel">Precision-Machined Bore</div>
+    <div class="clabel">Cooling Fin Array</div>
+    <div class="clabel">Rotating Shaft Assembly</div>
+  </div>
+
+  <div class="scroll-ind">
+    <div class="scroll-line"></div>
+    <span>Scroll</span>
+  </div>
+</section>
+
+<!-- BAND -->
+<div class="band" aria-hidden="true">
+  <div class="band-track">
+    <div class="band-item"><span class="band-dot"></span>Automotive</div>
+    <div class="band-item"><span class="band-dot"></span>Agriculture</div>
+    <div class="band-item"><span class="band-dot"></span>Electric Motors</div>
+    <div class="band-item"><span class="band-dot"></span>Gear Castings</div>
+    <div class="band-item"><span class="band-dot"></span>Water Pumps</div>
+    <div class="band-item"><span class="band-dot"></span>Cylinder Heads</div>
+    <div class="band-item"><span class="band-dot"></span>Industrial Machinery</div>
+    <div class="band-item"><span class="band-dot"></span>Automotive</div>
+    <div class="band-item"><span class="band-dot"></span>Agriculture</div>
+    <div class="band-item"><span class="band-dot"></span>Electric Motors</div>
+    <div class="band-item"><span class="band-dot"></span>Gear Castings</div>
+    <div class="band-item"><span class="band-dot"></span>Water Pumps</div>
+    <div class="band-item"><span class="band-dot"></span>Cylinder Heads</div>
+    <div class="band-item"><span class="band-dot"></span>Industrial Machinery</div>
+  </div>
+</div>
+
+<!-- ═══════════════ ABOUT ═════════════════ -->
+<section class="about-section" id="about">
+  <div class="about-grid">
+    <div class="about-poster reveal">
+      <div class="ap-bg">
+        <div class="ap-grid-lines"></div>
+        <div class="ap-ore-block">
+          <div class="ap-since">
+            <span>Est.</span>
+            <strong>2006</strong>
+          </div>
+        </div>
+        <div class="ap-year">18</div>
+        <div class="ap-facts">
+          <div class="ap-fact">
+            <div class="ap-fact-icon"><i class="fa fa-map-marker-alt"></i></div>
+            <div><div class="ap-fact-t">Aji GIDC, Rajkot</div><div class="ap-fact-d">India's premier engineering industrial estate</div></div>
+          </div>
+          <div class="ap-fact">
+            <div class="ap-fact-icon"><i class="fa fa-medal"></i></div>
+            <div><div class="ap-fact-t">Multi-Stage QC</div><div class="ap-fact-d">Every casting inspected before dispatch</div></div>
+          </div>
+          <div class="ap-fact">
+            <div class="ap-fact-icon"><i class="fa fa-drafting-compass"></i></div>
+            <div><div class="ap-fact-t">Drawing-to-Casting</div><div class="ap-fact-d">Bespoke manufacturing from your specs</div></div>
+          </div>
+        </div>
+      </div>
+      <div class="ap-badge">
+        <div class="ap-badge-n">500+</div>
+        <div class="ap-badge-l">Products</div>
+      </div>
+    </div>
+
+    <div class="about-right reveal d2">
+      <div class="s-label">About the Company</div>
+      <h2 class="s-head">Built on<br><span class="ore">Precision</span><br><span class="stroke">& Trust</span></h2>
+      <p>Headquartered in Rajkot's Aji GIDC — India's premier engineering industrial estate — Asian Technocast has delivered precision cast iron components to clients across India for nearly two decades. We combine modern manufacturing discipline with deep metallurgical expertise.</p>
+
+      <div class="cert-strip">
+        <div class="cert"><div class="cert-icon"><i class="fa fa-shield-alt"></i></div><div class="cert-t">Quality Certified</div></div>
+        <div class="cert"><div class="cert-icon"><i class="fa fa-industry"></i></div><div class="cert-t">ISO Process</div></div>
+        <div class="cert"><div class="cert-icon"><i class="fa fa-truck"></i></div><div class="cert-t">Pan India</div></div>
+        <div class="cert"><div class="cert-icon"><i class="fa fa-users"></i></div><div class="cert-t">OEM Ready</div></div>
+      </div>
+
+      <a href="#contact" class="btn-primary">Partner With Us →</a>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════ MOTOR SHOWCASE ════════ -->
+<section class="motor-section" id="motor">
+  <div class="motor-inner">
+    <div class="motor-canvas-wrap reveal">
+      <div class="motor-frame-label">
+        <span class="mfl-tag">Motor Body · Live Cross-Section</span>
+        <span class="mfl-status"><span class="mfl-dot"></span>Animated · Running</span>
+      </div>
+      <canvas id="motorDetailCanvas"></canvas>
+    </div>
+
+    <div class="reveal d2">
+      <div class="s-label">Motor Castings</div>
+      <h2 class="s-head" style="margin-bottom:2rem">Motor<br><span class="ore">Body</span><br><span class="stroke">Experts</span></h2>
+      <p style="font-size:1rem;line-height:1.85;color:#8fa6c0;margin-bottom:2rem">We cast motor frames, end shields, and pump housings to the tightest tolerances for India's leading electric motor manufacturers. Every cavity is machined, every surface inspected.</p>
+
+      <div class="motor-tabs" id="motorTabs">
+        <button class="m-tab active" data-type="frame">
+          <div><div class="m-tab-name">Motor Frame</div><div class="m-tab-detail">Stator Housing · Frame 56–355</div></div>
+          <i class="fa fa-chevron-right" style="color:var(--ore);font-size:.65rem"></i>
+        </button>
+        <button class="m-tab" data-type="shield">
+          <div><div class="m-tab-name">End Shield</div><div class="m-tab-detail">Drive End · Non-Drive End</div></div>
+          <i class="fa fa-chevron-right" style="color:#7a8fa8;font-size:.65rem"></i>
+        </button>
+        <button class="m-tab" data-type="pump">
+          <div><div class="m-tab-name">Pump Housing</div><div class="m-tab-detail">Volute Casing · Impeller</div></div>
+          <i class="fa fa-chevron-right" style="color:#7a8fa8;font-size:.65rem"></i>
+        </button>
+        <button class="m-tab" data-type="gear">
+          <div><div class="m-tab-name">Gear Housing</div><div class="m-tab-detail">Gearbox · Industrial</div></div>
+          <i class="fa fa-chevron-right" style="color:#7a8fa8;font-size:.65rem"></i>
+        </button>
+      </div>
+
+      <table class="spec-table" id="motorSpecTable">
+        <tbody>
+          <tr><td>Material</td><td id="sm">Grey Cast Iron (GCI)</td></tr>
+          <tr><td>Grade</td><td id="sg">IS 210 Grade FG 260</td></tr>
+          <tr><td>Frame Range</td><td id="sr">Frame 56 to 355</td></tr>
+          <tr><td>Machining</td><td id="smach">Bore + Face + Feet</td></tr>
+          <tr><td>Tolerance</td><td id="stol">H7 / ISO 286-1</td></tr>
+        </tbody>
+      </table>
+
+      <a href="#contact" class="btn-primary">Get Motor Body Quote →</a>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════ PRODUCTS ══════════════ -->
+<section class="prod-section" id="products">
+  <div class="prod-header reveal">
+    <div>
+      <div class="s-label">What We Make</div>
+      <h2 class="s-head">Product<br><span class="ore">Range</span></h2>
+    </div>
+    <div>
+      <p style="font-size:1rem;line-height:1.85;color:#8fa6c0;margin-bottom:1.5rem">High-grade cast iron components engineered for durability across diverse industrial applications. Custom specs welcome.</p>
+      <a href="#contact" class="btn-primary">Request Custom Quote →</a>
+    </div>
+  </div>
+
+  <div class="prod-grid reveal d1">
+    <div class="prod-card featured">
+      <div class="prod-num">01</div>
+      <div class="prod-icon-wrap"><i class="fa fa-layer-group"></i></div>
+      <div class="prod-name">Cast Iron Castings</div>
+      <div class="prod-desc">Our flagship product — general-purpose high-grade cast iron castings manufactured to custom specifications. Available in grey iron, ductile iron, and alloy variants for a wide range of industrial applications.</div>
+      <div class="prod-tags"><span class="ptag">Grey Iron</span><span class="ptag">Ductile Iron</span><span class="ptag">Alloy CI</span><span class="ptag">Custom Sizes</span></div>
+      <div class="prod-arrow">Enquire Now <i class="fa fa-arrow-right"></i></div>
+    </div>
+    <div class="prod-card">
+      <div class="prod-num">02</div>
+      <div class="prod-icon-wrap"><i class="fa fa-tractor"></i></div>
+      <div class="prod-name">Agriculture Castings</div>
+      <div class="prod-desc">Wear-resistant components built for demanding field conditions in agricultural machinery.</div>
+      <div class="prod-tags"><span class="ptag">Plough Parts</span><span class="ptag">Pump Housings</span></div>
+    </div>
+    <div class="prod-card">
+      <div class="prod-num">03</div>
+      <div class="prod-icon-wrap"><i class="fa fa-car"></i></div>
+      <div class="prod-name">Automobile Castings</div>
+      <div class="prod-desc">Precision automotive parts with tight tolerances for OEM and aftermarket requirements.</div>
+      <div class="prod-tags"><span class="ptag">OEM Ready</span><span class="ptag">Brake Parts</span></div>
+    </div>
+    <div class="prod-card">
+      <div class="prod-num">04</div>
+      <div class="prod-icon-wrap"><i class="fa fa-bolt"></i></div>
+      <div class="prod-name">Motor Castings</div>
+      <div class="prod-desc">Motor frames, end shields, and housings cast to precise thermal and dimensional specs.</div>
+      <div class="prod-tags"><span class="ptag">Frames</span><span class="ptag">End Shields</span></div>
+    </div>
+    <div class="prod-card">
+      <div class="prod-num">05</div>
+      <div class="prod-icon-wrap"><i class="fa fa-cog"></i></div>
+      <div class="prod-name">Gear Castings</div>
+      <div class="prod-desc">High-strength gear blanks and housings for power transmission in industrial gearboxes.</div>
+      <div class="prod-tags"><span class="ptag">Gear Blanks</span><span class="ptag">Gearboxes</span></div>
+    </div>
+    <div class="prod-card">
+      <div class="prod-num">06</div>
+      <div class="prod-icon-wrap"><i class="fa fa-fire"></i></div>
+      <div class="prod-name">Cylinder Heads</div>
+      <div class="prod-desc">Thermally stable cylinder heads for diesel and petrol engines with superior pressure resistance.</div>
+      <div class="prod-tags"><span class="ptag">Engine Grade</span><span class="ptag">Pressure Tested</span></div>
+    </div>
+    <div class="prod-card">
+      <div class="prod-num">07</div>
+      <div class="prod-icon-wrap"><i class="fa fa-tint"></i></div>
+      <div class="prod-name">Water Pump Castings</div>
+      <div class="prod-desc">Corrosion-resistant pump bodies and volutes for agricultural and industrial pumping systems.</div>
+      <div class="prod-tags"><span class="ptag">Pump Bodies</span><span class="ptag">Volutes</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════ WHY US ════════════════ -->
+<section class="why-section" id="why">
+  <div class="why-bg-text">QUALITY</div>
+  <div class="why-inner">
+    <div class="reveal" style="display:grid;grid-template-columns:1fr 1fr;gap:3rem;align-items:end;margin-bottom:0">
+      <div>
+        <div class="s-label">Our Strengths</div>
+        <h2 class="s-head">Why<br><span class="ore">Choose</span><br><span class="stroke">Us?</span></h2>
+      </div>
+      <p style="font-size:1rem;line-height:1.85;color:#8fa6c0;align-self:end">Decades of expertise, modern processes, and an unwavering commitment to delivering cast iron components that perform reliably in the most demanding environments.</p>
+    </div>
+    <div class="why-grid reveal d1">
+      <div class="wcard"><div class="wcard-n">01 / 06</div><div class="wcard-icon"><i class="fa fa-shield-alt"></i></div><div class="wcard-title">Uncompromised Quality</div><div class="wcard-desc">Every casting goes through multi-stage inspection and testing. We hold ourselves to standards that consistently exceed customer expectations.</div></div>
+      <div class="wcard"><div class="wcard-n">02 / 06</div><div class="wcard-icon"><i class="fa fa-clock"></i></div><div class="wcard-title">18+ Years Experience</div><div class="wcard-desc">Since 2006, we've refined processes and expanded capabilities — backed by nearly two decades of casting knowledge and client trust.</div></div>
+      <div class="wcard"><div class="wcard-n">03 / 06</div><div class="wcard-icon"><i class="fa fa-bullseye"></i></div><div class="wcard-title">Tight Tolerances</div><div class="wcard-desc">Our manufacturing is calibrated for precision dimensional accuracy — every component fits and performs exactly as engineered.</div></div>
+      <div class="wcard"><div class="wcard-n">04 / 06</div><div class="wcard-icon"><i class="fa fa-truck"></i></div><div class="wcard-title">Reliable Delivery</div><div class="wcard-desc">Located in Rajkot's industrial heart with a strong logistics network for on-time delivery across India.</div></div>
+      <div class="wcard"><div class="wcard-n">05 / 06</div><div class="wcard-icon"><i class="fa fa-drafting-compass"></i></div><div class="wcard-title">Custom Capabilities</div><div class="wcard-desc">We work from your drawings and specifications, delivering castings tailored precisely to your engineering requirements.</div></div>
+      <div class="wcard"><div class="wcard-n">06 / 06</div><div class="wcard-icon"><i class="fa fa-users"></i></div><div class="wcard-title">Client-First Approach</div><div class="wcard-desc">Long-term partnerships built on transparency and consistent quality — we invest in your success as much as our own.</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- PROCESS STRIP -->
+<div class="process-section">
+  <div class="process-inner">
+    <div class="process-title">Manufacturing Process</div>
+    <div class="proc-row">
+      <div class="proc-step"><div class="proc-n">01</div><div class="proc-icon"><i class="fa fa-drafting-compass"></i></div><div class="proc-label">Design & Engineering</div></div>
+      <div class="proc-step"><div class="proc-n">02</div><div class="proc-icon"><i class="fa fa-fire"></i></div><div class="proc-label">Melting & Pouring</div></div>
+      <div class="proc-step"><div class="proc-n">03</div><div class="proc-icon"><i class="fa fa-cube"></i></div><div class="proc-label">Moulding</div></div>
+      <div class="proc-step"><div class="proc-n">04</div><div class="proc-icon"><i class="fa fa-tools"></i></div><div class="proc-label">Fettling & Finishing</div></div>
+      <div class="proc-step"><div class="proc-n">05</div><div class="proc-icon"><i class="fa fa-check-double"></i></div><div class="proc-label">Quality Inspection</div></div>
+      <div class="proc-step"><div class="proc-n">06</div><div class="proc-icon"><i class="fa fa-truck"></i></div><div class="proc-label">Dispatch & Delivery</div></div>
+    </div>
+  </div>
+</div>
+
+<!-- ═══════════════ CONTACT ═══════════════ -->
+<section class="contact-section" id="contact">
+  <div class="contact-inner">
+    <div class="contact-info reveal">
+      <div class="s-label">Get In Touch</div>
+      <h2 class="s-head" style="margin-bottom:2.5rem">Let's Build<br><span class="ore">Together</span></h2>
+      <div class="info-blocks">
+        <div class="iblock">
+          <div class="iblock-icon"><i class="fa fa-map-marker-alt"></i></div>
+          <div>
+            <div class="iblock-lbl">Factory Address</div>
+            <div class="iblock-val">Plot No. 185, M Road, Aji GIDC,<br>Rajkot – 360003, Gujarat, India</div>
+          </div>
+        </div>
+        <div class="iblock">
+          <div class="iblock-icon"><i class="fa fa-phone-alt"></i></div>
+          <div>
+            <div class="iblock-lbl">Phone — Alpesh Ghadia</div>
+            <div class="iblock-val"><a href="tel:+919725252593">+91 97252 52593</a></div>
+          </div>
+        </div>
+        <div class="iblock">
+          <div class="iblock-icon"><i class="fa fa-phone-alt"></i></div>
+          <div>
+            <div class="iblock-lbl">Phone — Sandeep Ghadia</div>
+            <div class="iblock-val"><a href="tel:+919662200009">+91 96622 00009</a></div>
+          </div>
+        </div>
+        <div class="iblock">
+          <div class="iblock-icon"><i class="fa fa-envelope"></i></div>
+          <div>
+            <div class="iblock-lbl">Email</div>
+            <div class="iblock-val"><a href="mailto:mananghadia83@gmail.com">mananghadia83@gmail.com</a></div>
+          </div>
+        </div>
+        <div class="iblock">
+          <div class="iblock-icon"><i class="fa fa-clock"></i></div>
+          <div>
+            <div class="iblock-lbl">Working Hours</div>
+            <div class="iblock-val">Monday – Saturday · 9:00 AM – 6:00 PM IST</div>
+          </div>
+        </div>
+      </div>
+      <div class="map-box">
+        <iframe src="https://www.google.com/maps?q=22.2964,70.7706&z=16&output=embed" width="100%" height="260" style="border:0;display:block;filter:grayscale(90%) contrast(1.1) brightness(.6)" allowfullscreen="" loading="lazy"></iframe>
+      </div>
+    </div>
+
+    <div class="form-box reveal d2">
+      <div class="form-head">Send a Message</div>
+      <div class="form-sub">We respond within 1 business day</div>
+      <div class="frow">
+        <div class="fg"><label>Full Name *</label><input id="fn" type="text" placeholder="Your full name"/></div>
+        <div class="fg"><label>Email *</label><input id="fe" type="email" placeholder="you@company.com"/></div>
+      </div>
+      <div class="frow">
+        <div class="fg"><label>Phone</label><input id="fp" type="tel" placeholder="+91 XXXXX XXXXX"/></div>
+        <div class="fg"><label>Product Interest</label>
+          <select id="fpr">
+            <option value="">Select a product</option>
+            <option>Cast Iron Castings</option><option>Agriculture Castings</option>
+            <option>Automobile Castings</option><option>Electric Motor Castings</option>
+            <option>Gear Castings</option><option>Cylinder Head Castings</option>
+            <option>Water Pump Castings</option><option>Custom / Other</option>
+          </select>
+        </div>
+      </div>
+      <div class="fg"><label>Company Name</label><input id="fco" type="text" placeholder="Your company or organization"/></div>
+      <div class="fg"><label>Quantity / Volume</label><input id="fq" type="text" placeholder="e.g. 500 pcs/month, bulk order"/></div>
+      <div class="fg"><label>Requirements & Message *</label><textarea id="fm" placeholder="Describe your requirements, material specifications, drawings reference…"></textarea></div>
+      <button class="btn-primary" id="submitBtn" onclick="sendForm()" style="width:100%;justify-content:center;display:block;text-align:center;padding:1rem;font-size:11px">Send Message & Request Quote →</button>
+      <div class="form-ok" id="formOk"><i class="fa fa-check-circle"></i><span>Message sent! We'll reach out within 1 business day.</span></div>
+      <div id="formErr" style="display:none;align-items:center;gap:.8rem;margin-top:1rem;padding:.9rem 1.1rem;background:rgba(255,74,0,.07);border:1px solid rgba(255,74,0,.3);color:#ff7240;font-family:var(--ff-mono);font-size:10px;letter-spacing:.08em"><i class="fa fa-exclamation-circle"></i><span id="formErrMsg">Something went wrong. Please try again.</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-top">
+    <div>
+      <div class="footer-logo-name">Asian<br>Technocast</div>
+      <div class="footer-logo-sub">Precision Cast Iron · Rajkot, India · Est. 2006</div>
+      <div class="footer-bar"></div>
+      <p class="footer-desc">A trusted manufacturer and supplier of high-quality cast iron components, serving automotive, agriculture, and industrial sectors for nearly two decades from Rajkot, Gujarat.</p>
+    </div>
+    <div>
+      <div class="fc-head">Navigation</div>
+      <div class="fc-links">
+        <a href="#home">Home</a><a href="#about">About Us</a><a href="#motor">Motor Bodies</a>
+        <a href="#products">Products</a><a href="#why">Why Us</a><a href="#contact">Contact</a>
+      </div>
+    </div>
+    <div>
+      <div class="fc-head">Contact Info</div>
+      <div class="fc-info">
+        <div class="fci"><i class="fa fa-map-marker-alt"></i><span>Plot 185, M Road, Aji GIDC, Rajkot – 360003, Gujarat</span></div>
+        <div class="fci"><i class="fa fa-phone-alt"></i><span>Alpesh Ghadia: <a href="tel:+919725252593" style="color:inherit">+91 97252 52593</a></span></div>
+        <div class="fci"><i class="fa fa-phone-alt"></i><span>Sandeep Ghadia: <a href="tel:+919662200009" style="color:inherit">+91 96622 00009</a></span></div>
+        <div class="fci"><i class="fa fa-envelope"></i><span><a href="mailto:mananghadia83@gmail.com" style="color:inherit">mananghadia83@gmail.com</a></span></div>
+        <div class="fci"><i class="fa fa-clock"></i><span>Mon–Sat: 9:00 AM – 6:00 PM IST</span></div>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>© 2024 Asian Technocast. All rights reserved.</span>
+    <span>Plot 185, Aji GIDC, Rajkot, Gujarat — 360003</span>
+  </div>
+</footer>
+
+<button id="stt" aria-label="Back to top"><i class="fa fa-arrow-up"></i></button>
+
+<script>
+/* ══════════════════════════════════════
+   HERO MOTOR CANVAS (full background)
+══════════════════════════════════════ */
+(function(){
+  const canvas = document.getElementById('motorCanvas');
+  const ctx = canvas.getContext('2d');
+  let W,H,t=0;
+
+  function resize(){
+    W = canvas.width = canvas.offsetWidth;
+    H = canvas.height = canvas.offsetHeight;
+  }
+  resize();
+  window.addEventListener('resize', resize);
+
+  const PARTS = 24;
+  const ROTOR_BARS = 18;
+
+  function drawMotor(){
+    ctx.clearRect(0,0,W,H);
+
+    const cx = W * 0.68;
+    const cy = H * 0.5;
+    const outerR = Math.min(W*0.28, H*0.42);
+
+    ctx.fillStyle = 'rgba(255,255,255,0.04)';
+    const gs = 36;
+    for(let x=0; x<W; x+=gs) for(let y=0; y<H; y+=gs){
+      ctx.beginPath(); ctx.arc(x,y,1,0,Math.PI*2); ctx.fill();
+    }
+
+    const halo = ctx.createRadialGradient(cx,cy,outerR*0.7, cx,cy, outerR*1.6);
+    halo.addColorStop(0,'rgba(255,74,0,0.06)');
+    halo.addColorStop(1,'rgba(255,74,0,0)');
+    ctx.fillStyle = halo;
+    ctx.beginPath(); ctx.arc(cx,cy,outerR*1.6,0,Math.PI*2); ctx.fill();
+
+    ctx.save();
+    ctx.beginPath(); ctx.arc(cx,cy,outerR,0,Math.PI*2);
+    const housingGrad = ctx.createRadialGradient(cx-outerR*.2,cy-outerR*.2,outerR*.1, cx,cy, outerR);
+    housingGrad.addColorStop(0,'#1a2535');
+    housingGrad.addColorStop(0.7,'#0f1722');
+    housingGrad.addColorStop(1,'#080d14');
+    ctx.fillStyle = housingGrad;
+    ctx.fill();
+    ctx.strokeStyle='rgba(255,74,0,0.4)';
+    ctx.lineWidth=2;
+    ctx.stroke();
+    ctx.restore();
+
+    const FIN_COUNT = 32;
+    for(let i=0;i<FIN_COUNT;i++){
+      const angle = (i/FIN_COUNT)*Math.PI*2;
+      const r1 = outerR*0.95;
+      const r2 = outerR*1.08 + Math.sin(t*2 + i*0.5)*1.5;
+      ctx.strokeStyle = `rgba(255,255,255,${0.06 + Math.sin(t*3+i*0.4)*0.02})`;
+      ctx.lineWidth = 3;
+      ctx.lineCap='round';
+      ctx.beginPath();
+      ctx.moveTo(cx+Math.cos(angle)*r1, cy+Math.sin(angle)*r1);
+      ctx.lineTo(cx+Math.cos(angle)*r2, cy+Math.sin(angle)*r2);
+      ctx.stroke();
+    }
+
+    const statorOuter = outerR * 0.88;
+    const statorInner = outerR * 0.65;
+    ctx.save();
+    ctx.beginPath(); ctx.arc(cx,cy,statorOuter,0,Math.PI*2);
+    ctx.arc(cx,cy,statorInner,0,Math.PI*2,true);
+    const statorGrad = ctx.createRadialGradient(cx,cy,statorInner, cx,cy, statorOuter);
+    statorGrad.addColorStop(0,'#1e2d40');
+    statorGrad.addColorStop(1,'#121e2e');
+    ctx.fillStyle = statorGrad;
+    ctx.fill();
+    ctx.strokeStyle='rgba(255,255,255,0.07)';
+    ctx.lineWidth=1;
+    ctx.stroke();
+    ctx.restore();
+
+    const PHASE_COLORS = [
+      'rgba(255,74,0,',
+      'rgba(58,140,212,',
+      'rgba(42,176,106,'
+    ];
+    for(let i=0;i<PARTS;i++){
+      const angle = (i/PARTS)*Math.PI*2 - Math.PI/2;
+      const slotR = (statorOuter + statorInner)*0.5;
+      const slotW = outerR*0.07;
+      const slotH = (statorOuter - statorInner)*0.65;
+      const phase = i % 3;
+      const pulse = 0.4 + 0.6*Math.abs(Math.sin(t*2.5 + (phase*Math.PI*2/3)));
+      ctx.save();
+      ctx.translate(cx + Math.cos(angle)*slotR, cy + Math.sin(angle)*slotR);
+      ctx.rotate(angle + Math.PI/2);
+      ctx.fillStyle = PHASE_COLORS[phase] + pulse + ')';
+      ctx.shadowColor = PHASE_COLORS[phase] + '0.8)';
+      ctx.shadowBlur = 8*pulse;
+      ctx.fillRect(-slotW/2, -slotH/2, slotW, slotH);
+      ctx.restore();
+    }
+
+    ctx.beginPath(); ctx.arc(cx,cy,statorInner,0,Math.PI*2);
+    ctx.strokeStyle='rgba(0,200,232,0.08)';
+    ctx.setLineDash([4,6]);
+    ctx.lineWidth=1;
+    ctx.stroke();
+    ctx.setLineDash([]);
+
+    const rotorOuter = statorInner * 0.93;
+    const rotorInner = outerR * 0.22;
+    ctx.save();
+    ctx.translate(cx,cy);
+    ctx.rotate(t*1.2);
+
+    ctx.beginPath(); ctx.arc(0,0,rotorOuter,0,Math.PI*2);
+    const rotorGrad = ctx.createRadialGradient(0,0,0, 0,0,rotorOuter);
+    rotorGrad.addColorStop(0,'#1a2e44');
+    rotorGrad.addColorStop(0.6,'#0e1e30');
+    rotorGrad.addColorStop(1,'#0a1520');
+    ctx.fillStyle = rotorGrad;
+    ctx.fill();
+    ctx.strokeStyle='rgba(255,74,0,0.2)';
+    ctx.lineWidth=1.5;
+    ctx.stroke();
+
+    for(let i=0;i<ROTOR_BARS;i++){
+      const a = (i/ROTOR_BARS)*Math.PI*2;
+      const br = (rotorOuter + rotorInner)*0.52;
+      const bw = outerR*0.045;
+      const bh = (rotorOuter - rotorInner)*0.5;
+      const barPulse = 0.3 + 0.5*Math.abs(Math.sin(t*2.5 + i*0.35));
+      ctx.save();
+      ctx.translate(Math.cos(a)*br, Math.sin(a)*br);
+      ctx.rotate(a + Math.PI/2);
+      ctx.fillStyle = `rgba(255,162,0,${barPulse})`;
+      ctx.shadowColor='rgba(255,162,0,0.6)';
+      ctx.shadowBlur=6*barPulse;
+      ctx.fillRect(-bw/2,-bh/2,bw,bh);
+      ctx.restore();
+    }
+
+    ctx.beginPath(); ctx.arc(0,0,rotorInner*1.4,0,Math.PI*2);
+    ctx.fillStyle='rgba(8,13,20,0.9)';
+    ctx.fill();
+    ctx.strokeStyle='rgba(255,74,0,0.3)';
+    ctx.lineWidth=1;
+    ctx.stroke();
+
+    ctx.beginPath(); ctx.arc(0,0,outerR*0.1,0,Math.PI*2);
+    ctx.fillStyle='#040608';
+    ctx.fill();
+    ctx.strokeStyle='rgba(255,74,0,0.6)';
+    ctx.lineWidth=2;
+    ctx.stroke();
+
+    ctx.fillStyle='rgba(255,74,0,0.5)';
+    ctx.fillRect(-outerR*0.04, -outerR*0.13, outerR*0.08, outerR*0.06);
+
+    ctx.restore();
+
+    const shaftH = outerR*0.1;
+    const shaftLen = outerR*0.35;
+    ctx.fillStyle='#0d1826';
+    ctx.strokeStyle='rgba(255,255,255,0.12)';
+    ctx.lineWidth=1;
+    ctx.fillRect(cx-outerR-shaftLen, cy-shaftH/2, shaftLen*0.7, shaftH);
+    ctx.strokeRect(cx-outerR-shaftLen, cy-shaftH/2, shaftLen*0.7, shaftH);
+    ctx.fillRect(cx+outerR, cy-shaftH/2, shaftLen, shaftH);
+    ctx.strokeRect(cx+outerR, cy-shaftH/2, shaftLen, shaftH);
+
+    const shaftGrad = ctx.createLinearGradient(0,cy-shaftH/2,0,cy+shaftH/2);
+    shaftGrad.addColorStop(0,'rgba(255,255,255,0.15)');
+    shaftGrad.addColorStop(0.5,'rgba(255,255,255,0.05)');
+    shaftGrad.addColorStop(1,'rgba(0,0,0,0.3)');
+    ctx.fillStyle = shaftGrad;
+    ctx.fillRect(cx+outerR, cy-shaftH/2, shaftLen, shaftH);
+
+    function drawShield(x){
+      ctx.save();
+      ctx.translate(x,cy);
+      ctx.fillStyle='#0d1826';
+      ctx.strokeStyle='rgba(255,74,0,0.3)';
+      ctx.lineWidth=2;
+      ctx.beginPath();
+      ctx.ellipse(0,0,outerR*0.07,outerR*0.55,0,0,Math.PI*2);
+      ctx.fill(); ctx.stroke();
+      ctx.beginPath();
+      ctx.arc(0,0,outerR*0.13,0,Math.PI*2);
+      ctx.fillStyle='#080d14';
+      ctx.fill();
+      ctx.strokeStyle='rgba(255,74,0,0.5)';
+      ctx.lineWidth=1.5;
+      ctx.stroke();
+      ctx.restore();
+    }
+    drawShield(cx-outerR+outerR*0.04);
+    drawShield(cx+outerR-outerR*0.04);
+
+    ctx.save();
+    ctx.translate(cx+outerR+shaftLen*0.45, cy);
+    ctx.rotate(-t*2.5);
+    const fanR = outerR*0.24;
+    for(let i=0;i<6;i++){
+      const a = (i/6)*Math.PI*2;
+      ctx.save();
+      ctx.rotate(a);
+      ctx.fillStyle='rgba(255,255,255,0.14)';
+      ctx.beginPath();
+      ctx.moveTo(fanR*0.3,0);
+      ctx.bezierCurveTo(fanR*0.6,-fanR*0.25, fanR,-fanR*0.15, fanR,0);
+      ctx.bezierCurveTo(fanR,fanR*0.1, fanR*0.5,fanR*0.12, fanR*0.3,0);
+      ctx.fill();
+      ctx.restore();
+    }
+    ctx.beginPath(); ctx.arc(0,0,fanR*0.18,0,Math.PI*2);
+    ctx.fillStyle='#0d1826';
+    ctx.fill();
+    ctx.strokeStyle='rgba(255,74,0,0.4)';
+    ctx.lineWidth=1.5;
+    ctx.stroke();
+    ctx.restore();
+
+    const tbW = outerR*0.55, tbH = outerR*0.22;
+    const tbX = cx - tbW/2, tbY = cy - outerR - tbH;
+    ctx.fillStyle='#0d1826';
+    ctx.strokeStyle='rgba(255,74,0,0.35)';
+    ctx.lineWidth=1.5;
+    ctx.fillRect(tbX,tbY,tbW,tbH);
+    ctx.strokeRect(tbX,tbY,tbW,tbH);
+    const pins = [
+      {c:'rgba(255,74,0,0.9)',label:'U'},
+      {c:'rgba(58,140,212,0.9)',label:'V'},
+      {c:'rgba(42,176,106,0.9)',label:'W'}
+    ];
+    pins.forEach((p,i)=>{
+      const px = tbX + tbW*0.25 + i*tbW*0.25;
+      const py = tbY + tbH*0.5;
+      ctx.fillStyle=p.c;
+      ctx.shadowColor=p.c;
+      ctx.shadowBlur=8*(0.5+0.5*Math.sin(t*3+i*2.1));
+      ctx.fillRect(px-tbW*0.07,py-tbH*0.3, tbW*0.14, tbH*0.6);
+      ctx.shadowBlur=0;
+      ctx.fillStyle='rgba(255,255,255,0.7)';
+      ctx.font=`bold ${outerR*0.06}px DM Mono,monospace`;
+      ctx.textAlign='center';
+      ctx.fillText(p.label, px, py + tbH*0.12);
+    });
+    ['rgba(255,74,0,0.25)','rgba(58,140,212,0.25)','rgba(42,176,106,0.25)'].forEach((c,i)=>{
+      ctx.strokeStyle=c;
+      ctx.lineWidth=1.5;
+      ctx.setLineDash([4,4]);
+      ctx.beginPath();
+      ctx.moveTo(tbX+tbW*0.25+i*tbW*0.25, tbY+tbH);
+      ctx.lineTo(cx+Math.cos(-Math.PI/2+i*0.3)*statorOuter, cy+Math.sin(-Math.PI/2+i*0.3)*statorOuter);
+      ctx.stroke();
+    });
+    ctx.setLineDash([]);
+
+    for(let i=0;i<5;i++){
+      const hx = cx-outerR*0.6 + i*outerR*0.3;
+      const phase2 = t*2 + i*1.2;
+      ctx.strokeStyle=`rgba(255,74,0,${0.08+0.06*Math.sin(phase2)})`;
+      ctx.lineWidth=1;
+      ctx.beginPath();
+      ctx.moveTo(hx,cy-outerR*1.1);
+      ctx.bezierCurveTo(hx+Math.sin(phase2)*8,cy-outerR*1.3, hx-Math.sin(phase2)*8,cy-outerR*1.5, hx+Math.sin(phase2*1.3)*6,cy-outerR*1.7);
+      ctx.stroke();
+    }
+
+    const annotations = [
+      {a: -0.5, r:1.25, txt:'STATOR'},
+      {a: 0.8, r:1.2, txt:'ROTOR'},
+      {a: 2.3, r:1.2, txt:'SHAFT'},
+      {a: 1.55, r:1.3, txt:'BEARING'},
+    ];
+    ctx.font=`${outerR*0.055}px DM Mono,monospace`;
+    ctx.textAlign='left';
+    annotations.forEach(ann=>{
+      const ax = cx+Math.cos(ann.a)*outerR*ann.r;
+      const ay = cy+Math.sin(ann.a)*outerR*ann.r;
+      const ox = cx+Math.cos(ann.a)*outerR*(ann.r-0.25);
+      const oy = cy+Math.sin(ann.a)*outerR*(ann.r-0.25);
+      ctx.strokeStyle='rgba(255,74,0,0.2)';
+      ctx.lineWidth=1;
+      ctx.beginPath();
+      ctx.moveTo(ox,oy);
+      ctx.lineTo(ax,ay);
+      ctx.stroke();
+      ctx.fillStyle='rgba(196,205,216,0.45)';
+      ctx.fillText(ann.txt, ax+6, ay+4);
+    });
+  }
+
+  function loop(){
+    t += 0.016;
+    drawMotor();
+    requestAnimationFrame(loop);
+  }
+  loop();
+})();
+
+/* ══════════════════════════════════════
+   MOTOR DETAIL CANVAS (showcase section)
+══════════════════════════════════════ */
+(function(){
+  const canvas = document.getElementById('motorDetailCanvas');
+  const ctx = canvas.getContext('2d');
+  let t=0, currentType='frame';
+  let W,H;
+
+  function resize(){
+    const rect = canvas.getBoundingClientRect();
+    W = canvas.width = rect.width || 500;
+    H = canvas.height = rect.height || 500;
+  }
+  resize();
+
+  const specs = {
+    frame:{mat:'Grey Cast Iron (GCI)',grade:'IS 210 Grade FG 260',range:'Frame 56 to 355',mach:'Bore + Face + Feet',tol:'H7 / ISO 286-1'},
+    shield:{mat:'Grey Cast Iron (GCI)',grade:'IS 210 Grade FG 200',range:'Frame 56 to 355',mach:'Concentric bearing bore',tol:'H6 / ISO 286-1'},
+    pump:{mat:'Grey / Ductile Iron',grade:'IS 210 / IS 1536',range:'25mm – 300mm bore',mach:'Hydraulic passage finish',tol:'H8 / ISO 286-1'},
+    gear:{mat:'Grey Cast Iron (GCI)',grade:'IS 210 Grade FG 300',range:'All industrial sizes',mach:'Bore + mounting faces',tol:'H7/js6 ISO 286-1'}
+  };
+
+  document.getElementById('motorTabs').addEventListener('click', e=>{
+    const tab = e.target.closest('.m-tab');
+    if(!tab) return;
+    document.querySelectorAll('.m-tab').forEach(t=>t.classList.remove('active'));
+    tab.classList.add('active');
+    currentType = tab.dataset.type;
+    const s = specs[currentType];
+    document.getElementById('sm').textContent=s.mat;
+    document.getElementById('sg').textContent=s.grade;
+    document.getElementById('sr').textContent=s.range;
+    document.getElementById('smach').textContent=s.mach;
+    document.getElementById('stol').textContent=s.tol;
+  });
+
+  function drawFrame(cx,cy,R){
+    const bg = ctx.createRadialGradient(cx,cy,0,cx,cy,R*1.5);
+    bg.addColorStop(0,'rgba(255,74,0,0.04)'); bg.addColorStop(1,'rgba(255,74,0,0)');
+    ctx.fillStyle=bg; ctx.beginPath(); ctx.arc(cx,cy,R*1.5,0,Math.PI*2); ctx.fill();
+
+    ctx.beginPath(); ctx.arc(cx,cy,R,0,Math.PI*2);
+    const og=ctx.createRadialGradient(cx-R*.2,cy-R*.2,R*.05,cx,cy,R);
+    og.addColorStop(0,'#1a2535'); og.addColorStop(1,'#080d14');
+    ctx.fillStyle=og; ctx.fill();
+    ctx.strokeStyle='rgba(255,74,0,0.45)'; ctx.lineWidth=2; ctx.stroke();
+
+    for(let i=0;i<28;i++){
+      const a=(i/28)*Math.PI*2;
+      ctx.strokeStyle=`rgba(255,255,255,${0.07+Math.sin(t*2+i)*0.02})`;
+      ctx.lineWidth=2.5; ctx.lineCap='round';
+      ctx.beginPath();
+      ctx.moveTo(cx+Math.cos(a)*R*0.94,cy+Math.sin(a)*R*0.94);
+      ctx.lineTo(cx+Math.cos(a)*(R+10+Math.sin(t*3+i*.4)*2),cy+Math.sin(a)*(R+10+Math.sin(t*3+i*.4)*2));
+      ctx.stroke();
+    }
+
+    const sOuter=R*0.85, sInner=R*0.6;
+    ctx.beginPath(); ctx.arc(cx,cy,sOuter,0,Math.PI*2);
+    ctx.arc(cx,cy,sInner,0,Math.PI*2,true);
+    ctx.fillStyle='#111e2e'; ctx.fill();
+
+    for(let i=0;i<24;i++){
+      const a=(i/24)*Math.PI*2-Math.PI/2;
+      const sr=(sOuter+sInner)*.5;
+      const ph=i%3;
+      const pc=['rgba(255,74,0,','rgba(58,140,212,','rgba(42,176,106,'][ph];
+      const pulse=0.45+0.55*Math.abs(Math.sin(t*2.5+ph*Math.PI*2/3));
+      ctx.save();
+      ctx.translate(cx+Math.cos(a)*sr,cy+Math.sin(a)*sr);
+      ctx.rotate(a+Math.PI/2);
+      ctx.fillStyle=pc+pulse+')';
+      ctx.shadowColor=pc+'1)'; ctx.shadowBlur=10*pulse;
+      ctx.fillRect(-R*.04,-R*.12,R*.08,R*.24);
+      ctx.restore();
+    }
+
+    ctx.beginPath(); ctx.arc(cx,cy,sInner,0,Math.PI*2);
+    ctx.strokeStyle='rgba(0,200,232,0.1)'; ctx.setLineDash([3,5]); ctx.lineWidth=1; ctx.stroke();
+    ctx.setLineDash([]);
+
+    const rOuter=sInner*.92;
+    ctx.save(); ctx.translate(cx,cy); ctx.rotate(t*1.5);
+    ctx.beginPath(); ctx.arc(0,0,rOuter,0,Math.PI*2);
+    const rg=ctx.createRadialGradient(0,0,0,0,0,rOuter);
+    rg.addColorStop(0,'#1c2e44'); rg.addColorStop(1,'#0a1520');
+    ctx.fillStyle=rg; ctx.fill();
+    ctx.strokeStyle='rgba(255,74,0,0.2)'; ctx.lineWidth=1.5; ctx.stroke();
+
+    for(let i=0;i<18;i++){
+      const a=(i/18)*Math.PI*2;
+      const br=rOuter*.62;
+      const bp=0.3+0.5*Math.abs(Math.sin(t*2.5+i*.35));
+      ctx.save();
+      ctx.translate(Math.cos(a)*br,Math.sin(a)*br);
+      ctx.rotate(a+Math.PI/2);
+      ctx.fillStyle=`rgba(255,162,0,${bp})`;
+      ctx.shadowColor='rgba(255,162,0,0.6)'; ctx.shadowBlur=6*bp;
+      ctx.fillRect(-R*.03,-R*.08,R*.06,R*.16);
+      ctx.restore();
+    }
+
+    ctx.beginPath(); ctx.arc(0,0,R*.12,0,Math.PI*2);
+    ctx.fillStyle='#040608'; ctx.fill();
+    ctx.strokeStyle='rgba(255,74,0,0.7)'; ctx.lineWidth=2.5; ctx.stroke();
+    ctx.restore();
+
+    ctx.font=`${R*.06}px DM Mono,monospace`;
+    ctx.fillStyle='rgba(196,205,216,0.35)'; ctx.textAlign='center';
+    ctx.fillText('CROSS SECTION · MOTOR FRAME',cx,H-16);
+  }
+
+  function drawShield(cx,cy,R){
+    const bg=ctx.createRadialGradient(cx,cy,0,cx,cy,R*1.4);
+    bg.addColorStop(0,'rgba(255,74,0,0.05)'); bg.addColorStop(1,'rgba(255,74,0,0)');
+    ctx.fillStyle=bg; ctx.beginPath(); ctx.arc(cx,cy,R*1.4,0,Math.PI*2); ctx.fill();
+
+    ctx.beginPath(); ctx.arc(cx,cy,R,0,Math.PI*2);
+    const dg=ctx.createRadialGradient(cx-R*.3,cy-R*.3,0,cx,cy,R);
+    dg.addColorStop(0,'#1a2535'); dg.addColorStop(1,'#080d14');
+    ctx.fillStyle=dg; ctx.fill();
+    ctx.strokeStyle='rgba(255,74,0,0.45)'; ctx.lineWidth=2; ctx.stroke();
+
+    for(let i=0;i<8;i++){
+      const startA=(i/8)*Math.PI*2 + t*0.3;
+      ctx.beginPath();
+      ctx.arc(cx,cy,R*.78, startA, startA+Math.PI*0.2);
+      ctx.strokeStyle=`rgba(255,255,255,${0.08+Math.sin(t+i)*0.03})`;
+      ctx.lineWidth=12; ctx.lineCap='butt'; ctx.stroke();
+    }
+
+    ctx.beginPath(); ctx.arc(cx,cy,R*.55,0,Math.PI*2);
+    ctx.fillStyle='#0a1520'; ctx.fill();
+    ctx.strokeStyle='rgba(255,74,0,0.2)'; ctx.lineWidth=1; ctx.stroke();
+
+    ctx.beginPath(); ctx.arc(cx,cy,R*.28,0,Math.PI*2);
+    ctx.fillStyle='#0c1826'; ctx.fill();
+    ctx.strokeStyle='rgba(255,74,0,0.5)'; ctx.lineWidth=2; ctx.stroke();
+
+    for(let i=0;i<8;i++){
+      const a=(i/8)*Math.PI*2 + t*1.5;
+      ctx.beginPath(); ctx.arc(cx+Math.cos(a)*R*.2, cy+Math.sin(a)*R*.2, R*.03,0,Math.PI*2);
+      ctx.fillStyle=`rgba(220,220,230,0.6)`; ctx.fill();
+    }
+
+    ctx.beginPath(); ctx.arc(cx,cy,R*.1,0,Math.PI*2);
+    ctx.fillStyle='#040608'; ctx.fill();
+    ctx.strokeStyle='rgba(255,74,0,0.6)'; ctx.lineWidth=2; ctx.stroke();
+
+    for(let i=0;i<4;i++){
+      const a=(i/4)*Math.PI*2+Math.PI/4;
+      ctx.beginPath(); ctx.arc(cx+Math.cos(a)*R*.88, cy+Math.sin(a)*R*.88, R*.06,0,Math.PI*2);
+      ctx.fillStyle='#040608'; ctx.fill();
+      ctx.strokeStyle='rgba(255,74,0,0.4)'; ctx.lineWidth=1.5; ctx.stroke();
+      ctx.beginPath(); ctx.arc(cx+Math.cos(a)*R*.88, cy+Math.sin(a)*R*.88, R*.035,0,Math.PI*2);
+      ctx.strokeStyle='rgba(255,255,255,0.1)'; ctx.lineWidth=1; ctx.stroke();
+    }
+
+    for(let i=0;i<4;i++){
+      const a=(i/4)*Math.PI*2;
+      ctx.strokeStyle='rgba(255,255,255,0.05)';
+      ctx.lineWidth=8; ctx.lineCap='round';
+      ctx.beginPath();
+      ctx.moveTo(cx+Math.cos(a)*R*.36, cy+Math.sin(a)*R*.36);
+      ctx.lineTo(cx+Math.cos(a)*R*.72, cy+Math.sin(a)*R*.72);
+      ctx.stroke();
+    }
+
+    ctx.font=`${R*.06}px DM Mono,monospace`;
+    ctx.fillStyle='rgba(196,205,216,0.35)'; ctx.textAlign='center';
+    ctx.fillText('DRIVE END SHIELD · FRONT VIEW',cx,H-16);
+  }
+
+  function drawPump(cx,cy,R){
+    const bg=ctx.createRadialGradient(cx,cy,0,cx,cy,R*1.5);
+    bg.addColorStop(0,'rgba(58,140,212,0.04)'); bg.addColorStop(1,'rgba(58,140,212,0)');
+    ctx.fillStyle=bg; ctx.beginPath(); ctx.arc(cx,cy,R*1.5,0,Math.PI*2); ctx.fill();
+
+    ctx.beginPath();
+    for(let a=0;a<Math.PI*2;a+=0.05){
+      const rr=R*(0.5 + (a/(Math.PI*2))*0.4);
+      if(a<0.05) ctx.moveTo(cx+Math.cos(a)*rr, cy+Math.sin(a)*rr);
+      else ctx.lineTo(cx+Math.cos(a)*rr, cy+Math.sin(a)*rr);
+    }
+    ctx.closePath();
+    ctx.fillStyle='#0e1a26';
+    ctx.strokeStyle='rgba(58,140,212,0.4)'; ctx.lineWidth=2; ctx.fill(); ctx.stroke();
+
+    const vOff = R*0.12;
+    ctx.beginPath(); ctx.arc(cx+vOff*.5, cy, R*.95+vOff*.3,0,Math.PI*2);
+    ctx.strokeStyle='rgba(255,74,0,0.3)'; ctx.lineWidth=1.5; ctx.stroke();
+
+    ctx.fillStyle='#0d1826';
+    ctx.strokeStyle='rgba(58,140,212,0.5)'; ctx.lineWidth=1.5;
+    ctx.fillRect(cx-R*1.6,cy-R*.12,R*.65,R*.24);
+    ctx.strokeRect(cx-R*1.6,cy-R*.12,R*.65,R*.24);
+    for(let i=0;i<3;i++){
+      const off=(t*0.8+i*.33)%1;
+      const ax=cx-R*1.6+R*.65*off;
+      ctx.strokeStyle='rgba(58,140,212,0.5)'; ctx.lineWidth=1.5;
+      ctx.beginPath(); ctx.moveTo(ax,cy); ctx.lineTo(ax+R*.08,cy);
+      ctx.stroke();
+    }
+
+    ctx.fillStyle='#0d1826';
+    ctx.strokeStyle='rgba(255,74,0,0.5)'; ctx.lineWidth=1.5;
+    ctx.fillRect(cx+R*.2,cy-R*1.5,R*.24,R*.55);
+    ctx.strokeRect(cx+R*.2,cy-R*1.5,R*.24,R*.55);
+    for(let i=0;i<3;i++){
+      const off=(t*0.8+i*.33)%1;
+      const ay=cy-R*1.5+R*.55*(1-off);
+      ctx.strokeStyle='rgba(255,74,0,0.5)'; ctx.lineWidth=1.5;
+      ctx.beginPath(); ctx.moveTo(cx+R*.32,ay); ctx.lineTo(cx+R*.32,ay-R*.08);
+      ctx.stroke();
+    }
+
+    ctx.save(); ctx.translate(cx,cy); ctx.rotate(-t*1.8);
+    const numVanes=7;
+    for(let i=0;i<numVanes;i++){
+      const a=(i/numVanes)*Math.PI*2;
+      ctx.save(); ctx.rotate(a);
+      ctx.fillStyle=`rgba(255,74,0,${0.15+0.1*Math.sin(t*2+i)})`;
+      ctx.strokeStyle='rgba(255,74,0,0.35)'; ctx.lineWidth=1;
+      ctx.beginPath();
+      ctx.moveTo(R*.12,0);
+      ctx.bezierCurveTo(R*.3,-R*.1, R*.55,-R*.06, R*.55,0);
+      ctx.bezierCurveTo(R*.55,R*.1, R*.3,R*.15, R*.12,0);
+      ctx.fill(); ctx.stroke();
+      ctx.restore();
+    }
+    ctx.beginPath(); ctx.arc(0,0,R*.14,0,Math.PI*2);
+    const hg=ctx.createRadialGradient(0,0,0,0,0,R*.14);
+    hg.addColorStop(0,'#1a2535'); hg.addColorStop(1,'#0a1520');
+    ctx.fillStyle=hg; ctx.fill();
+    ctx.strokeStyle='rgba(255,74,0,0.5)'; ctx.lineWidth=2; ctx.stroke();
+    ctx.beginPath(); ctx.arc(0,0,R*.06,0,Math.PI*2);
+    ctx.fillStyle='#040608'; ctx.fill();
+    ctx.strokeStyle='rgba(255,74,0,0.7)'; ctx.lineWidth=1.5; ctx.stroke();
+    ctx.restore();
+
+    const pz=ctx.createRadialGradient(cx+R*.35,cy,0,cx+R*.35,cy,R*.5);
+    pz.addColorStop(0,`rgba(255,74,0,${0.04+0.02*Math.sin(t*3)})`);
+    pz.addColorStop(1,'rgba(255,74,0,0)');
+    ctx.fillStyle=pz; ctx.beginPath(); ctx.arc(cx+R*.35,cy,R*.5,0,Math.PI*2); ctx.fill();
+
+    ctx.fillStyle='rgba(58,140,212,0.55)'; ctx.font=`${R*.07}px DM Mono,monospace`; ctx.textAlign='center';
+    ctx.fillText('INLET',cx-R*1.3,cy-R*.2);
+    ctx.fillStyle='rgba(255,74,0,0.55)';
+    ctx.fillText('OUT',cx+R*.32,cy-R*1.55);
+    ctx.fillStyle='rgba(196,205,216,0.35)'; ctx.font=`${R*.06}px DM Mono,monospace`;
+    ctx.fillText('VOLUTE CASING · CROSS SECTION',cx,H-16);
+  }
+
+  function drawGear(cx,cy,R){
+    const bg=ctx.createRadialGradient(cx,cy,0,cx,cy,R*1.4);
+    bg.addColorStop(0,'rgba(200,144,32,0.05)'); bg.addColorStop(1,'rgba(200,144,32,0)');
+    ctx.fillStyle=bg; ctx.beginPath(); ctx.arc(cx,cy,R*1.4,0,Math.PI*2); ctx.fill();
+
+    ctx.fillStyle='#0d1826';
+    ctx.strokeStyle='rgba(200,144,32,0.4)'; ctx.lineWidth=2;
+    ctx.beginPath();
+    ctx.roundRect(cx-R*1.1, cy-R*0.85, R*2.2, R*1.7, 12);
+    ctx.fill(); ctx.stroke();
+
+    const drawGearShape=(gx,gy,gr,nt,rot,c)=>{
+      ctx.save(); ctx.translate(gx,gy); ctx.rotate(rot);
+      const tooth=gr*.18, toothW=Math.PI*1.2/nt;
+      ctx.beginPath();
+      for(let i=0;i<nt;i++){
+        const a=(i/nt)*Math.PI*2;
+        const a2=a+toothW*0.4, a3=a+toothW*0.6, a4=a+toothW;
+        ctx.lineTo(Math.cos(a)*gr, Math.sin(a)*gr);
+        ctx.lineTo(Math.cos(a)*(gr+tooth), Math.sin(a)*(gr+tooth));
+        ctx.lineTo(Math.cos(a2)*(gr+tooth), Math.sin(a2)*(gr+tooth));
+        ctx.lineTo(Math.cos(a3)*(gr+tooth), Math.sin(a3)*(gr+tooth));
+        ctx.lineTo(Math.cos(a4)*(gr+tooth), Math.sin(a4)*(gr+tooth));
+        ctx.lineTo(Math.cos(a4)*gr, Math.sin(a4)*gr);
+      }
+      ctx.closePath();
+      const gg=ctx.createRadialGradient(0,0,0,0,0,gr+tooth);
+      gg.addColorStop(0,c+'0.25)'); gg.addColorStop(1,c+'0.08)');
+      ctx.fillStyle=gg; ctx.fill();
+      ctx.strokeStyle=c+'0.5)'; ctx.lineWidth=1.5; ctx.stroke();
+      ctx.beginPath(); ctx.arc(0,0,gr*.22,0,Math.PI*2);
+      ctx.fillStyle='#040608'; ctx.fill();
+      ctx.strokeStyle=c+'0.7)'; ctx.lineWidth=2; ctx.stroke();
+      ctx.restore();
+    };
+
+    drawGearShape(cx-R*.28,cy, R*.42, 16, t*0.8, 'rgba(200,144,32,');
+    drawGearShape(cx+R*.42,cy-R*.02, R*.28, 10, -t*1.2, 'rgba(255,74,0,');
+
+    [[cx-R*.28,cy],[cx+R*.42,cy]].forEach(([sx,sy])=>{
+      ctx.fillStyle='#0a1520';
+      ctx.strokeStyle='rgba(255,255,255,0.15)'; ctx.lineWidth=1;
+      ctx.fillRect(sx-R*.04, cy-R*.85, R*.08, R*1.7);
+      ctx.strokeRect(sx-R*.04, cy-R*.85, R*.08, R*1.7);
+    });
+
+    ctx.fillStyle='rgba(200,144,32,0.05)';
+    ctx.beginPath();
+    ctx.roundRect(cx-R*1.1, cy+R*.5, R*2.2, R*.35, [0,0,12,12]);
+    ctx.fill();
+
+    ctx.font=`${R*.06}px DM Mono,monospace`;
+    ctx.fillStyle='rgba(196,205,216,0.35)'; ctx.textAlign='center';
+    ctx.fillText('GEARBOX HOUSING · CROSS SECTION',cx,H-16);
+  }
+
+  function loop2(){
+    t += 0.016;
+    ctx.clearRect(0,0,W,H);
+    const cx=W/2, cy=H/2, R=Math.min(W,H)*0.36;
+    if(currentType==='frame') drawFrame(cx,cy,R);
+    else if(currentType==='shield') drawShield(cx,cy,R);
+    else if(currentType==='pump') drawPump(cx,cy,R);
+    else if(currentType==='gear') drawGear(cx,cy,R);
+    requestAnimationFrame(loop2);
+  }
+
+  const ro = new ResizeObserver(()=>{ resize(); });
+  ro.observe(canvas);
+  loop2();
+})();
+
+/* ══════════════════════════════════════
+   NAV / HAM / SCROLL / REVEAL
+══════════════════════════════════════ */
+const hamBtn=document.getElementById('hamBtn'), mobMenu=document.getElementById('mobMenu');
+hamBtn.addEventListener('click',()=>{
+  mobMenu.classList.toggle('open');
+  const spans=hamBtn.querySelectorAll('span');
+  if(mobMenu.classList.contains('open')){
+    spans[0].style.transform='translateY(6.5px) rotate(45deg)';
+    spans[1].style.opacity='0';
+    spans[2].style.transform='translateY(-6.5px) rotate(-45deg)';
+  } else {
+    spans.forEach(s=>{s.style.transform='';s.style.opacity=''});
+  }
+});
+mobMenu.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>{mobMenu.classList.remove('open')}));
+
+const sttBtn=document.getElementById('stt');
+window.addEventListener('scroll',()=>sttBtn.classList.toggle('show',scrollY>500));
+sttBtn.addEventListener('click',()=>window.scrollTo({top:0,behavior:'smooth'}));
+
+const io=new IntersectionObserver(entries=>{
+  entries.forEach(e=>{if(e.isIntersecting){e.target.classList.add('visible');io.unobserve(e.target)}});
+},{threshold:.08});
+document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
+
+/* ══════════════════════════════════════
+   EMAILJS FORM SUBMISSION
+══════════════════════════════════════ */
+function sendForm(){
+  const name    = document.getElementById('fn').value.trim();
+  const email   = document.getElementById('fe').value.trim();
+  const phone   = document.getElementById('fp').value.trim();
+  const product = document.getElementById('fpr').value;
+  const company = document.getElementById('fco').value.trim();
+  const qty     = document.getElementById('fq').value.trim();
+  const message = document.getElementById('fm').value.trim();
+
+  if(!name || !email || !message){
+    alert('Please fill in Name, Email and Message.');
+    return;
+  }
+  if(!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)){
+    alert('Please enter a valid email address.');
+    return;
+  }
+
+  const btn = document.getElementById('submitBtn');
+  btn.textContent = 'Sending…';
+  btn.disabled = true;
+  btn.style.opacity = '0.7';
+
+  const templateParams = {
+    from_name:    name,
+    from_email:   email,
+    phone:        phone || 'Not provided',
+    product:      product || 'Not specified',
+    company:      company || 'Not provided',
+    quantity:     qty || 'Not specified',
+    message:      message,
+    to_email:     'mananghadia83@gmail.com'
+  };
+
+  emailjs.send('service_nevpycp', 'template_er9zb3q', templateParams)
+    .then(function(){
+      const ok = document.getElementById('formOk');
+      ok.style.display = 'flex';
+      document.getElementById('formErr').style.display = 'none';
+      ['fn','fe','fp','fco','fq','fm'].forEach(id => {
+        document.getElementById(id).value = '';
+      });
+      document.getElementById('fpr').selectedIndex = 0;
+      ok.scrollIntoView({behavior:'smooth', block:'nearest'});
+      setTimeout(()=>{ ok.style.display='none'; }, 8000);
+    }, function(error){
+      const errDiv = document.getElementById('formErr');
+      const errMsg = document.getElementById('formErrMsg');
+      errMsg.textContent = 'Failed to send: ' + (error.text || 'Please try again or contact us directly.');
+      errDiv.style.display = 'flex';
+      errDiv.scrollIntoView({behavior:'smooth', block:'nearest'});
+    })
+    .finally(function(){
+      btn.textContent = 'Send Message & Request Quote →';
+      btn.disabled = false;
+      btn.style.opacity = '1';
+    });
+}
+</script>
+</body>
+</html>
