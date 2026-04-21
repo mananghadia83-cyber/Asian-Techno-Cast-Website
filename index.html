@@ -485,6 +485,65 @@ footer{background:var(--ink);border-top:1px solid rgba(255,255,255,.07)}
   .seo-about-grid{grid-template-columns:1fr !important}
 }
 
+/* ─── PAGE LOADER ───────────────────────── */
+#pageLoader{
+  position:fixed;inset:0;z-index:99999;
+  background:var(--ink);
+  display:flex;flex-direction:column;align-items:center;justify-content:center;gap:2.5rem;
+  transition:opacity .6s ease, visibility .6s ease;
+}
+#pageLoader.hidden{opacity:0;visibility:hidden;pointer-events:none}
+.loader-logo{display:flex;align-items:center;gap:14px;animation:loaderFadeIn .6s ease forwards}
+.loader-logo-text{font-family:var(--ff-display);font-size:2.8rem;color:var(--white);letter-spacing:.06em;line-height:1}
+.loader-logo-sub{font-family:var(--ff-mono);font-size:9px;letter-spacing:.22em;color:var(--fog);text-transform:uppercase;margin-top:4px}
+.loader-bar-wrap{width:260px;height:2px;background:rgba(255,255,255,.08);overflow:hidden;position:relative}
+.loader-bar{height:100%;width:0%;background:var(--ore);transition:width .05s linear;box-shadow:0 0 12px rgba(255,74,0,.6)}
+.loader-pct{font-family:var(--ff-mono);font-size:10px;letter-spacing:.18em;color:var(--fog)}
+.loader-tag{font-family:var(--ff-mono);font-size:9px;letter-spacing:.2em;text-transform:uppercase;color:rgba(255,74,0,.6);margin-top:.5rem}
+@keyframes loaderFadeIn{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:none}}
+
+/* ─── MOTOR GALLERY ─────────────────────── */
+.mgallery-section{background:var(--ink);position:relative;overflow:hidden}
+.mgallery-section::before{content:'CASTINGS';position:absolute;left:-2rem;top:50%;transform:translateY(-50%);font-family:var(--ff-display);font-size:clamp(8rem,16vw,18rem);color:rgba(255,255,255,.013);white-space:nowrap;pointer-events:none}
+.mgallery-inner{max-width:1400px;margin:0 auto}
+.mgallery-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:1px;background:rgba(255,255,255,.05);margin-top:4rem}
+.mgcard{background:var(--ink);position:relative;overflow:hidden;cursor:default;transition:.4s}
+.mgcard:hover{background:var(--ink2)}
+.mgcard-img{width:100%;aspect-ratio:16/10;overflow:hidden;position:relative;background:var(--ink3)}
+.mgcard-img img{width:100%;height:100%;object-fit:cover;filter:grayscale(30%) contrast(1.05);transition:transform .7s ease, filter .4s ease;display:block}
+.mgcard:hover .mgcard-img img{transform:scale(1.04);filter:grayscale(0%) contrast(1.1)}
+.mgcard-img-overlay{position:absolute;inset:0;background:linear-gradient(to bottom,transparent 50%,rgba(8,9,12,.95) 100%);pointer-events:none}
+.mgcard-img-badge{position:absolute;top:1rem;left:1rem;font-family:var(--ff-mono);font-size:9px;letter-spacing:.18em;text-transform:uppercase;background:var(--ore);color:#fff;padding:.3rem .7rem}
+.mgcard-body{padding:2rem 2.2rem 2.5rem}
+.mgcard-title{font-family:var(--ff-display);font-size:2rem;color:var(--white);letter-spacing:.03em;margin-bottom:.4rem}
+.mgcard-grade{font-family:var(--ff-mono);font-size:10px;letter-spacing:.16em;text-transform:uppercase;color:var(--ore);margin-bottom:1.2rem}
+.mgcard-desc{font-size:.85rem;color:#8fa6c0;line-height:1.8;margin-bottom:1.5rem}
+.mgcard-specs{display:grid;grid-template-columns:1fr 1fr;gap:0;border:1px solid rgba(255,255,255,.07)}
+.mgspec{padding:.7rem .9rem;border-right:1px solid rgba(255,255,255,.07);border-bottom:1px solid rgba(255,255,255,.07)}
+.mgspec:nth-child(even){border-right:none}
+.mgspec:nth-last-child(-n+2){border-bottom:none}
+.mgspec-label{font-family:var(--ff-mono);font-size:8px;letter-spacing:.14em;text-transform:uppercase;color:#5a7090;margin-bottom:3px}
+.mgspec-val{font-size:.8rem;color:#c0d0e0;font-weight:500}
+.mgcard-footer{display:flex;align-items:center;justify-content:space-between;margin-top:1.5rem;padding-top:1.2rem;border-top:1px solid rgba(255,255,255,.07)}
+.mgcard-apps{display:flex;flex-wrap:wrap;gap:.35rem}
+.mgapp{font-family:var(--ff-mono);font-size:8px;letter-spacing:.1em;text-transform:uppercase;padding:.2rem .5rem;border:1px solid rgba(255,74,0,.25);color:var(--ore)}
+.mgcard-arrow{font-family:var(--ff-mono);font-size:9px;letter-spacing:.1em;text-transform:uppercase;color:#8fa6c0;display:flex;align-items:center;gap:.4rem;transition:.25s;white-space:nowrap}
+.mgcard:hover .mgcard-arrow{color:var(--ore);gap:.7rem}
+.mgcard.wide{grid-column:span 2}
+.mgcard.wide .mgcard-img{aspect-ratio:21/8}
+.mgcard.wide .mgcard-body{display:grid;grid-template-columns:1fr 1fr;gap:3rem}
+.mgcard.wide .mgcard-specs{grid-template-columns:repeat(4,1fr)}
+.mgcard.wide .mgspec:nth-child(even){border-right:1px solid rgba(255,255,255,.07)}
+.mgcard.wide .mgspec:nth-child(4n){border-right:none}
+.mgcard.wide .mgspec:nth-last-child(-n+4){border-bottom:none}
+@media(max-width:900px){
+  .mgallery-grid{grid-template-columns:1fr}
+  .mgcard.wide,.mgcard{grid-column:span 1}
+  .mgcard.wide .mgcard-body{grid-template-columns:1fr}
+  .mgcard.wide .mgcard-specs{grid-template-columns:1fr 1fr}
+  .mgcard.wide .mgcard-img{aspect-ratio:16/9}
+}
+
 /* ─── RESPONSIVE ────────────────────────── */
 @media(max-width:1100px){
   .about-grid,.motor-inner,.contact-inner,.footer-top{grid-template-columns:1fr;gap:3rem}
@@ -524,6 +583,25 @@ footer{background:var(--ink);border-top:1px solid rgba(255,255,255,.07)}
 </script>
 </head>
 <body itemscope itemtype="https://schema.org/WebPage">
+
+<!-- ═══════════════ PAGE LOADER ═══════════════ -->
+<div id="pageLoader">
+  <div class="loader-logo">
+    <svg width="44" height="44" viewBox="0 0 38 38" fill="none">
+      <polygon points="19,2 36,10.5 36,27.5 19,36 2,27.5 2,10.5" fill="rgba(255,74,0,.14)" stroke="#ff4a00" stroke-width="1.5"/>
+      <text x="50%" y="55%" text-anchor="middle" dominant-baseline="middle" font-family="Bebas Neue" font-size="13" fill="#ff4a00">AT</text>
+    </svg>
+    <div>
+      <div class="loader-logo-text">Asian Technocast</div>
+      <div class="loader-logo-sub">Cast Iron Manufacturer · Rajkot · Est. 2006</div>
+    </div>
+  </div>
+  <div>
+    <div class="loader-bar-wrap"><div class="loader-bar" id="loaderBar"></div></div>
+    <div class="loader-pct" id="loaderPct" style="text-align:center;margin-top:.5rem">0%</div>
+  </div>
+  <div class="loader-tag" id="loaderTag">Initialising…</div>
+</div>
 
 <!-- TOPBAR -->
 <div class="topbar">
@@ -736,6 +814,258 @@ footer{background:var(--ink);border-top:1px solid rgba(255,255,255,.07)}
 
       <a href="#contact" class="btn-primary">Get Motor Body Quote →</a>
     </div>
+  </div>
+</section>
+
+<!-- ═══════════════ MOTOR BODY GALLERY ════════════ -->
+<section class="mgallery-section" id="gallery" style="padding:clamp(5rem,10vw,10rem) clamp(1.5rem,4vw,4rem)">
+  <div class="mgallery-inner">
+    <div class="reveal" style="display:grid;grid-template-columns:1fr 1fr;gap:3rem;align-items:end;margin-bottom:0">
+      <div>
+        <div class="s-label">Real Products</div>
+        <h2 class="s-head">Motor Body<br><span class="ore">Castings</span><br><span class="stroke">Gallery</span></h2>
+      </div>
+      <p style="font-size:1rem;line-height:1.85;color:#8fa6c0;align-self:end">Every casting shown below is manufactured at our Aji GIDC foundry in Rajkot. Technical data sourced from IS 210:2009 and verified against our production standards.</p>
+    </div>
+
+    <div class="mgallery-grid reveal d1">
+
+      <!-- CARD 1: Motor Frame — WIDE FEATURED -->
+      <div class="mgcard wide">
+        <div class="mgcard-img">
+          <img
+            src="https://5.imimg.com/data5/SELLER/Default/2022/9/OC/AS/LF/157218454/cast-iron-electric-motor-body.jpg"
+            alt="Cast iron electric motor body frame casting grey iron IS 210 FG260 Rajkot"
+            loading="lazy"
+            onerror="this.src='https://images.unsplash.com/photo-1581092580497-e0d23cbdf1dc?w=1200&q=80';this.onerror=null"
+          />
+          <div class="mgcard-img-overlay"></div>
+          <div class="mgcard-img-badge">Featured Product</div>
+        </div>
+        <div class="mgcard-body">
+          <div>
+            <div class="mgcard-title">Electric Motor Frame</div>
+            <div class="mgcard-grade">IS 210 Grade FG 260 · Grey Cast Iron</div>
+            <div class="mgcard-desc">The motor frame (stator housing) forms the structural backbone of any induction motor. Our frames are sand-cast from IS 210 FG 260 grey iron, machined on all critical surfaces — bore, faces, and feet — to H7 tolerance. Cooling fins are cast integral for optimal thermal dissipation. Supplied to frame sizes 56 through 355 for 3-phase and single-phase motors.</div>
+          </div>
+          <div>
+            <div class="mgcard-specs">
+              <div class="mgspec"><div class="mgspec-label">Material</div><div class="mgspec-val">Grey Cast Iron (GCI)</div></div>
+              <div class="mgspec"><div class="mgspec-label">IS Standard</div><div class="mgspec-val">IS 210:2009</div></div>
+              <div class="mgspec"><div class="mgspec-label">Grade</div><div class="mgspec-val">FG 260</div></div>
+              <div class="mgspec"><div class="mgspec-label">Tensile Strength</div><div class="mgspec-val">260 N/mm² (min)</div></div>
+              <div class="mgspec"><div class="mgspec-label">Brinell Hardness</div><div class="mgspec-val">180 – 230 HB</div></div>
+              <div class="mgspec"><div class="mgspec-label">Frame Range</div><div class="mgspec-val">Frame 56 to 355</div></div>
+              <div class="mgspec"><div class="mgspec-label">Bore Tolerance</div><div class="mgspec-val">H7 / ISO 286-1</div></div>
+              <div class="mgspec"><div class="mgspec-label">Machining</div><div class="mgspec-val">Bore + Face + Feet</div></div>
+            </div>
+            <div class="mgcard-footer">
+              <div class="mgcard-apps">
+                <span class="mgapp">3-Phase Induction</span>
+                <span class="mgapp">Single Phase</span>
+                <span class="mgapp">TEFC Motors</span>
+                <span class="mgapp">Pump Sets</span>
+              </div>
+              <a href="#contact" class="mgcard-arrow">Get Quote <i class="fa fa-arrow-right"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- CARD 2: End Shield -->
+      <div class="mgcard">
+        <div class="mgcard-img">
+          <img
+            src="https://5.imimg.com/data5/SELLER/Default/2021/5/UP/TT/RH/130586834/ci-motor-end-shield.jpg"
+            alt="Cast iron motor end shield bearing housing CI casting Rajkot"
+            loading="lazy"
+            onerror="this.src='https://images.unsplash.com/photo-1565514020179-026b92b84bb6?w=800&q=80';this.onerror=null"
+          />
+          <div class="mgcard-img-overlay"></div>
+          <div class="mgcard-img-badge">End Shield</div>
+        </div>
+        <div class="mgcard-body">
+          <div class="mgcard-title">Motor End Shield</div>
+          <div class="mgcard-grade">IS 210 Grade FG 200 · Grey Cast Iron</div>
+          <div class="mgcard-desc">End shields (also called end brackets or bearing housings) close both ends of the motor frame and precisely locate the rotor shaft bearings. Drive-end (DE) and non-drive-end (NDE) variants are supplied as matched pairs. Bearing bore is concentric-machined to H6 for press-fit or clearance-fit bearings per customer spec.</div>
+          <div class="mgcard-specs">
+            <div class="mgspec"><div class="mgspec-label">Grade</div><div class="mgspec-val">IS 210 FG 200</div></div>
+            <div class="mgspec"><div class="mgspec-label">Tensile Str.</div><div class="mgspec-val">200 N/mm² (min)</div></div>
+            <div class="mgspec"><div class="mgspec-label">Hardness</div><div class="mgspec-val">160 – 220 HB</div></div>
+            <div class="mgspec"><div class="mgspec-label">Bore Tolerance</div><div class="mgspec-val">H6 / ISO 286-1</div></div>
+          </div>
+          <div class="mgcard-footer">
+            <div class="mgcard-apps">
+              <span class="mgapp">Drive End (DE)</span>
+              <span class="mgapp">Non-Drive End</span>
+              <span class="mgapp">Frame 56–355</span>
+            </div>
+            <a href="#contact" class="mgcard-arrow">Enquire <i class="fa fa-arrow-right"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <!-- CARD 3: Pump Casting -->
+      <div class="mgcard">
+        <div class="mgcard-img">
+          <img
+            src="https://5.imimg.com/data5/SELLER/Default/2023/1/FQ/WX/BG/180665809/ci-pump-volute-casing.jpg"
+            alt="CI pump volute casing casting grey iron water pump agricultural industrial"
+            loading="lazy"
+            onerror="this.src='https://images.unsplash.com/photo-1581092160607-ee22621dd758?w=800&q=80';this.onerror=null"
+          />
+          <div class="mgcard-img-overlay"></div>
+          <div class="mgcard-img-badge">Pump Casting</div>
+        </div>
+        <div class="mgcard-body">
+          <div class="mgcard-title">Water Pump Casing</div>
+          <div class="mgcard-grade">IS 210 FG 200 / IS 1536 · Grey & Ductile Iron</div>
+          <div class="mgcard-desc">Volute pump casings and impeller housings cast in grey or ductile iron for agricultural and industrial centrifugal pumps. Hydraulic passages are core-cast for smooth flow paths. Available in bore sizes 25 mm to 300 mm. Flanges and bolt holes machined to customer drawing.</div>
+          <div class="mgcard-specs">
+            <div class="mgspec"><div class="mgspec-label">Material</div><div class="mgspec-val">GCI / Ductile Iron</div></div>
+            <div class="mgspec"><div class="mgspec-label">Standard</div><div class="mgspec-val">IS 210 / IS 1536</div></div>
+            <div class="mgspec"><div class="mgspec-label">Bore Range</div><div class="mgspec-val">25 mm – 300 mm</div></div>
+            <div class="mgspec"><div class="mgspec-label">Tolerance</div><div class="mgspec-val">H8 / ISO 286-1</div></div>
+          </div>
+          <div class="mgcard-footer">
+            <div class="mgcard-apps">
+              <span class="mgapp">Agriculture</span>
+              <span class="mgapp">Industrial</span>
+              <span class="mgapp">Irrigation</span>
+            </div>
+            <a href="#contact" class="mgcard-arrow">Enquire <i class="fa fa-arrow-right"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <!-- CARD 4: Gear Housing -->
+      <div class="mgcard">
+        <div class="mgcard-img">
+          <img
+            src="https://5.imimg.com/data5/SELLER/Default/2022/3/NF/GR/HZ/4850968/cast-iron-gear-box-housing.jpg"
+            alt="Cast iron gearbox gear housing casting IS 210 FG300 industrial"
+            loading="lazy"
+            onerror="this.src='https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?w=800&q=80';this.onerror=null"
+          />
+          <div class="mgcard-img-overlay"></div>
+          <div class="mgcard-img-badge">Gear Housing</div>
+        </div>
+        <div class="mgcard-body">
+          <div class="mgcard-title">Gear Housing</div>
+          <div class="mgcard-grade">IS 210 Grade FG 300 · Grey Cast Iron</div>
+          <div class="mgcard-desc">Industrial gearbox housings in FG 300 — the highest-strength standard grey iron grade, offering superior rigidity and vibration damping for precision power-transmission applications. Shaft bore centres are precision-machined to H7/js6 fit. Oil sumps and breather bosses cast integral.</div>
+          <div class="mgcard-specs">
+            <div class="mgspec"><div class="mgspec-label">Grade</div><div class="mgspec-val">IS 210 FG 300</div></div>
+            <div class="mgspec"><div class="mgspec-label">Tensile Str.</div><div class="mgspec-val">300 N/mm² (min)</div></div>
+            <div class="mgspec"><div class="mgspec-label">Hardness</div><div class="mgspec-val">180 – 230 HB</div></div>
+            <div class="mgspec"><div class="mgspec-label">Bore Fit</div><div class="mgspec-val">H7/js6 ISO 286-1</div></div>
+          </div>
+          <div class="mgcard-footer">
+            <div class="mgcard-apps">
+              <span class="mgapp">Worm Gearbox</span>
+              <span class="mgapp">Helical</span>
+              <span class="mgapp">Industrial</span>
+            </div>
+            <a href="#contact" class="mgcard-arrow">Enquire <i class="fa fa-arrow-right"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <!-- CARD 5: Cylinder Head -->
+      <div class="mgcard">
+        <div class="mgcard-img">
+          <img
+            src="https://5.imimg.com/data5/SELLER/Default/2021/7/WN/OD/VU/6563388/cylinder-head-casting.jpg"
+            alt="Cast iron cylinder head casting diesel petrol engine pressure tested grey iron"
+            loading="lazy"
+            onerror="this.src='https://images.unsplash.com/photo-1517420704952-d9f39e95b43e?w=800&q=80';this.onerror=null"
+          />
+          <div class="mgcard-img-overlay"></div>
+          <div class="mgcard-img-badge">Engine Parts</div>
+        </div>
+        <div class="mgcard-body">
+          <div class="mgcard-title">Cylinder Head</div>
+          <div class="mgcard-grade">IS 210 Grade FG 260 · Pressure Tested</div>
+          <div class="mgcard-desc">Thermally stable grey iron cylinder heads for diesel and petrol engines. Cast in FG 260 for optimal combination of strength and thermal conductivity. All castings are pressure-tested before dispatch. Valve seat and port cores are precision-positioned for accurate port geometry.</div>
+          <div class="mgcard-specs">
+            <div class="mgspec"><div class="mgspec-label">Grade</div><div class="mgspec-val">IS 210 FG 260</div></div>
+            <div class="mgspec"><div class="mgspec-label">Test</div><div class="mgspec-val">Pressure Tested</div></div>
+            <div class="mgspec"><div class="mgspec-label">Hardness</div><div class="mgspec-val">180 – 230 HB</div></div>
+            <div class="mgspec"><div class="mgspec-label">Finish</div><div class="mgspec-val">Shot Blasted</div></div>
+          </div>
+          <div class="mgcard-footer">
+            <div class="mgcard-apps">
+              <span class="mgapp">Diesel Engine</span>
+              <span class="mgapp">Petrol Engine</span>
+              <span class="mgapp">OEM</span>
+            </div>
+            <a href="#contact" class="mgcard-arrow">Enquire <i class="fa fa-arrow-right"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <!-- CARD 6: Agriculture Casting -->
+      <div class="mgcard">
+        <div class="mgcard-img">
+          <img
+            src="https://5.imimg.com/data5/SELLER/Default/2022/11/DB/JW/IY/6563388/agriculture-casting.jpg"
+            alt="Cast iron agriculture machinery casting tractor plough wear resistant grey iron"
+            loading="lazy"
+            onerror="this.src='https://images.unsplash.com/photo-1530836369250-ef72a3f5cda8?w=800&q=80';this.onerror=null"
+          />
+          <div class="mgcard-img-overlay"></div>
+          <div class="mgcard-img-badge">Agriculture</div>
+        </div>
+        <div class="mgcard-body">
+          <div class="mgcard-title">Agriculture Casting</div>
+          <div class="mgcard-grade">IS 210 FG 200 / FG 260 · Wear Resistant</div>
+          <div class="mgcard-desc">Wear-resistant grey iron castings for agricultural machinery including tractor components, plough parts, seed drill housings, and pump casings. Cast to withstand abrasive soil conditions and high impact loads typical of field operations. Custom grades with higher phosphorus content available for improved wear resistance.</div>
+          <div class="mgcard-specs">
+            <div class="mgspec"><div class="mgspec-label">Grade</div><div class="mgspec-val">FG 200 / FG 260</div></div>
+            <div class="mgspec"><div class="mgspec-label">Property</div><div class="mgspec-val">Wear Resistant</div></div>
+            <div class="mgspec"><div class="mgspec-label">Process</div><div class="mgspec-val">Green Sand</div></div>
+            <div class="mgspec"><div class="mgspec-label">Finish</div><div class="mgspec-val">Fettled & Shot Blasted</div></div>
+          </div>
+          <div class="mgcard-footer">
+            <div class="mgcard-apps">
+              <span class="mgapp">Tractor Parts</span>
+              <span class="mgapp">Plough</span>
+              <span class="mgapp">Irrigation</span>
+            </div>
+            <a href="#contact" class="mgcard-arrow">Enquire <i class="fa fa-arrow-right"></i></a>
+          </div>
+        </div>
+      </div>
+
+    </div><!-- end mgallery-grid -->
+
+    <!-- Material grade reference strip -->
+    <div class="reveal d2" style="margin-top:3rem;border:1px solid rgba(255,255,255,.07);overflow:hidden">
+      <div style="background:rgba(255,74,0,.06);padding:.8rem 1.5rem;border-bottom:1px solid rgba(255,255,255,.07);display:flex;align-items:center;gap:.8rem">
+        <i class="fa fa-flask" style="color:var(--ore);font-size:.85rem"></i>
+        <span style="font-family:var(--ff-mono);font-size:9px;letter-spacing:.2em;text-transform:uppercase;color:var(--ore)">IS 210:2009 — Grey Iron Grade Reference Table</span>
+      </div>
+      <div style="overflow-x:auto">
+        <table style="width:100%;border-collapse:collapse;font-size:.8rem;min-width:600px">
+          <thead>
+            <tr style="border-bottom:1px solid rgba(255,255,255,.08)">
+              <th style="padding:.75rem 1.2rem;font-family:var(--ff-mono);font-size:8px;letter-spacing:.14em;text-transform:uppercase;color:#5a7090;text-align:left">Grade</th>
+              <th style="padding:.75rem 1.2rem;font-family:var(--ff-mono);font-size:8px;letter-spacing:.14em;text-transform:uppercase;color:#5a7090;text-align:left">Min Tensile Strength</th>
+              <th style="padding:.75rem 1.2rem;font-family:var(--ff-mono);font-size:8px;letter-spacing:.14em;text-transform:uppercase;color:#5a7090;text-align:left">Brinell Hardness (HB)</th>
+              <th style="padding:.75rem 1.2rem;font-family:var(--ff-mono);font-size:8px;letter-spacing:.14em;text-transform:uppercase;color:#5a7090;text-align:left">Intl. Equivalent</th>
+              <th style="padding:.75rem 1.2rem;font-family:var(--ff-mono);font-size:8px;letter-spacing:.14em;text-transform:uppercase;color:#5a7090;text-align:left">Typical Use</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr style="border-bottom:1px solid rgba(255,255,255,.05)"><td style="padding:.7rem 1.2rem;color:#c0d0e0;font-weight:500">FG 200</td><td style="padding:.7rem 1.2rem;color:#8fa6c0">200 N/mm²</td><td style="padding:.7rem 1.2rem;color:#8fa6c0">160 – 220 HB</td><td style="padding:.7rem 1.2rem;color:#5a7090">EN-GJL-200</td><td style="padding:.7rem 1.2rem;color:#8fa6c0">End shields, pump casings, agriculture parts</td></tr>
+            <tr style="border-bottom:1px solid rgba(255,255,255,.05);background:rgba(255,74,0,.03)"><td style="padding:.7rem 1.2rem;color:var(--ore);font-weight:600">FG 260 ★</td><td style="padding:.7rem 1.2rem;color:#8fa6c0">260 N/mm²</td><td style="padding:.7rem 1.2rem;color:#8fa6c0">180 – 230 HB</td><td style="padding:.7rem 1.2rem;color:#5a7090">EN-GJL-250</td><td style="padding:.7rem 1.2rem;color:#8fa6c0">Motor frames, cylinder heads, general castings</td></tr>
+            <tr style="border-bottom:1px solid rgba(255,255,255,.05)"><td style="padding:.7rem 1.2rem;color:#c0d0e0;font-weight:500">FG 300</td><td style="padding:.7rem 1.2rem;color:#8fa6c0">300 N/mm²</td><td style="padding:.7rem 1.2rem;color:#8fa6c0">180 – 230 HB</td><td style="padding:.7rem 1.2rem;color:#5a7090">EN-GJL-300</td><td style="padding:.7rem 1.2rem;color:#8fa6c0">Gear housings, heavy-duty machine parts</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <div style="padding:.6rem 1.2rem;font-family:var(--ff-mono);font-size:8px;letter-spacing:.1em;color:#3a4a60">★ Most commonly used grade at Asian Technocast · Data per IS 210:2009 Bureau of Indian Standards</div>
+    </div>
+
   </div>
 </section>
 
@@ -1051,6 +1381,63 @@ footer{background:var(--ink);border-top:1px solid rgba(255,255,255,.07)}
 <button id="stt" aria-label="Back to top"><i class="fa fa-arrow-up"></i></button>
 
 <script>
+/* ══════════════════════════════════════
+   PAGE LOADER
+══════════════════════════════════════ */
+(function(){
+  const loader = document.getElementById('pageLoader');
+  const bar    = document.getElementById('loaderBar');
+  const pct    = document.getElementById('loaderPct');
+  const tag    = document.getElementById('loaderTag');
+
+  const stages = [
+    {p:15, msg:'Loading foundry assets…'},
+    {p:32, msg:'Rendering motor schematics…'},
+    {p:55, msg:'Preparing product gallery…'},
+    {p:72, msg:'Compiling specifications…'},
+    {p:88, msg:'Almost there…'},
+    {p:100,msg:'Welcome to Asian Technocast'},
+  ];
+
+  let current = 0;
+  let displayed = 0;
+
+  function animateTo(target, cb){
+    function step(){
+      if(displayed < target){
+        displayed += 1;
+        bar.style.width = displayed + '%';
+        pct.textContent = displayed + '%';
+        requestAnimationFrame(step);
+      } else {
+        cb && cb();
+      }
+    }
+    requestAnimationFrame(step);
+  }
+
+  function runStage(){
+    if(current >= stages.length) return;
+    const s = stages[current];
+    tag.textContent = s.msg;
+    animateTo(s.p, function(){
+      current++;
+      if(current < stages.length){
+        setTimeout(runStage, current === stages.length - 1 ? 300 : 180);
+      } else {
+        setTimeout(function(){
+          loader.classList.add('hidden');
+          document.body.style.overflow = '';
+        }, 420);
+      }
+    });
+  }
+
+  // Prevent scroll during load
+  document.body.style.overflow = 'hidden';
+  setTimeout(runStage, 200);
+})();
+
 /* ══════════════════════════════════════
    HERO MOTOR CANVAS (full background)
 ══════════════════════════════════════ */
@@ -1678,9 +2065,7 @@ footer{background:var(--ink);border-top:1px solid rgba(255,255,255,.07)}
   loop2();
 })();
 
-/* ══════════════════════════════════════
-   NAV / HAM / SCROLL / REVEAL
-══════════════════════════════════════ */
+
 const hamBtn=document.getElementById('hamBtn'), mobMenu=document.getElementById('mobMenu');
 hamBtn.addEventListener('click',()=>{
   mobMenu.classList.toggle('open');
