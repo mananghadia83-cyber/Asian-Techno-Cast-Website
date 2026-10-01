@@ -1,0 +1,344 @@
+{
+  "capabilities": {
+    "seo": {
+      "title": "Fertigung – Schmelzen, Formen, CNC-Bearbeitung, Lackierung | Asian Technocast Indien",
+      "description": "Fertigungsmöglichkeiten der Eisengießerei in Rajkot, Indien: Schmelzbetrieb, Formerei, Stückgewichte, Monatskapazität, CNC-Bearbeitung und Lackierung im eigenen Haus."
+    },
+    "eyebrow": "Fertigung",
+    "title": "Von der Schmelze zum bearbeiteten Teil",
+    "intro": "Gießen, Bearbeiten und Oberflächenbehandlung in einem Werk in Aji GIDC, Rajkot.",
+    "sections": [
+      {
+        "title": "Kapazität auf einen Blick",
+        "facts": [
+          { "label": "Stückgewicht", "value": { "unit": "kg", "min": null, "max": null, "todo": "Stückgewichtsbereich in kg" } },
+          { "label": "Monatliche Kapazität", "value": { "unit": "t/month", "value": null, "todo": "Monatskapazität in Tonnen" } },
+          { "label": "Werkstoffe", "value": "Grauguss · Sphäroguss" },
+          { "label": "Schmelzbetrieb", "value": "[[TODO: Ofentyp und Kapazität, z. B. Induktionsofen, n × kg]]" },
+          { "label": "Formverfahren", "value": "[[TODO: Formverfahren, z. B. Grünsand / No-Bake, Maschinen- oder Handformerei]]" },
+          { "label": "Größter Formkasten", "value": { "unit": "mm", "value": null, "todo": "größte Formkastengröße in mm" } }
+        ]
+      },
+      {
+        "id": "melting",
+        "title": "Schmelzbetrieb",
+        "paragraphs": ["[[TODO: Öfen beschreiben (Typ, Anzahl, Kapazität je Schmelze), Einsatzstoffe und Kontrolle der Schmelzanalyse vor dem Abguss]]"],
+        "image": { "src": null, "alt": "Induktionsofen beim Abstich von flüssigem Eisen in eine Pfanne in der Gießerei Asian Technocast" }
+      },
+      {
+        "id": "moulding",
+        "title": "Formerei & Kernmacherei",
+        "paragraphs": ["[[TODO: Formanlage, Sandaufbereitung und Kernherstellung beschreiben]]"],
+        "image": { "src": null, "alt": "Formanlage mit abgießbereiten Sandformen" }
+      },
+      {
+        "id": "machining",
+        "title": "CNC-Bearbeitung",
+        "paragraphs": ["Die Gussteile werden im eigenen Haus bearbeitet. Sie erhalten einbaufertige Teile, und ein Lieferant ist für Guss und Bearbeitung verantwortlich."],
+        "facts": [
+          { "label": "CNC-Drehmaschinen", "value": "[[TODO: Anzahl und max. Drehdurchmesser]]" },
+          { "label": "Bearbeitungszentren (BAZ)", "value": "[[TODO: Anzahl und Tischgröße / Verfahrwege]]" },
+          { "label": "Weitere Maschinen", "value": "[[TODO: z. B. Radialbohrmaschinen, Gewindeschneiden, Ausbohren]]" }
+        ],
+        "image": { "src": null, "alt": "Bearbeitungszentrum fräst ein Motorgehäuse aus Grauguss" }
+      },
+      {
+        "id": "finishing",
+        "title": "Putzerei, Lackierung & Beschichtung",
+        "list": [
+          "Strahlen und Putzen: [[TODO: Anlagen bestätigen]]",
+          "Grundierung / Lackierung nach Kundenvorgabe: [[TODO: Lackarten und Farbtöne]]",
+          "Korrosionsschutzöl auf bearbeiteten Flächen: [[TODO: bestätigen]]"
+        ]
+      }
+    ]
+  },
+  "quality": {
+    "seo": {
+      "title": "Qualitätssicherung & Prüfung – Werkstoffprüfzeugnis, PPAP | Asian Technocast Indien",
+      "description": "Wie Asian Technocast Grauguss- und Sphärogussteile prüft: chemische Analyse, mechanische Prüfung, Maßprüfung, Werkstoffprüfzeugnisse sowie Erstmusterprüfung / PPAP auf Anfrage."
+    },
+    "eyebrow": "Qualität",
+    "title": "Nachweisbare Prüfung",
+    "intro": "Was wir prüfen, mit welchen Geräten, und welche Dokumente Ihre Teile begleiten.",
+    "sections": [
+      {
+        "title": "Prüfschritte",
+        "steps": [
+          { "title": "Wareneingang", "text": "[[TODO: Prüfung von Roheisen, Schrott und Legierungen beschreiben]]" },
+          { "title": "Schmelzanalyse", "text": "[[TODO: Spektrometerprüfung vor dem Abguss beschreiben]]" },
+          { "title": "Gussprüfung", "text": "[[TODO: Sichtprüfung und Fehlerprüfung nach dem Putzen beschreiben]]" },
+          { "title": "Mechanische Eigenschaften", "text": "[[TODO: Zug- und Härteprüfung je Schmelze/Los beschreiben]]" },
+          { "title": "Maßprüfung", "text": "[[TODO: Erstteil- und Zwischenprüfung, verwendete Messmittel beschreiben]]" },
+          { "title": "Endprüfung & Verpackung", "text": "[[TODO: Endprüfung, Stichprobenplan und Verpackungskontrolle beschreiben]]" }
+        ]
+      },
+      {
+        "title": "Prüfmittel",
+        "facts": [
+          { "label": "Spektrometer", "value": "[[TODO: Hersteller/Modell oder externes Labor]]" },
+          { "label": "Zugprüfmaschine", "value": "[[TODO: Kapazität oder externes Labor]]" },
+          { "label": "Härteprüfgerät", "value": "[[TODO: Brinell / Rockwell, Hersteller]]" },
+          { "label": "Koordinatenmessgerät (KMG)", "value": "[[TODO: KMG vorhanden? Falls nicht, Zeile entfernen]]" },
+          { "label": "Mikroskop (Gefüge)", "value": "[[TODO: bestätigen]]" },
+          { "label": "Messmittel", "value": "[[TODO: z. B. Innenmessgeräte, Höhenmessgerät, Gewindelehren]]" }
+        ],
+        "image": { "src": null, "alt": "Prüflabor mit Spektrometer und Härteprüfgerät" }
+      },
+      {
+        "title": "Dokumente, die wir liefern können",
+        "list": [
+          "Werkstoffprüfzeugnis (chemische Analyse und mechanische Werte)",
+          "Maßprotokoll",
+          "Erstmusterprüfbericht (EMPB / FAI) auf Anfrage",
+          "PPAP-Dokumentation auf Anfrage",
+          "[[TODO: weitere Dokumente, z. B. Abnahmeprüfzeugnis 3.1 nach EN 10204, Schichtdickenprotokoll]]"
+        ]
+      },
+      {
+        "title": "Zertifizierungen",
+        "intro": "Zertifikate werden hier erst nach Prüfung des Originals angezeigt.",
+        "badges": [
+          "[[TODO: z. B. ISO 9001:2015 – Zertifikatsnummer und Zertifizierungsstelle]]",
+          "[[TODO: weitere Zertifizierungen oder Freigaben]]"
+        ]
+      }
+    ]
+  },
+  "export-logistics": {
+    "seo": {
+      "title": "Export & Logistik – FOB / CIF ab Mundra & Pipavav, Verpackung nach ISPM 15 | Asian Technocast",
+      "description": "So liefern wir Gussteile aus Indien nach Deutschland und Europa: FOB und CIF ab Mundra oder Pipavav, Exportverpackung nach ISPM 15, Lieferzeiten für Muster und Serie, Zahlungsbedingungen."
+    },
+    "eyebrow": "Export & Logistik",
+    "title": "Von Rajkot an Ihre Rampe",
+    "intro": "Häfen, Incoterms, Verpackung, Lieferzeiten und Zahlungsbedingungen.",
+    "sections": [
+      {
+        "title": "Versand",
+        "facts": [
+          { "label": "Verschiffungshäfen", "value": "Mundra · Pipavav (Gujarat)" },
+          { "label": "Incoterms", "value": "FOB · CIF", "note": "Weitere Incoterms auf Anfrage." },
+          { "label": "Sendungsgröße", "value": "[[TODO: FCL / LCL – Angebot bestätigen]]" }
+        ]
+      },
+      {
+        "title": "Exportverpackung",
+        "list": [
+          "Hitzebehandelte Holzkisten und Paletten nach ISPM 15",
+          "Korrosionsschutz bearbeiteter Flächen: [[TODO: Verfahren bestätigen, z. B. Korrosionsschutzöl, VCI-Folie]]",
+          "Verpackung und Kennzeichnung nach Ihrer Vorgabe: [[TODO: bestätigen]]"
+        ],
+        "image": { "src": null, "alt": "Exportkiste mit lackierten Motorgehäusen auf ISPM-15-gestempelter Palette, bereit zur Containerverladung" }
+      },
+      {
+        "title": "Lieferzeiten",
+        "facts": [
+          { "label": "Modell / Werkzeug", "value": "[[TODO: übliche Modellbauzeit in Wochen]]" },
+          { "label": "Muster", "value": "[[TODO: übliche Lieferzeit für Muster in Wochen]]" },
+          { "label": "Serie", "value": "[[TODO: übliche Serienlieferzeit nach Musterfreigabe in Wochen]]" },
+          { "label": "Seefracht nach Hamburg / Bremerhaven", "value": "[[TODO: übliche Transitzeit in Tagen]]" }
+        ]
+      },
+      {
+        "title": "Zahlungsbedingungen",
+        "list": [
+          "Akkreditiv (L/C)",
+          "Anzahlung, Restzahlung gegen Versanddokumente",
+          "[[TODO: akzeptierte Zahlungsbedingungen und weitere Optionen bestätigen]]"
+        ]
+      }
+    ]
+  },
+  "industries": {
+    "seo": {
+      "title": "Branchen – Elektromotoren, Pumpen, Getriebe, Landtechnik | Asian Technocast Indien",
+      "description": "Grauguss- und Sphärogussteile für Hersteller von Elektromotoren, Pumpen und Bewässerung, Antriebstechnik, Landtechnik und den Kfz-Ersatzteilmarkt."
+    },
+    "eyebrow": "Branchen",
+    "title": "Für wen wir gießen",
+    "intro": "Unsere Gussteile werden in Geräten dieser Branchen verbaut.",
+    "sections": [
+      {
+        "title": "Branchen",
+        "cards": [
+          { "title": "Elektromotoren", "text": "Motorgehäuse (Statorgehäuse) und Lagerschilde für IEC- und NEMA-Asynchronmotoren.", "href": "/products/motor-frames" },
+          { "title": "Pumpen & Bewässerung", "text": "Spiralgehäuse, Pumpenkörper und Deckel aus Grau- und Sphäroguss.", "href": "/products/pump-casings" },
+          { "title": "Antriebstechnik", "text": "Getriebegehäuse, Deckel und Lagerträger.", "href": "/products/gearbox-housings" },
+          { "title": "Landtechnik", "text": "Gussteile für Traktoren, Anbaugeräte und Landmaschinen.", "href": "/products/agriculture-castings" },
+          { "title": "Kfz-Ersatzteilmarkt", "text": "Zylinderköpfe und Ersatz-Gussteile.", "href": "/products/automotive-castings" }
+        ]
+      },
+      {
+        "title": "Referenzen",
+        "paragraphs": ["[[TODO: optional – Kundennamen oder anonymisierte Referenzen (z. B. „Motorenhersteller, Gujarat“), nur mit Zustimmung]]"]
+      }
+    ]
+  },
+  "about": {
+    "seo": {
+      "title": "Über Asian Technocast – Eisengießerei in Rajkot, Indien, seit 2006",
+      "description": "Asian Technocast ist eine Grauguss- und Sphärogussgießerei in Aji GIDC, Rajkot, Gujarat, gegründet 2006 und geführt von Alpesh Ghadia und Sandeep Ghadia."
+    },
+    "eyebrow": "Über uns",
+    "title": "Eisengießerei in Rajkot seit 2006",
+    "intro": "Asian Technocast gießt und bearbeitet Teile aus Grauguss und Sphäroguss in Plot 185, M Road, Aji GIDC, Rajkot, Gujarat.",
+    "sections": [
+      {
+        "title": "Unsere Geschichte",
+        "paragraphs": [
+          "Asian Technocast wurde 2006 in Aji GIDC gegründet, einem der wichtigsten Industriegebiete von Rajkot. Rajkot ist ein bedeutender Standort für Maschinenbau und Gießereien in Westindien, mit vielen Herstellern von Pumpen, Motoren, Werkzeugmaschinen und Landtechnik.",
+          "[[TODO: kurze Firmengeschichte – Anfänge, Wachstum, wichtige Meilensteine (neuer Ofen, Bearbeitung, erster Export)]]",
+          "Wir bauen jetzt das direkte Exportgeschäft auf, zuerst mit den USA, dann mit Deutschland und dem Vereinigten Königreich."
+        ],
+        "image": { "src": null, "alt": "Außenansicht der Gießerei Asian Technocast in Aji GIDC, Rajkot" }
+      },
+      {
+        "title": "Das Team",
+        "cards": [
+          { "title": "Alpesh Ghadia", "text": "[[TODO: Funktion und kurzer Lebenslauf]]" },
+          { "title": "Sandeep Ghadia", "text": "[[TODO: Funktion und kurzer Lebenslauf]]" },
+          { "title": "Unsere Mitarbeiter", "text": "[[TODO: Anzahl Mitarbeiter, Schlüsselpersonen wie Metallurge oder QS-Leitung]]" }
+        ]
+      },
+      {
+        "title": "Standort",
+        "paragraphs": ["Plot No. 185, M Road, Aji GIDC, Rajkot 360003, Gujarat, Indien. [[TODO: Straßenentfernung und Fahrzeit vom Werk zu den Häfen Mundra und Pipavav]]"]
+      }
+    ]
+  },
+  "rfq": {
+    "seo": {
+      "title": "Angebot anfragen – Gussteile nach Zeichnung | Asian Technocast Indien",
+      "description": "Senden Sie Ihre Zeichnung (PDF, STEP, DWG, DXF) und Ihren Jahresbedarf für ein Angebot über Grauguss- oder Sphärogussteile, im Haus bearbeitet und aus Indien exportiert."
+    },
+    "eyebrow": "Angebot anfragen",
+    "title": "Angebot anfragen",
+    "intro": "Senden Sie uns Zeichnung und Anforderungen. Wir prüfen das Teil und antworten mit einem Angebot oder mit Rückfragen.",
+    "sections": [
+      {
+        "title": "Damit wir schnell anbieten können",
+        "list": [
+          "2D-Zeichnung mit Toleranzen (PDF) und 3D-Modell (STEP), falls vorhanden",
+          "Werkstoff und Prüfanforderungen",
+          "Bearbeitet oder Rohguss, Lackvorgabe",
+          "Jahresbedarf und Losgröße",
+          "Lieferort und gewünschter Incoterm"
+        ]
+      },
+      {
+        "title": "Wie es weitergeht",
+        "paragraphs": ["Wir prüfen Ihre Zeichnung und antworten innerhalb von 24 Stunden (IST), entweder mit Rückfragen oder mit einem Termin für das Angebot. [[TODO: übliche Zeit bis zum vollständigen Angebot bestätigen]]"]
+      }
+    ]
+  },
+  "contact": {
+    "seo": {
+      "title": "Kontakt – Asian Technocast, Eisengießerei in Rajkot, Indien",
+      "description": "Rufen Sie Asian Technocast in Aji GIDC, Rajkot, Indien, an, schreiben Sie per WhatsApp oder E-Mail. Geschäftszeiten in IST und US-Ostküstenzeit."
+    },
+    "eyebrow": "Kontakt",
+    "title": "Sprechen Sie uns an",
+    "intro": "Rufen Sie uns direkt an, schreiben Sie per WhatsApp oder senden Sie Ihre Zeichnung über das Anfrageformular.",
+    "sections": []
+  },
+  "privacy": {
+    "seo": {
+      "title": "Datenschutzerklärung | Asian Technocast",
+      "description": "Wie Asian Technocast personenbezogene Daten verarbeitet, die über diese Website übermittelt werden, einschließlich Ihrer Rechte nach der DSGVO."
+    },
+    "eyebrow": "Rechtliches",
+    "title": "Datenschutzerklärung",
+    "intro": "Stand: [[TODO: Datum der Veröffentlichung]]",
+    "sections": [
+      {
+        "title": "Verantwortlicher",
+        "paragraphs": ["Asian Technocast, Plot No. 185, M Road, Aji GIDC, Rajkot 360003, Gujarat, Indien. E-Mail: [[TODO: geschäftliche E-Mail]]. [[TODO: Rechtsform und Inhaber für die Angabe des Verantwortlichen bestätigen]]"]
+      },
+      {
+        "title": "Welche Daten wir verarbeiten und warum",
+        "paragraphs": [
+          "Anfrageformular: Name, Firma, Land, E-Mail, Telefon (optional), Angaben zu Produkt und Projekt sowie hochgeladene Zeichnungen. Wir verwenden diese Daten ausschließlich zur Beantwortung Ihrer Anfrage und zur Angebotserstellung. Rechtsgrundlage: vorvertragliche Maßnahmen und unser berechtigtes Interesse an der Beantwortung geschäftlicher Anfragen (Art. 6 Abs. 1 lit. b und f DSGVO).",
+          "E-Mail, Telefon und WhatsApp: Wenn Sie uns direkt kontaktieren, verarbeiten wir Ihre Angaben, um Ihnen zu antworten. WhatsApp wird von der WhatsApp Ireland Ltd. / Meta betrieben; bei Nutzung gilt deren Datenschutzerklärung.",
+          "Server-Logfiles: Unser Hosting-Anbieter speichert technische Daten wie IP-Adresse, Browsertyp und Zugriffszeit, um die Website sicher bereitzustellen. Rechtsgrundlage: berechtigtes Interesse am sicheren Betrieb der Website (Art. 6 Abs. 1 lit. f DSGVO)."
+        ]
+      },
+      {
+        "title": "Cookies und Tracking",
+        "paragraphs": [
+          "Diese Website verwendet keine Analyse-, Werbe- oder Tracking-Cookies. Deshalb wird kein Cookie-Banner angezeigt.",
+          "Der Spam-Schutz im Anfrageformular nutzt Cloudflare Turnstile. Dabei werden technische Daten (z. B. IP-Adresse und Browsermerkmale) verarbeitet, um Menschen von Bots zu unterscheiden. Es werden keine Tracking-Cookies gesetzt.",
+          "Die Karte auf der Kontaktseite wird erst von Google geladen, wenn Sie auf „Karte laden“ klicken."
+        ]
+      },
+      {
+        "title": "Dienstleister",
+        "list": [
+          "Vercel Inc. (USA): Hosting der Website und Speicherung hochgeladener Zeichnungen",
+          "Resend (USA): Versand der E-Mails aus dem Anfrageformular",
+          "Cloudflare Inc. (USA): Spam-Schutz (Turnstile)",
+          "Google: Kartendarstellung, erst nach Klick auf „Karte laden“",
+          "[[TODO: E-Mail-Anbieter des geschäftlichen Postfachs]]"
+        ],
+        "note": "Übermittlungen außerhalb der EU stützen sich auf das EU-US Data Privacy Framework und/oder Standardvertragsklauseln dieser Anbieter. Ihre Anfrage wird außerdem von uns in Indien bearbeitet. [[TODO: rechtliche Prüfung]]"
+      },
+      {
+        "title": "Speicherdauer",
+        "paragraphs": ["Anfragen und Zeichnungen speichern wir, solange es für die Bearbeitung der Anfrage und eine daraus entstehende Geschäftsbeziehung erforderlich ist, und danach für die handels- und steuerrechtlich vorgeschriebenen Fristen. [[TODO: Löschfrist festlegen, z. B. hochgeladene Zeichnungen nach 12 Monaten ohne Auftrag löschen]]"]
+      },
+      {
+        "title": "Ihre Rechte",
+        "paragraphs": [
+          "Sie haben das Recht auf Auskunft, Berichtigung, Löschung und Einschränkung der Verarbeitung Ihrer personenbezogenen Daten, auf Datenübertragbarkeit sowie auf Widerspruch gegen Verarbeitungen auf Grundlage berechtigter Interessen. Schreiben Sie uns dazu an [[TODO: geschäftliche E-Mail]].",
+          "Sie können sich außerdem bei einer Datenschutz-Aufsichtsbehörde beschweren, zum Beispiel in dem EU-Mitgliedstaat, in dem Sie wohnen."
+        ]
+      }
+    ]
+  },
+  "impressum": {
+    "seo": {
+      "title": "Impressum | Asian Technocast",
+      "description": "Impressum und Anbieterkennzeichnung von Asian Technocast, Rajkot, Indien."
+    },
+    "eyebrow": "Rechtliches",
+    "title": "Impressum",
+    "intro": "Angaben gemäß § 5 DDG (Digitale-Dienste-Gesetz).",
+    "sections": [
+      {
+        "title": "Anbieter",
+        "paragraphs": [
+          "Asian Technocast [[TODO: vollständige Firmierung und Rechtsform, z. B. Partnership Firm / Private Limited]]",
+          "Plot No. 185, M Road, Aji GIDC, Rajkot 360003, Gujarat, Indien"
+        ]
+      },
+      {
+        "title": "Vertreten durch",
+        "paragraphs": ["[[TODO: vertretungsberechtigte Personen, z. B. Alpesh Ghadia und Sandeep Ghadia, mit Funktion]]"]
+      },
+      {
+        "title": "Kontakt",
+        "paragraphs": [
+          "Telefon: +91 97252 52593 · +91 96622 00009",
+          "E-Mail: [[TODO: geschäftliche E-Mail]]"
+        ]
+      },
+      {
+        "title": "Register und Steuernummern",
+        "paragraphs": [
+          "[[TODO: Registereintrag, z. B. Corporate Identification Number (CIN) oder Partnership-Registrierung, falls vorhanden]]",
+          "GSTIN: [[TODO: GST-Nummer]]",
+          "IEC (Import Export Code): [[TODO: IEC-Nummer]]",
+          "[[TODO: USt-IdNr., falls eine EU-Umsatzsteuer-Identifikationsnummer vorhanden ist; sonst Zeile entfernen]]"
+        ]
+      },
+      {
+        "title": "Verantwortlich für den Inhalt",
+        "paragraphs": ["[[TODO: Name und Anschrift der inhaltlich verantwortlichen Person]]"]
+      },
+      {
+        "title": "Verbraucherstreitbeilegung",
+        "paragraphs": ["Wir sind nicht bereit und nicht verpflichtet, an Streitbeilegungsverfahren vor einer Verbraucherschlichtungsstelle teilzunehmen. Unser Angebot richtet sich ausschließlich an gewerbliche Kunden. [[TODO: rechtliche Prüfung]]"]
+      }
+    ]
+  }
+}

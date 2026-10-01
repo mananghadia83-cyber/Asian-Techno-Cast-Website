@@ -1,0 +1,42 @@
+{
+  "seo": {
+    "title": "Grey & Ductile Iron Castings Supplier India – ASTM A48 / A536 | Asian Technocast",
+    "description": "Iron foundry in Rajkot, India, since 2006. Motor frames, end shields, pump casings, gearbox housings, machined in-house and exported FOB/CIF. Send your drawing for a quote."
+  },
+  "eyebrow": "Iron foundry · Rajkot, India · Since 2006",
+  "headline": "Grey & ductile iron castings, machined in-house, exported from India.",
+  "subhead": "Motor frames, end shields, pump casings and gearbox housings made to your drawing in ASTM A48 and A536 grades. Shipped FOB or CIF from Mundra or Pipavav.",
+  "heroImage": {
+    "src": null,
+    "alt": "Molding line at the Asian Technocast foundry in Aji GIDC, Rajkot, with grey iron motor frame castings"
+  },
+  "facts": [
+    { "label": "Casting since", "value": "2006" },
+    { "label": "Materials", "value": "Grey iron (ASTM A48) · Ductile iron (ASTM A536)" },
+    { "label": "Casting weight range", "value": { "unit": "kg", "min": null, "max": null, "todo": "casting weight range, kg" } },
+    { "label": "Monthly capacity", "value": { "unit": "t/month", "value": null, "todo": "monthly capacity in tonnes" } },
+    { "label": "Machining", "value": "In-house CNC / VMC", "note": "[[TODO: number of CNC and VMC machines]]" },
+    { "label": "Certification", "value": "[[TODO: certification, e.g. ISO 9001:2015 – only once certificate is confirmed]]" }
+  ],
+  "productsTitle": "What we cast",
+  "productsIntro": "Grey and ductile iron parts made to customer drawings, supplied as-cast or machined and painted.",
+  "industriesTitle": "Industries served",
+  "industries": [
+    { "title": "Electric motors", "text": "Stator housings (motor frames) and end shields for NEMA and IEC frame motors." },
+    { "title": "Pumps & irrigation", "text": "Volute casings, pump bodies and covers for water and irrigation pumps." },
+    { "title": "Power transmission", "text": "Gearbox and gear housings, covers and bearing carriers." },
+    { "title": "Agricultural equipment", "text": "Castings for tractors, implements and farm machinery." },
+    { "title": "Automotive aftermarket", "text": "Cylinder heads and replacement iron castings made to drawing." }
+  ],
+  "whyTitle": "What procurement teams get",
+  "why": [
+    { "title": "One supplier: casting + machining", "text": "Casting, CNC/VMC machining and painting under one roof, so you get finished parts with one point of contact.", "href": "/capabilities" },
+    { "title": "Grades you specify", "text": "We work to ASTM A48 and A536, with IS and EN equivalents cross-referenced for your drawing.", "href": "/materials" },
+    { "title": "Documented quality", "text": "Material test certificates and dimensional reports, with first-article inspection or PPAP on request.", "href": "/quality" },
+    { "title": "Export-ready packing", "text": "ISPM-15 heat-treated wooden crates and pallets, shipped FOB or CIF from Gujarat ports.", "href": "/export-logistics" },
+    { "title": "Direct contact with the owners", "text": "You talk to the people who run the foundry, by email, phone or WhatsApp.", "href": "/about" },
+    { "title": "Fast replies", "text": "We reply within 24 hours (IST); our evening overlaps US morning hours.", "href": "/rfq" }
+  ],
+  "ctaTitle": "Send your drawing for a quote",
+  "ctaText": "PDF, STEP, DWG or DXF. Tell us the grade, annual quantity and delivery target, and we will reply within 24 hours (IST)."
+}

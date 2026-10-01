@@ -1,0 +1,120 @@
+{
+  "meta": {
+    "defaultTitle": "Grauguss & Sphäroguss aus Indien | Asian Technocast",
+    "defaultDescription": "Gussteile aus Grauguss und Sphäroguss, im eigenen Haus bearbeitet und aus Rajkot, Indien, exportiert. Motorgehäuse, Lagerschilde, Pumpengehäuse und Getriebegehäuse nach DIN EN 1561 / 1563."
+  },
+  "nav": {
+    "home": "Asian Technocast Startseite",
+    "main": "Hauptmenü",
+    "menu": "Menü",
+    "tagline": "Eisengießerei · Rajkot · seit 2006",
+    "products": "Produkte",
+    "materials": "Werkstoffe",
+    "capabilities": "Fertigung",
+    "quality": "Qualität",
+    "export": "Export",
+    "industries": "Branchen",
+    "about": "Über uns",
+    "contact": "Kontakt",
+    "rfq": "Angebot anfragen"
+  },
+  "common": {
+    "skip": "Zum Inhalt springen",
+    "photoNeeded": "Foto folgt",
+    "days": "Mo–Sa",
+    "summer": "Sommerzeit",
+    "winter": "Winterzeit"
+  },
+  "footer": {
+    "blurb": "Gussteile aus Grauguss und Sphäroguss, im eigenen Haus bearbeitet und aus Rajkot, Gujarat, Indien, exportiert.",
+    "pages": "Seiten",
+    "contact": "Kontakt",
+    "address": "Adresse der Gießerei",
+    "since": "Gießerei seit {year}.",
+    "privacy": "Datenschutz"
+  },
+  "cta": {
+    "title": "Senden Sie uns Ihre Zeichnung",
+    "text": "Zeichnung und Jahresbedarf genügen. Unser Angebot nennt Werkstoff, Gewicht, Bearbeitungsumfang und Incoterms.",
+    "button": "Angebot anfragen"
+  },
+  "home": {
+    "ctaPrimary": "Angebot anfragen",
+    "ctaSecondary": "Produkte ansehen",
+    "factsTitle": "Eckdaten",
+    "allProducts": "Alle Produkte",
+    "viewSpecs": "Technische Daten",
+    "allIndustries": "Unsere Branchen"
+  },
+  "product": {
+    "eyebrow": "Produkt",
+    "specs": "Technische Daten",
+    "grades": "Werkstoffe",
+    "weight": "Stückgewicht",
+    "machining": "Mechanische Bearbeitung im Haus",
+    "tolerances": "Toleranzen",
+    "applications": "Anwendungen",
+    "details": "Daten & Details",
+    "quoteThis": "Angebot für dieses Teil anfragen",
+    "gradeTable": "Werkstoff-Entsprechungen",
+    "allGrades": "Vollständige Werkstofftabelle →"
+  },
+  "contact": {
+    "phone": "Telefon & WhatsApp",
+    "email": "E-Mail",
+    "rfqHint": "Sie haben eine Zeichnung?",
+    "rfqLink": "Laden Sie sie über das Anfrageformular hoch.",
+    "hours": "Geschäftszeiten",
+    "india": "Indien (IST)",
+    "usEastern": "US-Ostküste",
+    "overlap": "Wir antworten innerhalb von 24 Stunden (IST). Unser Arbeitstag überschneidet sich mit dem europäischen Vormittag.",
+    "address": "Adresse der Gießerei",
+    "openMaps": "In Google Maps öffnen →",
+    "mapTitle": "Karte: Asian Technocast in Aji GIDC, Rajkot",
+    "loadMap": "Karte laden",
+    "mapConsent": "Die Karte wird von Google bereitgestellt. Beim Laden wird Ihre IP-Adresse an Google übermittelt."
+  },
+  "rfq": {
+    "replyTime": "Wir antworten innerhalb von 24 Stunden (IST). Unser Arbeitstag überschneidet sich mit dem europäischen Vormittag.",
+    "name": "Ihr Name",
+    "company": "Firma",
+    "country": "Land",
+    "email": "Geschäftliche E-Mail",
+    "phone": "Telefon",
+    "phoneHint": "Mit Ländervorwahl. WhatsApp ist möglich.",
+    "product": "Produktart",
+    "choose": "Bitte wählen…",
+    "otherProduct": "Sonstiges / nicht aufgeführt",
+    "grade": "Werkstoff",
+    "gradeUnsure": "Laut Zeichnung / noch offen",
+    "annualQuantity": "Jahresbedarf",
+    "annualQuantityHint": "Stück pro Jahr, z. B. 2.000 Stk.",
+    "targetDelivery": "Gewünschter Liefertermin",
+    "targetDeliveryHint": "z. B. Muster bis März, Serie ab Q3",
+    "message": "Nachricht",
+    "messageHint": "Teilebeschreibung, Bearbeitung, Oberfläche, Prüf- und Dokumentationsanforderungen.",
+    "drawings": "Zeichnungen (optional)",
+    "drawingsCta": "Klicken, um Zeichnungen anzuhängen",
+    "drawingsLimit": "bis zu {max} Dateien, je {size}",
+    "removeFile": "{name} entfernen",
+    "confidential": "Zeichnungen verwenden wir ausschließlich zur Angebotserstellung.",
+    "fileType": "{name}: Dateityp wird nicht unterstützt.",
+    "fileSize": "{name} ist größer als {max}.",
+    "fileCount": "Sie können bis zu {max} Dateien anhängen.",
+    "captchaPending": "Bitte schließen Sie die Spam-Prüfung über der Schaltfläche ab.",
+    "submit": "Anfrage senden",
+    "uploading": "Zeichnungen werden hochgeladen…",
+    "sending": "Wird gesendet…",
+    "privacyNote": "Mit dem Absenden stimmen Sie zu, dass wir Ihre Angaben zur Bearbeitung Ihrer Anfrage verwenden (siehe Datenschutzerklärung).",
+    "successTitle": "Vielen Dank, Ihre Anfrage ist eingegangen",
+    "successText": "Wir antworten innerhalb von 24 Stunden (IST). In dringenden Fällen schreiben Sie uns per WhatsApp.",
+    "errorCaptcha": "Die Spam-Prüfung ist fehlgeschlagen. Bitte versuchen Sie es erneut.",
+    "errorGeneric": "Leider ist ein Fehler aufgetreten. Bitte versuchen Sie es erneut oder kontaktieren Sie uns telefonisch oder per WhatsApp.",
+    "countries": ["Deutschland", "Österreich", "Schweiz", "Niederlande", "Belgien", "Frankreich", "Italien", "Polen", "Tschechien", "Vereinigtes Königreich", "Vereinigte Staaten", "Indien"]
+  },
+  "notFound": {
+    "title": "Seite nicht gefunden",
+    "text": "Die gesuchte Seite existiert nicht oder wurde verschoben.",
+    "home": "Zur Startseite"
+  }
+}

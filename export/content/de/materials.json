@@ -1,0 +1,38 @@
+{
+  "seo": {
+    "title": "Gusseisen-Werkstoffvergleich: EN-GJL / EN-GJS vs. ASTM A48 / A536 vs. IS 210 | Asian Technocast",
+    "description": "Ungefähre Entsprechungen zwischen DIN EN 1561 / 1563, ASTM A48 und A536 sowie indischen IS 210 / IS 1865 Grau- und Sphärogusssorten, mit typischen Anwendungen."
+  },
+  "eyebrow": "Werkstoffe & Normen",
+  "title": "Grauguss- und Sphärogusssorten: DIN EN, ASTM und IS",
+  "intro": "Geben Sie den Werkstoff in der Norm an, mit der Sie arbeiten. Die Tabelle zeigt die ungefähren Entsprechungen.",
+  "order": ["en", "astm", "is"],
+  "columns": { "en": "DIN EN (Europa)", "astm": "ASTM (USA)", "is": "IS (Indien)", "use": "Typische Anwendung" },
+  "standards": { "en": "DIN EN 1561 · DIN EN 1563", "astm": "A48/A48M · A536", "is": "IS 210 · IS 1865" },
+  "rows": [
+    { "id": "gl200", "family": "grey", "en": "EN-GJL-200", "astm": "ASTM A48 Class 30", "is": "IS 210 FG 200", "use": "Lagerschilde, Pumpengehäuse, Landtechnik-Teile" },
+    { "id": "gl260", "family": "grey", "en": "EN-GJL-250", "astm": "ASTM A48 Class 35/40", "is": "IS 210 FG 260", "use": "Motorgehäuse, Zylinderköpfe" },
+    { "id": "gl300", "family": "grey", "en": "EN-GJL-300", "astm": "ASTM A48 Class 45", "is": "IS 210 FG 300", "use": "Getriebegehäuse, schwere Maschinenteile" },
+    { "id": "sg", "family": "ductile", "en": "EN-GJS-400 / EN-GJS-450", "astm": "ASTM A536 (z. B. 65-45-12)", "is": "IS 1865 (SG-Guss)", "use": "Pumpenkörper, druckbeanspruchte Teile" }
+  ],
+  "disclaimer": "Ungefähre Entsprechung; maßgeblich sind Kundenzeichnung und Spezifikation.",
+  "sections": [
+    {
+      "title": "Werkstoff angeben",
+      "paragraphs": [
+        "Geben Sie den Werkstoff auf Ihrer Zeichnung in der gewohnten Norm an: DIN EN, ASTM oder IS. In unserem Angebot bestätigen wir den Werkstoff, den wir gießen, und wie er geprüft wird.",
+        "Entsprechungen zwischen Normen sind nur ungefähr, da Probengrößen, Mindestwerte und Analysegrenzen abweichen. Wenn Ihr Teil kritische Eigenschaften hat (Druckstufe, Härtebereich, Bruchdehnung), geben Sie diese auf der Zeichnung oder in der Anfrage an."
+      ]
+    },
+    {
+      "title": "So wird der Werkstoff nachgewiesen",
+      "list": [
+        "Chemische Analyse: [[TODO: Spektrometer im Haus oder externes Labor bestätigen]]",
+        "Zugfestigkeit: [[TODO: Zugprüfmaschine im Haus oder externes Labor bestätigen]]",
+        "Härte (Brinell): [[TODO: Härteprüfgerät bestätigen]]",
+        "Gefüge / Kugelgraphit bei Sphäroguss: [[TODO: Metallmikroskop bestätigen]]"
+      ],
+      "note": "Die Ergebnisse stehen im Werkstoffprüfzeugnis. Welche Dokumente wir liefern, sehen Sie unter Qualität."
+    }
+  ]
+}

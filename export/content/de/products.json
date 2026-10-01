@@ -1,0 +1,170 @@
+{
+  "seo": {
+    "title": "Gussteile nach Zeichnung – Motorgehäuse, Pumpengehäuse, Getriebegehäuse | Asian Technocast",
+    "description": "Grauguss- und Sphärogussteile aus Indien: Motorgehäuse und Lagerschilde (IEC & NEMA), Pumpen-Spiralgehäuse, Getriebegehäuse, Zylinderköpfe, Landtechnik- und Kfz-Teile."
+  },
+  "eyebrow": "Produkte",
+  "title": "Gussteile nach Ihrer Zeichnung",
+  "intro": "Jedes Teil wird nach Zeichnung und Spezifikation des Kunden gegossen. Wählen Sie eine Produktgruppe für Werkstoffe, Gewichtsbereich, Bearbeitung und Toleranzen.",
+  "products": [
+    {
+      "slug": "motor-frames",
+      "name": "Motorgehäuse & Lagerschilde",
+      "summary": "Statorgehäuse und Lagerschilde aus Grauguss für Elektromotoren in IEC- und NEMA-Baugrößen, roh oder bearbeitet.",
+      "seo": {
+        "title": "Motorgehäuse aus Grauguss – Lieferant Indien – EN-GJL-250 | Asian Technocast",
+        "description": "Motorgehäuse (Statorgehäuse) und Lagerschilde aus Grauguss für IEC 56–355 und NEMA. EN-GJL-200/250, im Haus bearbeitet, Export aus Indien."
+      },
+      "intro": "Motorgehäuse (Statorgehäuse) und Lagerschilde aus Gusseisen für Niederspannungs-Elektromotoren, gegossen und bearbeitet nach Ihrer Zeichnung.",
+      "image": { "src": null, "alt": "Bearbeitetes Elektromotorgehäuse aus Grauguss mit Kühlrippen und Füßen, daneben ein passendes Lagerschild" },
+      "sizeRanges": [
+        { "label": "IEC-Baugrößen", "value": "56–355", "note": "Nach Kundenzeichnung." },
+        { "label": "NEMA-Baugrößen", "value": "48, 56, 143T–449T", "note": "Nach Kundenzeichnung." }
+      ],
+      "grades": ["gl260", "gl200"],
+      "gradeNote": "Gehäuse üblicherweise EN-GJL-250, Lagerschilde üblicherweise EN-GJL-200. Endgültiger Werkstoff laut Ihrer Zeichnung.",
+      "weight": { "unit": "kg", "min": null, "max": null, "todo": "Gewichtsbereich Motorgehäuse / Lagerschilde in kg" },
+      "machining": [
+        "[[TODO: Bearbeitung Gehäuse, z. B. Statorbohrung, Zentrierung, Fußfläche fräsen, Bohren & Gewinde]]",
+        "[[TODO: Bearbeitung Lagerschilde, z. B. Lagersitz, Zentrierung, Planfläche]]"
+      ],
+      "tolerances": "[[TODO: erreichbare Toleranzen, z. B. Lagersitz IT7, Rohguss nach ISO 8062 CT-Klasse]]",
+      "applications": [
+        "Oberflächengekühlte Drehstrom-Asynchronmotoren",
+        "Einphasen- und Kleinmotoren",
+        "Pumpen- und Lüftermotoren",
+        "Getriebe- und Bremsmotoren"
+      ],
+      "notes": ["Gehäuse und passende Lagerschilde können als Satz angeboten werden."]
+    },
+    {
+      "slug": "pump-casings",
+      "name": "Pumpen-Spiralgehäuse",
+      "summary": "Spiralgehäuse, Pumpenkörper und Deckel aus Grauguss und Sphäroguss für Wasser-, Bewässerungs- und Prozesspumpen.",
+      "seo": {
+        "title": "Pumpen-Spiralgehäuse aus Gusseisen – Lieferant Indien – EN-GJL / EN-GJS | Asian Technocast",
+        "description": "Spiralgehäuse, Pumpenkörper und Deckel aus Grauguss und Sphäroguss nach Zeichnung aus Indien. EN-GJL-200 und EN-GJS-400/450."
+      },
+      "intro": "Spiralgehäuse, Pumpenkörper, Saug- und Druckdeckel sowie Lagerträger für Kreisel-, Blockpumpen und Bewässerungspumpen.",
+      "image": { "src": null, "alt": "Pumpen-Spiralgehäuse aus Grauguss mit bearbeiteten Flanschen, für den Export lackiert" },
+      "grades": ["gl200", "sg"],
+      "gradeNote": "Sphäroguss (EN-GJS), wenn Ihre Spezifikation höhere Druckstufen oder Zähigkeit verlangt.",
+      "weight": { "unit": "kg", "min": null, "max": null, "todo": "Gewichtsbereich Pumpengehäuse in kg" },
+      "machining": ["[[TODO: Bearbeitung, z. B. Flansche plandrehen, Laufradbohrung, Flanschbohrungen]]"],
+      "tolerances": "[[TODO: erreichbare Toleranzen für Pumpengehäuse]]",
+      "applications": [
+        "Kreiselpumpen für Wasser",
+        "Blockpumpen und Pumpen für die Landwirtschaft",
+        "Bewässerungs- und Brunnenpumpen",
+        "Industrielle Prozesspumpen"
+      ],
+      "notes": ["[[TODO: bestätigen, ob Druckprüfung (Wasser) angeboten wird, und Prüfdruck]]"]
+    },
+    {
+      "slug": "gearbox-housings",
+      "name": "Getriebegehäuse",
+      "summary": "Getriebegehäuse, Deckel und Lagerträger aus hochfestem Grauguss, bearbeitet nach Zeichnung.",
+      "seo": {
+        "title": "Getriebegehäuse aus Grauguss – Lieferant Indien – EN-GJL-300 | Asian Technocast",
+        "description": "Getriebegehäuse, Deckel und Lagerträger aus Grauguss, gegossen und CNC-bearbeitet in Indien nach Kundenzeichnung. Werkstoff EN-GJL-300."
+      },
+      "intro": "Gehäuse, Deckel und Lagerträger für Industriegetriebe und Untersetzungsgetriebe aus hochfestem Grauguss.",
+      "image": { "src": null, "alt": "CNC-bearbeitetes Getriebegehäuse aus Grauguss mit Lagerbohrungen und Anschraubflächen" },
+      "grades": ["gl300"],
+      "weight": { "unit": "kg", "min": null, "max": null, "todo": "Gewichtsbereich Getriebegehäuse in kg" },
+      "machining": ["[[TODO: Bearbeitung, z. B. Lagerbohrungen, Trennflächen, Bohren & Gewinde]]"],
+      "tolerances": "[[TODO: erreichbare Toleranzen, z. B. Lage und Toleranz der Lagerbohrungen]]",
+      "applications": [
+        "Stirnrad- und Schneckengetriebe",
+        "Industriegetriebe",
+        "Landtechnik-Getriebe"
+      ]
+    },
+    {
+      "slug": "cylinder-heads",
+      "name": "Zylinderköpfe",
+      "summary": "Zylinderköpfe aus Grauguss für Motoren und Kompressoren, nach Ihrer Zeichnung.",
+      "seo": {
+        "title": "Zylinderköpfe aus Grauguss – Lieferant Indien – EN-GJL-250 | Asian Technocast",
+        "description": "Zylinderkopf-Gussteile aus Grauguss für Motoren und Kompressoren, nach Zeichnung aus Indien. Werkstoff EN-GJL-250."
+      },
+      "intro": "Zylinderköpfe für Stationärmotoren, Kompressoren und den Ersatzteilmarkt, gegossen in Grauguss nach Ihrer Zeichnung.",
+      "image": { "src": null, "alt": "Zylinderkopf aus Grauguss mit Kernkanälen vor der Bearbeitung" },
+      "grades": ["gl260"],
+      "weight": { "unit": "kg", "min": null, "max": null, "todo": "Gewichtsbereich Zylinderköpfe in kg" },
+      "machining": ["[[TODO: Bearbeitung von Zylinderköpfen]]"],
+      "tolerances": "[[TODO: erreichbare Toleranzen für Zylinderköpfe]]",
+      "applications": [
+        "Stationäre Dieselmotoren",
+        "Luftkompressoren",
+        "Ersatzteilmarkt Kfz und Traktoren"
+      ],
+      "notes": [
+        "[[TODO: bestätigen, ob Dichtheits-/Druckprüfung der Wassermäntel angeboten wird]]",
+        "[[TODO: bestätigen, ob Teile nach Kundenmuster entwickelt werden können (Reverse Engineering)]]"
+      ]
+    },
+    {
+      "slug": "agriculture-castings",
+      "name": "Landtechnik-Gussteile",
+      "summary": "Grauguss-Teile für Traktoren, Anbaugeräte und Landmaschinen.",
+      "seo": {
+        "title": "Landtechnik-Gussteile aus Indien – Traktor- und Geräteteile | Asian Technocast",
+        "description": "Grauguss-Teile für Traktoren, Anbaugeräte und Landmaschinen, nach Zeichnung aus Indien. Werkstoff EN-GJL-200."
+      },
+      "intro": "Konsolen, Naben, Gehäuse, Gewichte und andere Gussteile für Traktoren, Anbaugeräte und Landmaschinen.",
+      "image": { "src": null, "alt": "Verschiedene Landtechnik-Gussteile aus Grauguss auf einer Palette" },
+      "grades": ["gl200"],
+      "weight": { "unit": "kg", "min": null, "max": null, "todo": "Gewichtsbereich Landtechnik-Teile in kg" },
+      "machining": ["[[TODO: Bearbeitung von Landtechnik-Teilen]]"],
+      "tolerances": "[[TODO: erreichbare Toleranzen für Landtechnik-Teile]]",
+      "applications": [
+        "Traktorteile",
+        "Bodenbearbeitungs- und Sägeräte",
+        "Gehäuse und Konsolen für Landmaschinen"
+      ]
+    },
+    {
+      "slug": "automotive-castings",
+      "name": "Kfz-Gussteile",
+      "summary": "Ersatzteile aus Gusseisen für den Kfz-Ersatzteilmarkt, nach Ihrer Zeichnung.",
+      "seo": {
+        "title": "Kfz-Ersatzteile aus Gusseisen – Lieferant Indien | Asian Technocast",
+        "description": "Gussteile aus Grauguss und Sphäroguss für den Kfz-Ersatzteilmarkt, nach Zeichnung aus Indien, roh oder bearbeitet."
+      },
+      "intro": "Ersatzteile aus Gusseisen für den Kfz-Ersatzteilmarkt, gegossen und bearbeitet nach Ihrer Zeichnung.",
+      "image": { "src": null, "alt": "Bearbeitete Kfz-Ersatzteile aus Gusseisen vor der Prüfung" },
+      "grades": [],
+      "gradeNote": "[[TODO: Werkstoffe für Kfz-Gussteile]]",
+      "weight": { "unit": "kg", "min": null, "max": null, "todo": "Gewichtsbereich Kfz-Gussteile in kg" },
+      "machining": ["[[TODO: Bearbeitung von Kfz-Teilen]]"],
+      "tolerances": "[[TODO: erreichbare Toleranzen für Kfz-Teile]]",
+      "applications": ["[[TODO: typische Kfz-Teile, die Sie liefern]]"],
+      "notes": ["[[TODO: bestätigen, ob Teile nach Kundenmuster entwickelt werden können (Reverse Engineering)]]"]
+    },
+    {
+      "slug": "custom-castings",
+      "name": "Sonderguss nach Zeichnung",
+      "summary": "Jedes Teil aus Grauguss oder Sphäroguss in unserem Gewichtsbereich, nach Ihrer Zeichnung und Spezifikation.",
+      "seo": {
+        "title": "Grauguss & Sphäroguss nach Zeichnung – Gießerei Indien | Asian Technocast",
+        "description": "Sonderguss aus Grauguss und Sphäroguss nach Ihrer Zeichnung aus Indien. EN-GJL, EN-GJS, ASTM A48 und A536, im Haus bearbeitet und exportiert."
+      },
+      "intro": "Wenn es aus Grauguss oder Sphäroguss ist und in unseren Gewichtsbereich passt, senden Sie uns die Zeichnung. Wir prüfen sie, schlagen Werkstoff und Verfahren vor und bieten Guss und Bearbeitung an.",
+      "image": { "src": null, "alt": "Auswahl von Sondergussteilen aus Grau- und Sphäroguss nach Kundenzeichnung" },
+      "grades": ["gl200", "gl260", "gl300", "sg"],
+      "gradeNote": "Endgültiger Werkstoff laut Ihrer Zeichnung und Spezifikation.",
+      "weight": { "unit": "kg", "min": null, "max": null, "todo": "gesamter Stückgewichtsbereich in kg" },
+      "machining": [
+        "CNC-Drehen, Fräsen auf Bearbeitungszentren (BAZ), Bohren und Gewindeschneiden",
+        "[[TODO: maximale Bearbeitungsgröße / größter Arbeitsraum]]"
+      ],
+      "tolerances": "[[TODO: allgemeine Toleranzen Rohguss und bearbeitet]]",
+      "applications": [
+        "Maschinenbauteile",
+        "Armaturen- und Kompressorteile",
+        "Gegengewichte und Maschinenbetten"
+      ]
+    }
+  ]
+}
