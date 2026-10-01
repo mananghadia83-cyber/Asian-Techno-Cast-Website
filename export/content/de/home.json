@@ -1,0 +1,42 @@
+{
+  "seo": {
+    "title": "Grauguss- & Sphärogussteile aus Indien – EN-GJL / EN-GJS | Asian Technocast",
+    "description": "Eisengießerei in Rajkot, Indien, seit 2006. Motorgehäuse, Lagerschilde, Pumpen- und Getriebegehäuse aus EN-GJL und EN-GJS, im Haus bearbeitet, Lieferung FOB/CIF."
+  },
+  "eyebrow": "Eisengießerei · Rajkot, Indien · seit 2006",
+  "headline": "Grauguss und Sphäroguss, im Haus bearbeitet, exportiert aus Indien.",
+  "subhead": "Motorgehäuse, Lagerschilde, Pumpengehäuse und Getriebegehäuse nach Ihrer Zeichnung in EN-GJL und EN-GJS (DIN EN 1561 / DIN EN 1563). Versand FOB oder CIF ab Mundra oder Pipavav.",
+  "heroImage": {
+    "src": null,
+    "alt": "Formanlage der Gießerei Asian Technocast in Aji GIDC, Rajkot, mit Motorgehäusen aus Grauguss"
+  },
+  "facts": [
+    { "label": "Gießerei seit", "value": "2006" },
+    { "label": "Werkstoffe", "value": "Grauguss (EN-GJL) · Sphäroguss (EN-GJS)" },
+    { "label": "Stückgewicht", "value": { "unit": "kg", "min": null, "max": null, "todo": "Stückgewichtsbereich in kg" } },
+    { "label": "Monatliche Kapazität", "value": { "unit": "t/month", "value": null, "todo": "Monatskapazität in Tonnen" } },
+    { "label": "Bearbeitung", "value": "CNC / BAZ im eigenen Haus", "note": "[[TODO: Anzahl CNC-Drehmaschinen und Bearbeitungszentren]]" },
+    { "label": "Zertifizierung", "value": "[[TODO: Zertifizierung, z. B. ISO 9001:2015 – erst nach Prüfung des Zertifikats]]" }
+  ],
+  "productsTitle": "Was wir gießen",
+  "productsIntro": "Teile aus Grauguss und Sphäroguss nach Kundenzeichnung, roh oder einbaufertig bearbeitet und lackiert.",
+  "industriesTitle": "Branchen",
+  "industries": [
+    { "title": "Elektromotoren", "text": "Statorgehäuse (Motorgehäuse) und Lagerschilde für IEC- und NEMA-Baugrößen." },
+    { "title": "Pumpen & Bewässerung", "text": "Spiralgehäuse, Pumpenkörper und Deckel für Wasser- und Bewässerungspumpen." },
+    { "title": "Antriebstechnik", "text": "Getriebegehäuse, Deckel und Lagerträger." },
+    { "title": "Landtechnik", "text": "Gussteile für Traktoren, Anbaugeräte und Landmaschinen." },
+    { "title": "Kfz-Ersatzteilmarkt", "text": "Zylinderköpfe und Ersatz-Gussteile nach Zeichnung." }
+  ],
+  "whyTitle": "Was Einkäufer bei uns bekommen",
+  "why": [
+    { "title": "Ein Lieferant: Guss + Bearbeitung", "text": "Gießen, CNC-Bearbeitung und Lackierung unter einem Dach: einbaufertige Teile mit einem Ansprechpartner.", "href": "/capabilities" },
+    { "title": "Werkstoffe nach Ihrer Norm", "text": "Wir arbeiten nach DIN EN 1561 / 1563 und stellen ASTM- und IS-Entsprechungen für Ihre Zeichnung gegenüber.", "href": "/materials" },
+    { "title": "Dokumentierte Qualität", "text": "Werkstoffprüfzeugnisse und Maßprotokolle, Erstmusterprüfung (EMPB) oder PPAP auf Anfrage.", "href": "/quality" },
+    { "title": "Exportverpackung", "text": "Hitzebehandelte Holzkisten und Paletten nach ISPM 15, Versand FOB oder CIF ab Häfen in Gujarat.", "href": "/export-logistics" },
+    { "title": "Direkter Draht zur Geschäftsleitung", "text": "Sie sprechen mit den Inhabern der Gießerei, per E-Mail, Telefon oder WhatsApp.", "href": "/about" },
+    { "title": "Schnelle Antwort", "text": "Wir antworten innerhalb von 24 Stunden (IST). Unser Arbeitstag überschneidet sich mit dem europäischen Vormittag.", "href": "/rfq" }
+  ],
+  "ctaTitle": "Zeichnung senden, Angebot erhalten",
+  "ctaText": "PDF, STEP, DWG oder DXF. Nennen Sie Werkstoff, Jahresbedarf und Liefertermin. Wir antworten innerhalb von 24 Stunden (IST)."
+}

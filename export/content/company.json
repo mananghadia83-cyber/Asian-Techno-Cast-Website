@@ -1,0 +1,40 @@
+{
+  "name": "Asian Technocast",
+  "legalName": "Asian Technocast",
+  "founded": 2006,
+  "address": {
+    "street": "Plot No. 185, M Road",
+    "area": "Aji GIDC",
+    "city": "Rajkot",
+    "region": "Gujarat",
+    "postalCode": "360003",
+    "country": "India",
+    "countryCode": "IN"
+  },
+  "geo": { "lat": 22.2964, "lng": 70.7706 },
+  "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Asian+Technocast+Plot+185+M+Road+Aji+GIDC+Rajkot",
+  "email": null,
+  "emailTodo": "business email on own domain, e.g. export@asiantechnocast.com",
+  "phones": [
+    {
+      "name": "Alpesh Ghadia",
+      "role": "[[TODO: role, e.g. Partner – sales & commercial]]",
+      "display": "+91 97252 52593",
+      "e164": "+919725252593",
+      "whatsapp": true
+    },
+    {
+      "name": "Sandeep Ghadia",
+      "role": "[[TODO: role, e.g. Partner – production & quality]]",
+      "display": "+91 96622 00009",
+      "e164": "+919662200009",
+      "whatsapp": true
+    }
+  ],
+  "hours": {
+    "daysSchema": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
+    "open": "09:00",
+    "close": "18:00",
+    "timezone": "Asia/Kolkata"
+  }
+}

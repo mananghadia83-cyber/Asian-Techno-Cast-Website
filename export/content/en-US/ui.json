@@ -1,0 +1,120 @@
+{
+  "meta": {
+    "defaultTitle": "Grey & Ductile Iron Castings from India | Asian Technocast",
+    "defaultDescription": "Grey and ductile iron castings, machined in-house and exported from Rajkot, India. Motor frames, end shields, pump casings and gearbox housings to ASTM A48 / A536."
+  },
+  "nav": {
+    "home": "Asian Technocast home",
+    "main": "Main",
+    "menu": "Menu",
+    "tagline": "Iron foundry · Rajkot · Est. 2006",
+    "products": "Products",
+    "materials": "Materials",
+    "capabilities": "Capabilities",
+    "quality": "Quality",
+    "export": "Export",
+    "industries": "Industries",
+    "about": "About",
+    "contact": "Contact",
+    "rfq": "Request a Quote"
+  },
+  "common": {
+    "skip": "Skip to content",
+    "photoNeeded": "Photo needed",
+    "days": "Mon–Sat",
+    "summer": "summer",
+    "winter": "winter"
+  },
+  "footer": {
+    "blurb": "Grey and ductile iron castings, machined in-house and exported from Rajkot, Gujarat, India.",
+    "pages": "Pages",
+    "contact": "Contact",
+    "address": "Foundry address",
+    "since": "Casting since {year}.",
+    "privacy": "Privacy policy"
+  },
+  "cta": {
+    "title": "Send us your drawing",
+    "text": "Share a drawing and annual volume. We quote with material, weight, machining scope and Incoterms.",
+    "button": "Request a Quote"
+  },
+  "home": {
+    "ctaPrimary": "Request a Quote",
+    "ctaSecondary": "View products",
+    "factsTitle": "Key facts",
+    "allProducts": "All products",
+    "viewSpecs": "View specs",
+    "allIndustries": "Industries we serve"
+  },
+  "product": {
+    "eyebrow": "Product",
+    "specs": "Specifications",
+    "grades": "Material grades",
+    "weight": "Casting weight range",
+    "machining": "Machining done in-house",
+    "tolerances": "Tolerances",
+    "applications": "Applications",
+    "details": "Specs & details",
+    "quoteThis": "Request a quote for this part",
+    "gradeTable": "Grade equivalents",
+    "allGrades": "Full material cross-reference →"
+  },
+  "contact": {
+    "phone": "Phone & WhatsApp",
+    "email": "Email",
+    "rfqHint": "Have a drawing?",
+    "rfqLink": "Use the RFQ form to upload it.",
+    "hours": "Working hours",
+    "india": "India (IST)",
+    "usEastern": "US Eastern",
+    "overlap": "We reply within 24 hours (IST); our evening overlaps US morning hours.",
+    "address": "Foundry address",
+    "openMaps": "Open in Google Maps →",
+    "mapTitle": "Map showing Asian Technocast in Aji GIDC, Rajkot",
+    "loadMap": "Load map",
+    "mapConsent": "The map is provided by Google. Loading it sends your IP address to Google."
+  },
+  "rfq": {
+    "replyTime": "We reply within 24 hours (IST); our evening overlaps US morning hours.",
+    "name": "Your name",
+    "company": "Company",
+    "country": "Country",
+    "email": "Business email",
+    "phone": "Phone",
+    "phoneHint": "Include country code. WhatsApp is fine.",
+    "product": "Product type",
+    "choose": "Choose…",
+    "otherProduct": "Other / not listed",
+    "grade": "Material grade",
+    "gradeUnsure": "As per drawing / not sure",
+    "annualQuantity": "Annual quantity",
+    "annualQuantityHint": "Pieces per year, e.g. 2,000 pcs",
+    "targetDelivery": "Target delivery",
+    "targetDeliveryHint": "e.g. samples by March, production from Q3",
+    "message": "Message",
+    "messageHint": "Part description, machining needed, surface finish, testing or documentation requirements.",
+    "drawings": "Drawings (optional)",
+    "drawingsCta": "Click to attach drawings",
+    "drawingsLimit": "up to {max} files, {size} each",
+    "removeFile": "Remove {name}",
+    "confidential": "Drawings are used only to prepare your quotation.",
+    "fileType": "{name}: file type not accepted.",
+    "fileSize": "{name} is larger than {max}.",
+    "fileCount": "You can attach up to {max} files.",
+    "captchaPending": "Please complete the spam check above the button.",
+    "submit": "Send RFQ",
+    "uploading": "Uploading drawings…",
+    "sending": "Sending…",
+    "privacyNote": "By sending, you agree that we use your details to answer your request (see privacy policy).",
+    "successTitle": "Thank you, RFQ received",
+    "successText": "We reply within 24 hours (IST). If it is urgent, message us on WhatsApp.",
+    "errorCaptcha": "The spam check failed. Please try again.",
+    "errorGeneric": "Sorry, something went wrong. Please try again, or contact us by phone or WhatsApp.",
+    "countries": ["United States", "Canada", "Mexico", "United Kingdom", "Germany", "Netherlands", "France", "Italy", "Poland", "India", "United Arab Emirates", "Australia"]
+  },
+  "notFound": {
+    "title": "Page not found",
+    "text": "The page you are looking for does not exist or has moved.",
+    "home": "Go to home page"
+  }
+}

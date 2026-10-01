@@ -1,0 +1,269 @@
+{
+  "seo": {
+    "title": "Iron Castings Made to Drawing – Motor Frames, Pump Casings, Gear Housings | Asian Technocast",
+    "description": "Grey and ductile iron castings from India: motor frames and end shields (NEMA & IEC), pump volute casings, gearbox housings, cylinder heads, agricultural and automotive parts."
+  },
+  "eyebrow": "Products",
+  "title": "Iron castings made to your drawing",
+  "intro": "Every part is cast to the customer's drawing and specification. Choose a product family for grades, weight range, machining scope and tolerances.",
+  "products": [
+    {
+      "slug": "motor-frames",
+      "name": "Motor frames & end shields",
+      "summary": "Grey iron stator housings and end shields for NEMA and IEC frame electric motors, supplied as-cast or machined.",
+      "seo": {
+        "title": "Grey Iron Motor Frame Castings Supplier India – EN-GJL-250 | Asian Technocast",
+        "description": "Cast iron motor frames (stator housings) and end shields for IEC 56–355 and NEMA frame motors. EN-GJL-200/250 grades, machined in-house, exported from India."
+      },
+      "intro": "Cast iron motor frames (stator housings) and end shields for low-voltage electric motors, cast and machined to your drawing.",
+      "image": {
+        "src": null,
+        "alt": "Machined grey iron electric motor frame with cooling fins and feet, next to a matching end shield"
+      },
+      "sizeRanges": [
+        {
+          "label": "IEC frames",
+          "value": "56–355",
+          "note": "Made to customer drawing."
+        },
+        {
+          "label": "NEMA frames",
+          "value": "48, 56, 143T–449T",
+          "note": "Made to customer drawing."
+        }
+      ],
+      "grades": [
+        "gl260",
+        "gl200"
+      ],
+      "gradeNote": "Frames typically in EN-GJL-250; end shields typically in EN-GJL-200. Final grade per your drawing.",
+      "weight": {
+        "unit": "kg",
+        "min": null,
+        "max": null,
+        "todo": "motor frame / end shield weight range, kg"
+      },
+      "machining": [
+        "[[TODO: machining operations for frames, e.g. stator bore, spigot/rabbet, feet milling, drilling & tapping]]",
+        "[[TODO: machining operations for end shields, e.g. bearing housing bore, spigot, face]]"
+      ],
+      "tolerances": "[[TODO: achievable tolerances, e.g. bearing bore IT7, as-cast per ISO 8062 CT grade]]",
+      "applications": [
+        "TEFC three-phase induction motors",
+        "Single-phase and fractional-HP motors",
+        "Pump and fan motors",
+        "Gear motors and brake motors"
+      ],
+      "notes": [
+        "Frames and matching end shields can be quoted as a set."
+      ]
+    },
+    {
+      "slug": "pump-casings",
+      "name": "Pump volute casings",
+      "summary": "Volute casings, pump bodies and covers in grey and ductile iron for water, irrigation and process pumps.",
+      "seo": {
+        "title": "Cast Iron Pump Volute Casing Supplier India – EN-GJL / EN-GJS | Asian Technocast",
+        "description": "Grey and ductile iron pump volute casings, bodies and covers cast to drawing in India. EN-GJL-200 and EN-GJS-400/450 grades."
+      },
+      "intro": "Volute casings, pump bodies, suction and delivery covers and bearing brackets for centrifugal, monoblock and irrigation pumps.",
+      "image": {
+        "src": null,
+        "alt": "Grey iron pump volute casing with machined flanges, painted for export"
+      },
+      "grades": [
+        "gl200",
+        "sg"
+      ],
+      "gradeNote": "Ductile iron (A536) where your specification requires higher pressure ratings or toughness.",
+      "weight": {
+        "unit": "kg",
+        "min": null,
+        "max": null,
+        "todo": "pump casing weight range, kg"
+      },
+      "machining": [
+        "[[TODO: machining operations, e.g. flange facing, impeller bore, drilling of flange holes]]"
+      ],
+      "tolerances": "[[TODO: achievable tolerances for pump casings]]",
+      "applications": [
+        "Centrifugal water pumps",
+        "Monoblock and agricultural pumps",
+        "Irrigation and borewell pumps",
+        "Industrial process pumps"
+      ],
+      "notes": [
+        "[[TODO: confirm whether hydrostatic pressure testing is offered, and the test pressure]]"
+      ]
+    },
+    {
+      "slug": "gearbox-housings",
+      "name": "Gearbox & gear housings",
+      "summary": "Gearbox housings, covers and bearing carriers in high-strength grey iron, machined to drawing.",
+      "seo": {
+        "title": "Cast Iron Gearbox Housing Supplier India – EN-GJL-300 | Asian Technocast",
+        "description": "Grey iron gearbox and gear housings, covers and bearing carriers cast and CNC machined in India to customer drawing. EN-GJL-300 grade."
+      },
+      "intro": "Housings, covers and bearing carriers for industrial gearboxes and speed reducers, cast in high-strength grey iron.",
+      "image": {
+        "src": null,
+        "alt": "CNC machined grey iron gearbox housing showing bearing bores and mounting faces"
+      },
+      "grades": [
+        "gl300"
+      ],
+      "weight": {
+        "unit": "kg",
+        "min": null,
+        "max": null,
+        "todo": "gearbox housing weight range, kg"
+      },
+      "machining": [
+        "[[TODO: machining operations, e.g. bearing bores, mating faces, drilling & tapping]]"
+      ],
+      "tolerances": "[[TODO: achievable tolerances, e.g. bearing bore position and bore tolerance]]",
+      "applications": [
+        "Helical and worm gear reducers",
+        "Industrial gearboxes",
+        "Agricultural gearboxes"
+      ]
+    },
+    {
+      "slug": "cylinder-heads",
+      "name": "Cylinder heads",
+      "summary": "Grey iron cylinder heads for engines and compressors, made to your drawing.",
+      "seo": {
+        "title": "Cast Iron Cylinder Head Castings Supplier India – EN-GJL-250 | Asian Technocast",
+        "description": "Grey iron cylinder head castings for engines and compressors, made to drawing in India. EN-GJL-250 grade."
+      },
+      "intro": "Cylinder heads for stationary engines, compressors and aftermarket replacement, cast in grey iron to your drawing.",
+      "image": {
+        "src": null,
+        "alt": "Grey iron cylinder head casting with cored ports, before machining"
+      },
+      "grades": [
+        "gl260"
+      ],
+      "weight": {
+        "unit": "kg",
+        "min": null,
+        "max": null,
+        "todo": "cylinder head weight range, kg"
+      },
+      "machining": [
+        "[[TODO: machining operations for cylinder heads]]"
+      ],
+      "tolerances": "[[TODO: achievable tolerances for cylinder heads]]",
+      "applications": [
+        "Stationary diesel engines",
+        "Air compressors",
+        "Automotive and tractor aftermarket"
+      ],
+      "notes": [
+        "[[TODO: confirm if leak / pressure testing of water jackets is offered]]",
+        "[[TODO: confirm whether you can develop parts from a customer sample (reverse engineering)]]"
+      ]
+    },
+    {
+      "slug": "agriculture-castings",
+      "name": "Agricultural castings",
+      "summary": "Grey iron parts for tractors, implements and farm machinery.",
+      "seo": {
+        "title": "Agricultural Iron Castings Supplier India – Tractor & Implement Parts | Asian Technocast",
+        "description": "Grey iron castings for tractors, farm implements and agricultural machinery, made to drawing in India. EN-GJL-200 grade."
+      },
+      "intro": "Brackets, hubs, housings, weights and other iron parts for tractors, implements and farm machinery.",
+      "image": {
+        "src": null,
+        "alt": "Assorted grey iron agricultural machinery castings arranged on a pallet"
+      },
+      "grades": [
+        "gl200"
+      ],
+      "weight": {
+        "unit": "kg",
+        "min": null,
+        "max": null,
+        "todo": "agricultural casting weight range, kg"
+      },
+      "machining": [
+        "[[TODO: machining operations for agricultural parts]]"
+      ],
+      "tolerances": "[[TODO: achievable tolerances for agricultural parts]]",
+      "applications": [
+        "Tractor parts",
+        "Tillage and planting implements",
+        "Farm machinery housings and brackets"
+      ]
+    },
+    {
+      "slug": "automotive-castings",
+      "name": "Automotive castings",
+      "summary": "Iron replacement parts for the automotive aftermarket, made to your drawing.",
+      "seo": {
+        "title": "Automotive Aftermarket Iron Castings Supplier India | Asian Technocast",
+        "description": "Grey and ductile iron automotive aftermarket castings made to drawing in India, supplied as-cast or machined."
+      },
+      "intro": "Iron replacement parts for the automotive aftermarket, cast and machined to your drawing.",
+      "image": {
+        "src": null,
+        "alt": "Machined iron automotive aftermarket castings ready for inspection"
+      },
+      "grades": [],
+      "gradeNote": "[[TODO: grades used for automotive castings]]",
+      "weight": {
+        "unit": "kg",
+        "min": null,
+        "max": null,
+        "todo": "automotive casting weight range, kg"
+      },
+      "machining": [
+        "[[TODO: machining operations for automotive parts]]"
+      ],
+      "tolerances": "[[TODO: achievable tolerances for automotive parts]]",
+      "applications": [
+        "[[TODO: typical automotive part types you supply]]"
+      ],
+      "notes": [
+        "[[TODO: confirm whether you can develop parts from a customer sample (reverse engineering)]]"
+      ]
+    },
+    {
+      "slug": "custom-castings",
+      "name": "Custom castings",
+      "summary": "Any grey or ductile iron part within our weight range, made to your drawing and specification.",
+      "seo": {
+        "title": "Custom Grey & Ductile Iron Castings to Drawing – Foundry India | Asian Technocast",
+        "description": "Custom grey and ductile iron castings made to your drawing in India. ASTM A48, A536, EN-GJL and EN-GJS equivalent grades, machined in-house and exported."
+      },
+      "intro": "If it is grey or ductile iron and within our weight range, send the drawing. We review it, propose the grade and process, and quote the casting and machining.",
+      "image": {
+        "src": null,
+        "alt": "Range of custom grey and ductile iron castings made to customer drawings"
+      },
+      "grades": [
+        "gl200",
+        "gl260",
+        "gl300",
+        "sg"
+      ],
+      "gradeNote": "Final grade per your drawing and specification.",
+      "weight": {
+        "unit": "kg",
+        "min": null,
+        "max": null,
+        "todo": "overall casting weight range, kg"
+      },
+      "machining": [
+        "CNC turning and VMC milling, drilling and tapping",
+        "[[TODO: maximum machinable size / largest machine envelope]]"
+      ],
+      "tolerances": "[[TODO: general as-cast and machined tolerance capability]]",
+      "applications": [
+        "Industrial machinery components",
+        "Valve and compressor parts",
+        "Counterweights and machine bases"
+      ]
+    }
+  ]
+}

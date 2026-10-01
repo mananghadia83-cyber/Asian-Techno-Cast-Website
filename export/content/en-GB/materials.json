@@ -1,0 +1,79 @@
+{
+  "seo": {
+    "title": "Cast Iron Grade Cross-Reference: EN-GJL / EN-GJS vs ASTM A48 / A536 vs IS 210 | Asian Technocast",
+    "description": "Approximate equivalents between EN 1561 / EN 1563, ASTM A48 and A536, and Indian IS 210 / IS 1865 grey and ductile iron grades, with typical uses."
+  },
+  "eyebrow": "Materials & standards",
+  "title": "Grey and ductile iron grades: EN, ASTM and IS",
+  "intro": "Specify the grade in the standard you use. The table shows the approximate equivalents we work with.",
+  "order": [
+    "en",
+    "astm",
+    "is"
+  ],
+  "columns": {
+    "astm": "ASTM (US)",
+    "en": "EN (Europe)",
+    "is": "IS (India)",
+    "use": "Typical use"
+  },
+  "standards": {
+    "astm": "A48/A48M · A536",
+    "en": "EN 1561 · EN 1563",
+    "is": "IS 210 · IS 1865"
+  },
+  "rows": [
+    {
+      "id": "gl200",
+      "family": "grey",
+      "astm": "ASTM A48 Class 30",
+      "en": "EN-GJL-200",
+      "is": "IS 210 FG 200",
+      "use": "End shields, pump casings, agricultural parts"
+    },
+    {
+      "id": "gl260",
+      "family": "grey",
+      "astm": "ASTM A48 Class 35/40",
+      "en": "EN-GJL-250",
+      "is": "IS 210 FG 260",
+      "use": "Motor frames, cylinder heads"
+    },
+    {
+      "id": "gl300",
+      "family": "grey",
+      "astm": "ASTM A48 Class 45",
+      "en": "EN-GJL-300",
+      "is": "IS 210 FG 300",
+      "use": "Gear housings, heavy machine parts"
+    },
+    {
+      "id": "sg",
+      "family": "ductile",
+      "astm": "ASTM A536 (e.g. 65-45-12)",
+      "en": "EN-GJS-400 / EN-GJS-450",
+      "is": "IS 1865 (SG iron)",
+      "use": "Pump bodies, pressure parts"
+    }
+  ],
+  "disclaimer": "Approximate equivalent; final grade per customer drawing and specification.",
+  "sections": [
+    {
+      "title": "Specifying a grade",
+      "paragraphs": [
+        "Put the grade on your drawing in the standard you normally use: EN, ASTM or IS. In our quotation we confirm the grade we will cast to and how it will be tested.",
+        "Equivalents between standards are approximate because test bar sizes, minimum values and chemistry limits differ. If your part has critical properties (pressure rating, hardness range, elongation), list them on the drawing or in the RFQ."
+      ]
+    },
+    {
+      "title": "How the grade is verified",
+      "list": [
+        "Chemical composition: [[TODO: confirm spectrometer in-house or external lab]]",
+        "Tensile strength: [[TODO: confirm UTM in-house or external lab]]",
+        "Hardness (Brinell): [[TODO: confirm hardness tester]]",
+        "Microstructure / nodularity for ductile iron: [[TODO: confirm metallurgical microscope]]"
+      ],
+      "note": "Results are reported on the material test certificate. See Quality for the documents we provide."
+    }
+  ]
+}

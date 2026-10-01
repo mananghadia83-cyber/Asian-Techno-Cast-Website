@@ -1,0 +1,314 @@
+{
+  "capabilities": {
+    "seo": {
+      "title": "Foundry Capabilities – Melting, Molding, CNC Machining, Painting | Asian Technocast India",
+      "description": "Iron foundry capabilities in Rajkot, India: melting, molding, casting weight range, monthly capacity, in-house CNC/VMC machining and painting."
+    },
+    "eyebrow": "Capabilities",
+    "title": "From melt to machined part",
+    "intro": "Casting, machining and finishing in one plant in Aji GIDC, Rajkot.",
+    "sections": [
+      {
+        "title": "Capacity at a glance",
+        "facts": [
+          { "label": "Casting weight range", "value": { "unit": "kg", "min": null, "max": null, "todo": "casting weight range, kg" } },
+          { "label": "Monthly capacity", "value": { "unit": "t/month", "value": null, "todo": "monthly capacity in tonnes" } },
+          { "label": "Materials", "value": "Grey iron · Ductile (SG) iron" },
+          { "label": "Melting", "value": "[[TODO: furnace type and capacity, e.g. induction furnace, n × kg]]" },
+          { "label": "Molding", "value": "[[TODO: molding process, e.g. green sand / no-bake, machine or hand molding]]" },
+          { "label": "Largest box / flask size", "value": { "unit": "mm", "value": null, "todo": "largest molding box size, mm" } }
+        ]
+      },
+      {
+        "id": "melting",
+        "title": "Melting",
+        "paragraphs": [
+          "[[TODO: describe furnaces (type, number, capacity per heat), charge materials, and how melt chemistry is controlled before pouring]]"
+        ],
+        "image": { "src": null, "alt": "Induction furnace pouring molten iron into a ladle at the Asian Technocast foundry" }
+      },
+      {
+        "id": "molding",
+        "title": "Molding & core making",
+        "paragraphs": [
+          "[[TODO: describe the molding line, sand system and core making process]]"
+        ],
+        "image": { "src": null, "alt": "Molding line with sand moulds ready for pouring" }
+      },
+      {
+        "id": "machining",
+        "title": "CNC / VMC machining",
+        "paragraphs": [
+          "Castings are machined in-house, so you receive finished parts ready for assembly, with one supplier responsible for both casting and machining."
+        ],
+        "facts": [
+          { "label": "CNC turning centers", "value": "[[TODO: number and max turning diameter]]" },
+          { "label": "VMC machining centers", "value": "[[TODO: number and table size / travel]]" },
+          { "label": "Other machines", "value": "[[TODO: e.g. radial drills, tapping, boring]]" }
+        ],
+        "image": { "src": null, "alt": "VMC machining center milling a grey iron motor frame" }
+      },
+      {
+        "id": "finishing",
+        "title": "Cleaning, painting & coating",
+        "list": [
+          "Shot blasting and casting cleaning: [[TODO: confirm equipment]]",
+          "Primer / paint to customer specification: [[TODO: paint types and colors offered]]",
+          "Rust-preventive oil on machined surfaces: [[TODO: confirm]]"
+        ]
+      }
+    ]
+  },
+  "quality": {
+    "seo": {
+      "title": "Quality Control & Inspection – Material Test Certificates, PPAP | Asian Technocast India",
+      "description": "How Asian Technocast inspects grey and ductile iron castings: chemistry, mechanical testing, dimensional inspection, material test certificates and PPAP / first-article inspection on request."
+    },
+    "eyebrow": "Quality",
+    "title": "Inspection you can document",
+    "intro": "What we check, what equipment we use, and which documents ship with your parts.",
+    "sections": [
+      {
+        "title": "Inspection steps",
+        "steps": [
+          { "title": "Incoming material", "text": "[[TODO: describe checks on pig iron, scrap and alloys]]" },
+          { "title": "Melt chemistry", "text": "[[TODO: describe spectrometer check before pouring]]" },
+          { "title": "Casting inspection", "text": "[[TODO: describe visual inspection and defect checks after cleaning]]" },
+          { "title": "Mechanical properties", "text": "[[TODO: describe tensile and hardness testing per heat/lot]]" },
+          { "title": "Dimensional inspection", "text": "[[TODO: describe first-off and in-process dimensional checks, gauges used]]" },
+          { "title": "Final inspection & packing", "text": "[[TODO: describe final inspection, sampling plan and packing check]]" }
+        ]
+      },
+      {
+        "title": "Lab equipment",
+        "facts": [
+          { "label": "Spectrometer", "value": "[[TODO: make/model, or external lab]]" },
+          { "label": "Universal testing machine (UTM)", "value": "[[TODO: capacity, or external lab]]" },
+          { "label": "Hardness tester", "value": "[[TODO: Brinell / Rockwell, make]]" },
+          { "label": "CMM", "value": "[[TODO: CMM available? If not, remove this line]]" },
+          { "label": "Microscope (microstructure)", "value": "[[TODO: confirm]]" },
+          { "label": "Gauges & instruments", "value": "[[TODO: e.g. bore gauges, height gauge, thread gauges]]" }
+        ],
+        "image": { "src": null, "alt": "Quality lab with spectrometer and hardness tester" }
+      },
+      {
+        "title": "Documents we can provide",
+        "list": [
+          "Material test certificate (chemistry and mechanical properties)",
+          "Dimensional inspection report",
+          "First-article inspection (FAI) on request",
+          "PPAP documentation on request",
+          "[[TODO: other documents, e.g. EN 10204 3.1 certificate, paint thickness report]]"
+        ]
+      },
+      {
+        "title": "Certifications",
+        "intro": "Certificates are shown here only after the original has been verified.",
+        "badges": [
+          "[[TODO: e.g. ISO 9001:2015 – certificate number and certifying body]]",
+          "[[TODO: other certifications or approvals]]"
+        ]
+      }
+    ]
+  },
+  "export-logistics": {
+    "seo": {
+      "title": "Export & Logistics – FOB / CIF from Mundra & Pipavav, ISPM-15 Packing | Asian Technocast",
+      "description": "How we ship iron castings from India to the US and Europe: FOB and CIF from Mundra or Pipavav, ISPM-15 export packing, sample and production lead times, payment terms."
+    },
+    "eyebrow": "Export & logistics",
+    "title": "From Rajkot to your dock",
+    "intro": "Ports, Incoterms, packing, lead times and payment terms.",
+    "sections": [
+      {
+        "title": "Shipping",
+        "facts": [
+          { "label": "Ports of loading", "value": "Mundra · Pipavav (Gujarat)" },
+          { "label": "Incoterms", "value": "FOB · CIF", "note": "Other Incoterms on request." },
+          { "label": "Shipment size", "value": "[[TODO: FCL / LCL – confirm what you offer]]" }
+        ]
+      },
+      {
+        "title": "Export packing",
+        "list": [
+          "ISPM-15 heat-treated wooden crates and pallets",
+          "Machined surfaces protected against corrosion: [[TODO: confirm method, e.g. rust-preventive oil, VCI film]]",
+          "Packing and marking to your specification: [[TODO: confirm]]"
+        ],
+        "image": { "src": null, "alt": "Export crate of painted motor frames on ISPM-15 stamped pallet, ready for container loading" }
+      },
+      {
+        "title": "Lead times",
+        "facts": [
+          { "label": "Pattern / tooling", "value": "[[TODO: typical pattern development time, weeks]]" },
+          { "label": "Samples", "value": "[[TODO: typical sample lead time, weeks]]" },
+          { "label": "Production", "value": "[[TODO: typical production lead time after sample approval, weeks]]" },
+          { "label": "Sea transit to US East Coast", "value": "[[TODO: typical transit time, days]]" }
+        ]
+      },
+      {
+        "title": "Payment terms",
+        "list": [
+          "Letter of credit (LC)",
+          "Advance payment with balance against shipping documents",
+          "[[TODO: confirm accepted payment terms and any other options]]"
+        ]
+      }
+    ]
+  },
+  "industries": {
+    "seo": {
+      "title": "Industries Served – Electric Motors, Pumps, Gearboxes, Agriculture | Asian Technocast India",
+      "description": "Grey and ductile iron castings for electric motor, pump and irrigation, power transmission, agricultural equipment and automotive aftermarket manufacturers."
+    },
+    "eyebrow": "Industries",
+    "title": "Who we cast for",
+    "intro": "Our castings go into equipment made by these industries.",
+    "sections": [
+      {
+        "title": "Industries",
+        "cards": [
+          { "title": "Electric motors", "text": "Motor frames (stator housings) and end shields for NEMA and IEC frame induction motors.", "href": "/products/motor-frames" },
+          { "title": "Pumps & irrigation", "text": "Volute casings, pump bodies and covers in grey and ductile iron.", "href": "/products/pump-casings" },
+          { "title": "Power transmission", "text": "Gearbox and gear housings, covers and bearing carriers.", "href": "/products/gearbox-housings" },
+          { "title": "Agricultural equipment", "text": "Iron parts for tractors, implements and farm machinery.", "href": "/products/agriculture-castings" },
+          { "title": "Automotive aftermarket", "text": "Cylinder heads and replacement iron castings.", "href": "/products/automotive-castings" }
+        ]
+      },
+      {
+        "title": "Reference customers",
+        "paragraphs": [
+          "[[TODO: optional – customer names or anonymized references (e.g. 'motor manufacturer, Gujarat') only with permission]]"
+        ]
+      }
+    ]
+  },
+  "about": {
+    "seo": {
+      "title": "About Asian Technocast – Iron Foundry in Rajkot, India Since 2006",
+      "description": "Asian Technocast is a grey and ductile iron foundry in Aji GIDC, Rajkot, Gujarat, established in 2006 and run by Alpesh Ghadia and Sandeep Ghadia."
+    },
+    "eyebrow": "About us",
+    "title": "A Rajkot iron foundry since 2006",
+    "intro": "Asian Technocast casts and machines grey and ductile iron parts at Plot 185, M Road, Aji GIDC, Rajkot, Gujarat.",
+    "sections": [
+      {
+        "title": "Our story",
+        "paragraphs": [
+          "Asian Technocast was established in 2006 in Aji GIDC, one of Rajkot's main industrial estates. Rajkot is a major engineering and foundry center in western India, with a large base of pump, motor, machine tool and agricultural equipment makers.",
+          "[[TODO: short company story – how it started, how it grew, main milestones (new furnace, machining shop, first export)]]",
+          "We are now building direct export business, starting with the United States, then Germany and the United Kingdom."
+        ],
+        "image": { "src": null, "alt": "Front of the Asian Technocast foundry building in Aji GIDC, Rajkot" }
+      },
+      {
+        "title": "The team",
+        "cards": [
+          { "title": "Alpesh Ghadia", "text": "[[TODO: role and short bio]]" },
+          { "title": "Sandeep Ghadia", "text": "[[TODO: role and short bio]]" },
+          { "title": "Our people", "text": "[[TODO: number of employees, key staff such as metallurgist or QC head]]" }
+        ]
+      },
+      {
+        "title": "Location",
+        "paragraphs": [
+          "Plot No. 185, M Road, Aji GIDC, Rajkot 360003, Gujarat, India. [[TODO: road distance and transit time from the foundry to Mundra and Pipavav ports]]"
+        ]
+      }
+    ]
+  },
+  "rfq": {
+    "seo": {
+      "title": "Request a Quote – Iron Castings to Drawing | Asian Technocast India",
+      "description": "Send your drawing (PDF, STEP, DWG, DXF) and annual quantity for a quotation on grey or ductile iron castings, machined in-house and exported from India."
+    },
+    "eyebrow": "Request a Quote",
+    "title": "Request a quote",
+    "intro": "Send your drawing and requirements. We review the part and reply with a quotation or questions.",
+    "sections": [
+      {
+        "title": "What helps us quote fast",
+        "list": [
+          "2D drawing with tolerances (PDF) and 3D model (STEP) if available",
+          "Material grade and any test requirements",
+          "Machined or as-cast, and paint specification",
+          "Annual quantity and batch size",
+          "Delivery destination and preferred Incoterm"
+        ]
+      },
+      {
+        "title": "What happens next",
+        "paragraphs": [
+          "We review your drawing and reply within 24 hours (IST), either with questions or a timeline for the quotation. [[TODO: confirm typical time to send a full quotation]]"
+        ]
+      }
+    ]
+  },
+  "contact": {
+    "seo": {
+      "title": "Contact Asian Technocast – Iron Foundry, Rajkot, India",
+      "description": "Call, WhatsApp or email Asian Technocast in Aji GIDC, Rajkot, India. Working hours in IST and US Eastern time."
+    },
+    "eyebrow": "Contact",
+    "title": "Talk to us",
+    "intro": "Call or WhatsApp us directly, or send your drawing through the RFQ form.",
+    "sections": []
+  },
+  "privacy": {
+    "seo": {
+      "title": "Privacy Policy | Asian Technocast",
+      "description": "How Asian Technocast handles personal data submitted through this website, including rights under the GDPR and UK GDPR."
+    },
+    "eyebrow": "Legal",
+    "title": "Privacy policy",
+    "intro": "Last updated: [[TODO: date of publication]]",
+    "sections": [
+      {
+        "title": "Who is responsible",
+        "paragraphs": [
+          "Asian Technocast, Plot No. 185, M Road, Aji GIDC, Rajkot 360003, Gujarat, India. Email: [[TODO: business email]]. [[TODO: confirm legal entity type and owner names for the controller statement]]"
+        ]
+      },
+      {
+        "title": "What we collect and why",
+        "paragraphs": [
+          "Request a Quote form: name, company, country, email, phone (optional), product and project details, and any drawings you upload. We use this only to answer your enquiry and prepare a quotation. Legal basis: steps prior to entering into a contract and our legitimate interest in answering business enquiries (Art. 6(1)(b) and (f) GDPR / UK GDPR).",
+          "Email, phone and WhatsApp: if you contact us directly, we process the details you send to reply to you. WhatsApp is operated by WhatsApp Ireland Ltd / Meta; their privacy policy applies when you use it.",
+          "Server logs: our hosting provider records technical data such as IP address, browser type and time of access to deliver the site securely. Legal basis: legitimate interest in operating a secure website (Art. 6(1)(f))."
+        ]
+      },
+      {
+        "title": "Cookies and tracking",
+        "paragraphs": [
+          "This website does not use analytics, advertising or tracking cookies, so no cookie banner is shown.",
+          "Spam protection on the quote form uses Cloudflare Turnstile, which processes technical data (such as IP address and browser characteristics) to tell people from bots. It does not set tracking cookies.",
+          "The map on the contact page is only loaded from Google if you click 'Load map'."
+        ]
+      },
+      {
+        "title": "Service providers",
+        "list": [
+          "Vercel Inc. (USA): website hosting and storage of uploaded drawings",
+          "Resend (USA): delivery of quote form emails",
+          "Cloudflare Inc. (USA): spam protection (Turnstile)",
+          "Google: map display, only after you click 'Load map'",
+          "[[TODO: email provider for the business mailbox]]"
+        ],
+        "note": "Transfers outside the EU/UK rely on the EU–US Data Privacy Framework and/or Standard Contractual Clauses offered by these providers. Your enquiry is also processed by us in India. [[TODO: legal review]]"
+      },
+      {
+        "title": "How long we keep data",
+        "paragraphs": [
+          "Enquiries and drawings are kept as long as needed to handle the enquiry and any resulting business relationship, and then for the periods required by commercial and tax law. [[TODO: define retention period, e.g. delete uploaded drawings from storage after 12 months if no order follows]]"
+        ]
+      },
+      {
+        "title": "Your rights",
+        "paragraphs": [
+          "You have the right to access, correct, delete or restrict processing of your personal data, to data portability, and to object to processing based on legitimate interests. To exercise these rights, email us at [[TODO: business email]].",
+          "You can also complain to a data protection authority, for example in the EU member state where you live, or to the UK Information Commissioner's Office (ico.org.uk)."
+        ]
+      }
+    ]
+  }
+}
